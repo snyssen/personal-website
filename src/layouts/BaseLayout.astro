@@ -15,21 +15,14 @@ let { title, description } = Astro.props;
         <BaseHead title={title} description={description} />
         <style is:global>
             @tailwind base;
-            @tailwind utilities;
             @tailwind components;
-
-            @layer base {
-                html,
-                body {
-                    @apply min-h-screen;
-                }
-            }
+            @tailwind utilities;
         </style>
         <slot name="extra-head" />
     </head>
     <!-- TODO: Probably set default background to full white for printing resume, then override on other pages (or the reverse? Only overwrite to full white for resume) -->
     <body
-        class="text-gray-900 dark:text-gray-100 bg-zinc-100 dark:bg-zinc-800 p-4 md:p-6 text-base flex flex-col"
+        class="min-h-screen text-slate-900 dark:text-slate-100 bg-white dark:bg-zinc-800 flex flex-col"
     >
         <slot />
     </body>

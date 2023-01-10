@@ -1,16 +1,22 @@
 ---
-export interface Props extends astroHTML.JSX.AnchorHTMLAttributes {}
+export interface Props extends astroHTML.JSX.AnchorHTMLAttributes {
+	forceActive?: boolean;
+}
 
-const { href, class: className, ...props } = Astro.props;
+const { forceActive, href, class: className, ...props } = Astro.props;
 
 const { pathname } = Astro.url;
-const isActive = href === pathname || href === pathname.replace(/\/$/, "");
+if (!href) return;
+const isActive =
+	forceActive === true ||
+	href === pathname ||
+	href === pathname.replace(/\/$/, "");
 ---
 
 {
 	isActive ? (
 		<a
-			class="py-3 px-4 inline-flex items-center gap-2 text-gray-100 bg-accent bg-violet-600 text-sm font-medium text-center rounded-lg
+			class="py-3 px-4 inline-flex items-center gap-2 text-slate-50 hover:text-slate-50 bg-accent bg-purple-500 text-sm font-medium text-center rounded-lg
 			hover:ring hover:ring-gray-300 dark:hover:ring-gray-600"
 			href={href}
 			{...props}
@@ -19,7 +25,7 @@ const isActive = href === pathname || href === pathname.replace(/\/$/, "");
 		</a>
 	) : (
 		<a
-			class="py-3 px-4 inline-flex items-center gap-2 text-sm font-medium text-center rounded-lg
+			class="py-3 px-4 inline-flex items-center gap-2 text-slate-900 dark:text-slate-100 bg-transparent text-sm font-medium text-center rounded-lg
 			hover:ring hover:ring-gray-300 dark:hover:ring-gray-600"
 			href={href}
 			{...props}

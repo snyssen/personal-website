@@ -1,0 +1,57 @@
+---
+import LayoutWithHeaderAndFooter from "./LayoutWithHeaderAndFooter.astro";
+
+export interface Props {
+    content: {
+        title: string;
+        description: string;
+        pubDate?: string;
+        updatedDate?: string;
+        heroImage?: string;
+        heroImageAlt?: string;
+    };
+}
+
+const {
+    content: {
+        title,
+        description,
+        pubDate,
+        updatedDate,
+        heroImage,
+        heroImageAlt,
+    },
+} = Astro.props;
+---
+
+<LayoutWithHeaderAndFooter title={title} description={description}>
+    <article
+        class="mx-auto prose prose-zinc dark:prose-invert prose-img:rounded-xl"
+    >
+        <!-- TODO: Overlay text on image ? -->
+        {
+            heroImage && (
+                <img src={heroImage} alt={heroImageAlt} class="w-full mb-2" />
+            )
+        }
+        <h1 class="not-prose mb-1">{title}</h1>
+        <p class="not-prose m-0 text-sm">
+            {
+                pubDate && (
+                    <span>
+                        Published on <time>{pubDate}</time>
+                    </span>
+                )
+            }
+            {
+                updatedDate && (
+                    <span>
+                        Last updated on <time>{updatedDate}</time>
+                    </span>
+                )
+            }
+        </p>
+        <hr class="not-prose mt-1 mb-4" />
+        <slot />
+    </article>
+</LayoutWithHeaderAndFooter>
