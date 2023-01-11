@@ -1,3 +1,4 @@
+const defaultTheme = require('tailwindcss/defaultTheme')
 /** @type {import('tailwindcss').Config} */
 module.exports = {
 	darkMode: 'class',
@@ -20,6 +21,11 @@ module.exports = {
 			},
 			animation: {
 				'gradient-pulse-once': 'gradient-slide-left-right 2s ease-in-out infinite alternate'
+			},
+			fontFamily: {
+				'title': ['"There Brat Regular"'],
+				'sans': ['"Black Sans"', ...defaultTheme.fontFamily.sans],
+				'serif': ['"Kaisei HarunoUmi"', ...defaultTheme.fontFamily.serif]
 			},
 		},
 	},

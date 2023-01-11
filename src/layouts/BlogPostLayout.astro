@@ -1,5 +1,6 @@
 ---
 import LayoutWithHeaderAndFooter from "./LayoutWithHeaderAndFooter.astro";
+import { SITE_IMAGE } from "../config";
 
 export interface Props {
     content: {
@@ -24,9 +25,13 @@ const {
 } = Astro.props;
 ---
 
-<LayoutWithHeaderAndFooter title={title} description={description}>
+<LayoutWithHeaderAndFooter
+    title={title}
+    description={description}
+    image={heroImage ?? SITE_IMAGE}
+>
     <article
-        class="mx-auto prose prose-zinc dark:prose-invert prose-img:rounded-xl"
+        class="mx-auto text-justify prose prose-zinc dark:prose-invert prose-img:rounded-xl"
     >
         <!-- TODO: Overlay text on image ? -->
         {
