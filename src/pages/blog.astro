@@ -9,12 +9,6 @@ const posts = (await Astro.glob("./blog/*.{md,mdx}")).sort(
 );
 ---
 
-<style>
-	a {
-		@apply bg-purple-600 text-slate-50 p-0.5 inline-block transition ease-out delay-200 hover:-translate-y-1 hover:scale-105 hover:bg-cyan-400;
-	}
-</style>
-
 <LayoutWithHeaderAndFooter
 	title="Blog posts"
 	description="List of posts from snyssen's blog"
