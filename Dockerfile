@@ -1,7 +1,9 @@
 # stage 1
 FROM node:18 as builder
 ARG APP_VERSION="version undefined"
+ARG WEBSITE_URI="https://snyssen.be"
 ENV APP_VERSION ${APP_VERSION}
+ENV WEBSITE_URI ${WEBSITE_URI}
 WORKDIR /usr/src/app
 COPY package*.json ./
 RUN npm install
