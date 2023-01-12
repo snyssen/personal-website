@@ -1,15 +1,99 @@
 ---
-layout: "../layouts/LayoutWithHeaderAndFooter.astro"
-title: "About Me"
-description: "More information about Simon Nyssen, the author of this website"
+layout: "../layouts/ResumeLayout.astro"
+title: "Simon Nyssen's resume"
+description: "Simon Nyssen is a full-stack software developer"
+image: "/placeholder-about.jpg"
 ---
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Vitae ultricies leo integer malesuada nunc vel risus commodo viverra. Adipiscing enim eu turpis egestas pretium. Euismod elementum nisi quis eleifend quam adipiscing. In hac habitasse platea dictumst vestibulum. Sagittis purus sit amet volutpat. Netus et malesuada fames ac turpis egestas. Eget magna fermentum iaculis eu non diam phasellus vestibulum lorem. Varius sit amet mattis vulputate enim. Habitasse platea dictumst quisque sagittis. Integer quis auctor elit sed vulputate mi. Dictumst quisque sagittis purus sit amet.
+# Simon Nyssen
 
-Morbi tristique senectus et netus. Id semper risus in hendrerit gravida rutrum quisque non tellus. Habitasse platea dictumst quisque sagittis purus sit amet. Tellus molestie nunc non blandit massa. Cursus vitae congue mauris rhoncus. Accumsan tortor posuere ac ut. Fringilla urna porttitor rhoncus dolor. Elit ullamcorper dignissim cras tincidunt lobortis. In cursus turpis massa tincidunt dui ut ornare lectus. Integer feugiat scelerisque varius morbi enim nunc. Bibendum neque egestas congue quisque egestas diam. Cras ornare arcu dui vivamus arcu felis bibendum. Dignissim suspendisse in est ante in nibh mauris. Sed tempus urna et pharetra pharetra massa massa ultricies mi.
+**Full-stack developer**
 
-Mollis nunc sed id semper risus in. Convallis a cras semper auctor neque. Diam sit amet nisl suscipit. Lacus viverra vitae congue eu consequat ac felis donec. Egestas integer eget aliquet nibh praesent tristique magna sit amet. Eget magna fermentum iaculis eu non diam. In vitae turpis massa sed elementum. Tristique et egestas quis ipsum suspendisse ultrices. Eget lorem dolor sed viverra ipsum. Vel turpis nunc eget lorem dolor sed viverra. Posuere ac ut consequat semper viverra nam. Laoreet suspendisse interdum consectetur libero id faucibus. Diam phasellus vestibulum lorem sed risus ultricies tristique. Rhoncus dolor purus non enim praesent elementum facilisis. Ultrices tincidunt arcu non sodales neque. Tempus egestas sed sed risus pretium quam vulputate. Viverra suspendisse potenti nullam ac tortor vitae purus faucibus ornare. Fringilla urna porttitor rhoncus dolor purus non. Amet dictum sit amet justo donec enim.
+Huy, Belgium | contact@snyssen.be | [+32 492 69 88 11](tel:+32492698811)
 
-Mattis ullamcorper velit sed ullamcorper morbi tincidunt. Tortor posuere ac ut consequat semper viverra. Tellus mauris a diam maecenas sed enim ut sem viverra. Venenatis urna cursus eget nunc scelerisque viverra mauris in. Arcu ac tortor dignissim convallis aenean et tortor at. Curabitur gravida arcu ac tortor dignissim convallis aenean et tortor. Egestas tellus rutrum tellus pellentesque eu. Fusce ut placerat orci nulla pellentesque dignissim enim sit amet. Ut enim blandit volutpat maecenas volutpat blandit aliquam etiam. Id donec ultrices tincidunt arcu. Id cursus metus aliquam eleifend mi.
+I am passionate about web technologies at large, be it for creating websites, managing infrastructures, or everything in between. Most of my experience has been on the dotnet framework (especially ASP.NET) and Angular, but I am also proficient with other frameworks such as Astro and Preact. As a full-stack dev, I also have experience managing infrastructure on both Windows and (preferably) Linux, databases (mostly SQL Server), and general DevOps (Agile, Continuous Integration, Continuous Deployments).
 
-Tempus quam pellentesque nec nam aliquam sem. Risus at ultrices mi tempus imperdiet. Id porta nibh venenatis cras sed felis eget velit. Ipsum a arcu cursus vitae. Facilisis magna etiam tempor orci eu lobortis elementum. Tincidunt dui ut ornare lectus sit. Quisque non tellus orci ac. Blandit libero volutpat sed cras. Nec tincidunt praesent semper feugiat nibh sed pulvinar proin gravida. Egestas integer eget aliquet nibh praesent tristique magna.
+---
+
+## Relevant links
+
+- Personal website: <https://snyssen.be>
+- Linkedin: <https://www.linkedin.com/in/simon-nyssen-007247163>
+- GitHub: <https://github.com/snyssen>
+- Self-hosted Gitea: <https://git.snyssen.be/snyssen>
+
+---
+
+## Work Experience
+
+### [Neuromedia](https://neuromedia.io/)
+
+#### Full-stack developer | July 2019 - Current
+
+Worked in a small team (less than 10 people, at most 3 developers) on a wide range of projects related to online media audience measurement.
+
+**Projects**
+
+- [CasterStats](https://www.casterstats.com): Web radio and podcasts audience measurement through consumption of log files and direct data extraction from (proxied) admin interfaces of streaming servers
+- [Neuromedia Analytics](https://appstg.neuromedia.io): Rewrite of CasterStats, still in development. Also includes new features such as in-page player actions tracking.
+- [CIM Dashboard](https://cim.casterstats.net): Custom made interface for the [CIM Radio Stream Monitor (RSM) study](https://www.cim.be/fr/radio). Interface makes use of the data provided by CasterStats.
+- A lot of smaller projects for managing configurations, integrating 3rd party APIs, monitoring services, etc.
+
+**Technologies and tools**
+
+| Languages and Frameworks | Infrastructure | Other |
+| --- | --- | --- |
+| .NET Console apps (Core 3.1 and up to 7) | Windows Server 2016 and 2019 | Jira and Bitbucket |
+| ASP.NET APIs (4.5, Core 3.1 and up to 7) | Ubuntu Server 20.04 and 22.04 | SQL Server |
+| .NET 4.7 WPF app | Octopus Deploy | Docker |
+| AngularJS | Ansible | RavenDB |
+| Angular 6 to 12 |  | RabbitMQ |
+
+#### Developer internship | February 2019 - May 2019
+
+Spent internship at 303% Media, a sister company to Neuromedia. Worked on [Traxflow](https://neuromedia.io/en/produit/traxflow/), a platform for bridging music creators and broadcasters.
+
+**Technologies and tools**
+
+| Languages and Frameworks | Infrastructure | Other |
+| --- | --- | --- |
+| ASP .NET Core | Windows Server 2016 | SQL Server |
+| AngularJS | | Octopus Deploy |
+
+---
+
+## Personal projects
+
+### [Self-hosted infrastructure](https://github.com/snyssen/infra-snyssen.be)
+
+Initially a simple collection of scripts for a manually managed server at home, this project as grown into a full blown personal infrastructure and my biggest pride as a tech person. The now 3 separate machines at my home provide a lot of the services I rely on daily, and are entirely provisioned using Ansible playbooks and container images.
+
+**Technologies and tools**
+
+| Infrastructure |
+| --- |
+| Fedora Server |
+| Ansible |
+| Docker |
+
+### [Webb Launcher](https://git.snyssen.be/snyssen/webb-launcher)
+
+A simple web start page built with Astro. Bundled as a container image, it can easily be self-hosted.
+
+---
+
+## Languages
+
+| French         | English     |
+| -------------- | ----------- |
+| Native speaker | Fluent (C1) |
+
+---
+
+## Education
+
+### Haute École de la ville de Liège (HEL)
+
+#### Bachelor, Computers and Systems | September 2016 - June 2019
+
+Graduated magna cum laude
