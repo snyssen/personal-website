@@ -1,0 +1,73 @@
+---
+kind: pipeline
+name: versioned_docker
+type: docker
+trigger:
+  event:
+    - tag
+steps:
+  - name: build and publish container image on Gitea
+    image: plugins/docker
+    settings: &docker_settings
+      registry: git.snyssen.be
+      username: ${DRONE_COMMIT_AUTHOR}
+      password:
+        from_secret: gitea_access_token
+      repo: "git.snyssen.be/${DRONE_REPO}"
+      build_args: APP_VERSION=${DRONE_SEMVER}
+      tags: &docker_tags
+        - ${DRONE_SEMVER_MAJOR}
+        - ${DRONE_SEMVER_MAJOR}.${DRONE_SEMVER_MINOR}
+        - ${DRONE_SEMVER}
+        - latest
+  - name: notify by e-mail
+    image: drillster/drone-email
+    settings:
+      host:
+        from_secret: smtp_server
+      username:
+        from_secret: smtp_user
+      password:
+        from_secret: smtp_pass
+      from: admin@snyssen.be
+    depends_on:
+      - "build and publish container image on Gitea"
+    when:
+      status:
+        - success
+        - failure
+---
+kind: pipeline
+name: branches_docker
+type: docker
+trigger:
+  event:
+    - push
+steps:
+  - name: build and publish container image on Gitea
+    image: plugins/docker
+    settings: &docker_settings
+      registry: git.snyssen.be
+      username: ${DRONE_COMMIT_AUTHOR}
+      password:
+        from_secret: gitea_access_token
+      repo: "git.snyssen.be/${DRONE_REPO}"
+      build_args: APP_VERSION=from branch ${DRONE_BRANCH}
+      tags: &docker_tags
+        - ${DRONE_BRANCH}
+  - name: notify by e-mail
+    image: drillster/drone-email
+    settings:
+      host:
+        from_secret: smtp_server
+      username:
+        from_secret: smtp_user
+      password:
+        from_secret: smtp_pass
+      from: admin@snyssen.be
+    depends_on:
+      - "build and publish container image on Gitea"
+    when:
+      status:
+        - success
+        - failure
