@@ -5,6 +5,6 @@ import tailwind from "@astrojs/tailwind";
 
 // https://astro.build/config
 export default defineConfig({
-  site: import.meta.env.WEBSITE_URI ?? 'http://localhost:3000',
+  site: process.env.WEBSITE_URI ?? 'http://localhost:3000',
   integrations: [mdx(), sitemap(), tailwind()]
 });
