@@ -1,0 +1,7 @@
+version: '3'
+services:
+  personal-website:
+    build:
+      context: .
+    ports:
+      - "80:80"
