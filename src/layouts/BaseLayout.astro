@@ -1,4 +1,6 @@
 ---
+import "../assets/css/fonts.css";
+import "../assets/css/line-awesome.min.css";
 import BaseHead from "../components/BaseHead.astro";
 
 export interface Props {
@@ -18,49 +20,6 @@ let { title, description, image } = Astro.props;
             @tailwind base;
             @tailwind components;
             @tailwind utilities;
-
-            /* title font */
-            @font-face {
-                font-family: "There Brat Regular";
-                font-style: normal;
-                font-weight: normal;
-                src: local("There Brat Regular"),
-                    url("/fonts/ThereBrat-3zJlL.woff") format("woff");
-            }
-
-            /* serif font */
-            @font-face {
-                font-family: "Kaisei HarunoUmi";
-                font-style: normal;
-                font-weight: normal;
-                src: local("Kaisei HarunoUmi Regular"),
-                    url("/fonts/KaiseiHarunoUmi-Regular.woff") format("woff");
-            }
-            @font-face {
-                font-family: "Kaisei HarunoUmi";
-                font-style: normal;
-                font-weight: bold;
-                src: local("Kaisei HarunoUmi Bold"),
-                    url("/fonts/KaiseiHarunoUmi-Bold.woff") format("woff");
-            }
-
-            /* sans font */
-            @font-face {
-                font-family: "Black Sans";
-                font-style: normal;
-                font-weight: normal;
-                src: local("Black Sans Regular"),
-                    url("/fonts/blacksansregularwebfontd6761cbf250866e8870d97f03fa629a8.woff")
-                        format("woff");
-            }
-            @font-face {
-                font-family: "Black Sans";
-                font-style: normal;
-                font-weight: bold;
-                src: local("Black Sans Bold"),
-                    url("blacksansboldwebfont949ef363c646d9c2456af9d67a94778f.woff")
-                        format("woff");
-            }
         </style>
         <slot name="extra-head" />
     </head>

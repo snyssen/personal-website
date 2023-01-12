@@ -2,30 +2,43 @@
 import LayoutWithHeaderAndFooter from "../layouts/LayoutWithHeaderAndFooter.astro";
 ---
 
-<style>
-	a {
-		@apply bg-purple-600 text-slate-50 p-0.5 inline-block shadow-sm transition ease-out delay-200 hover:-translate-y-1 hover:scale-105 hover:bg-cyan-500 hover:shadow-xl;
-	}
-</style>
-
 <LayoutWithHeaderAndFooter>
-	<div class="max-w-prose text-lg mx-auto px-2">
+	<div class="max-w-prose text-lg mx-auto p-2">
 		<p>Hey, nice to e-meet you! My name is</p>
 		<h1
-			class="text-4xl bg-gradient-to-br from-cyan-400 via-purple-600 to-violet-400 bg-clip-text text-transparent w-fit font-title mb-2"
+			class="text-6xl sm:text-7xl bg-gradient-to-br from-cyan-400 via-purple-600 to-violet-400 bg-clip-text text-transparent w-fit font-title mb-2"
 		>
 			Simon Nyssen,
 		</h1>
-		<p>
-			though you may also find me on the web as <a
-				href="https://github.com/snyssen">snyssen</a
-			>. I'm a <span class="text-2xl font-bold"
+		<p class="text-justify">
+			I am a belgian <span
+				class="text-xl font-bold underline underline-offset-4"
 				>full-stack software developer</span
-			> based in the Liège area in Belgium.
+			> who is passionate about web technologies and self-hosting. You can
+			find more about me by checking out
+			<a
+				href="/resume"
+				class="bg-purple-600 text-slate-50 p-0.5 inline-block shadow-sm transition ease-out delay-200 hover:-translate-y-1 hover:scale-105 hover:bg-cyan-500 hover:shadow-xl"
+				>my resume
+			</a> or connecting with me on the following platforms:
 		</p>
-		<p>
-			I am passionate about web technologies at large, be it for creating
-			websites, managing infrastructures, or everything in between.
-		</p>
+		<div class="flex flex-row flex-wrap gap-x-4 my-4">
+			<a href="https://github.com/snyssen"
+				><i
+					class="lab la-github text-6xl bg-gradient-to-br from-cyan-400 via-purple-600 to-violet-400 bg-clip-text text-transparent drop-shadow-sm transition ease-out delay-200 hover:-translate-y-1 hover:scale-105 hover:drop-shadow-xl"
+				></i></a
+			>
+			<a href="https://git.snyssen.be/snyssen"
+				><i
+					class="lab la-git text-6xl bg-gradient-to-br from-cyan-400 via-purple-600 to-violet-400 bg-clip-text text-transparent drop-shadow-sm transition ease-out delay-200 hover:-translate-y-1 hover:scale-105 hover:drop-shadow-xl"
+				></i></a
+			>
+			<a href="https://be.linkedin.com/in/simon-nyssen-007247163"
+				><i
+					class="lab la-linkedin-in text-6xl bg-gradient-to-br from-cyan-400 via-purple-600 to-violet-400 bg-clip-text text-transparent drop-shadow-sm transition ease-out delay-200 hover:-translate-y-1 hover:scale-105 hover:drop-shadow-xl"
+				></i></a
+			>
+		</div>
+		<hr class="border-slate-600 dark:border-slate-400" />
 	</div>
 </LayoutWithHeaderAndFooter>
