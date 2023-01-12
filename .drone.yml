@@ -53,8 +53,8 @@ steps:
         from_secret: gitea_access_token
       repo: "git.snyssen.be/${DRONE_REPO}"
       build_args:
-        - APP_VERSION=from branch ${DRONE_BRANCH}
-        - WEBSITE_URI=https://test.snyssen.be
+        - APP_VERSION="from branch ${DRONE_BRANCH}""
+        - WEBSITE_URI="https://test.snyssen.be"
       tags: &docker_tags
         - ${DRONE_BRANCH}
   - name: notify by e-mail
