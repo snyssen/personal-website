@@ -4,42 +4,40 @@ title: "Simon Nyssen's resume"
 description: "Simon Nyssen is a full-stack software developer"
 image: "/placeholder-about.jpg"
 ---
+import ResumeSection from '../components/ResumeSection.astro';
 
+<ResumeSection>
 # Simon Nyssen
 
-**Full-stack developer**
+## Full-stack developer
 
-Huy, Belgium | contact@snyssen.be | [+32 492 69 88 11](tel:+32492698811)
+Huy, Belgium | contact@snyssen.be
 
-I am passionate about web technologies at large, be it for creating websites, managing infrastructures, or everything in between. Most of my experience has been on the dotnet framework (especially ASP.NET) and Angular, but I am also proficient with other frameworks such as Astro and Preact. As a full-stack dev, I also have experience managing infrastructure on both Windows and (preferably) Linux, databases (mostly SQL Server), and general DevOps (Agile, Continuous Integration, Continuous Deployments).
+I am passionate about web technologies at large, be it for creating websites, managing infrastructures, or everything in between.
+Most of my experience has been on the dotnet framework (especially ASP.NET) and Angular, but I am also proficient with other frameworks such as Astro and Preact.
+As a full-stack dev, I also have experience managing infrastructure on both Windows and (preferably) Linux, databases (mostly SQL Server), and general DevOps (Agile, Continuous Integration, Continuous Deployments).
+</ResumeSection>
 
----
+<ResumeSection title="Relevant links" justifyText={false}>
+- Personal website: https://snyssen.be
+- Linkedin: https://www.linkedin.com/in/simon-nyssen-007247163
+- GitHub: https://github.com/snyssen
+- Self-hosted Gitea: https://git.snyssen.be/snyssen
+</ResumeSection>
 
-## Relevant links
-
-- Personal website: <https://snyssen.be>
-- Linkedin: <https://www.linkedin.com/in/simon-nyssen-007247163>
-- GitHub: <https://github.com/snyssen>
-- Self-hosted Gitea: <https://git.snyssen.be/snyssen>
-
----
-
-## Work Experience
-
-### [Neuromedia](https://neuromedia.io/)
-
-#### Full-stack developer | July 2019 - Current
+<ResumeSection title="Work Experience">
+### Full-stack developer | [Neuromedia](https://neuromedia.io/) | July 2019 - Current
 
 Worked in a small team (less than 10 people, at most 3 developers) on a wide range of projects related to online media audience measurement.
 
-**Projects**
+#### Projects
 
 - [CasterStats](https://www.casterstats.com): Web radio and podcasts audience measurement through consumption of log files and direct data extraction from (proxied) admin interfaces of streaming servers
 - [Neuromedia Analytics](https://appstg.neuromedia.io): Rewrite of CasterStats, still in development. Also includes new features such as in-page player actions tracking.
 - [CIM Dashboard](https://cim.casterstats.net): Custom made interface for the [CIM Radio Stream Monitor (RSM) study](https://www.cim.be/fr/radio). Interface makes use of the data provided by CasterStats.
 - A lot of smaller projects for managing configurations, integrating 3rd party APIs, monitoring services, etc.
 
-**Technologies and tools**
+#### Technologies and tools
 
 | Languages and Frameworks | Infrastructure | Other |
 | --- | --- | --- |
@@ -49,26 +47,24 @@ Worked in a small team (less than 10 people, at most 3 developers) on a wide ran
 | AngularJS | Ansible | RavenDB |
 | Angular 6 to 12 |  | RabbitMQ |
 
-#### Developer internship | February 2019 - May 2019
+### Developer internship | [303% Media](https://303.media/#!home) | February 2019 - May 2019
 
 Spent internship at 303% Media, a sister company to Neuromedia. Worked on [Traxflow](https://neuromedia.io/en/produit/traxflow/), a platform for bridging music creators and broadcasters.
 
-**Technologies and tools**
+#### Technologies and tools
 
 | Languages and Frameworks | Infrastructure | Other |
 | --- | --- | --- |
 | ASP .NET Core | Windows Server 2016 | SQL Server |
 | AngularJS | | Octopus Deploy |
+</ResumeSection>
 
----
-
-## Personal projects
-
+<ResumeSection title="Personal projects">
 ### [Self-hosted infrastructure](https://github.com/snyssen/infra-snyssen.be)
 
 Initially a simple collection of scripts for a manually managed server at home, this project as grown into a full blown personal infrastructure and my biggest pride as a tech person. The now 3 separate machines at my home provide a lot of the services I rely on daily, and are entirely provisioned using Ansible playbooks and container images.
 
-**Technologies and tools**
+#### Technologies and tools
 
 | Infrastructure |
 | --- |
@@ -79,21 +75,14 @@ Initially a simple collection of scripts for a manually managed server at home, 
 ### [Webb Launcher](https://git.snyssen.be/snyssen/webb-launcher)
 
 A simple web start page built with Astro. Bundled as a container image, it can easily be self-hosted.
+</ResumeSection>
 
----
-
-## Languages
-
+<ResumeSection title="Languages">
 | French         | English     |
 | -------------- | ----------- |
 | Native speaker | Fluent (C1) |
-
----
-
-## Education
-
-### Haute École de la ville de Liège (HEL)
-
-#### Bachelor, Computers and Systems | September 2016 - June 2019
-
-Graduated magna cum laude
+</ResumeSection>
+<ResumeSection title="Education">
+### Haute École de la ville de Liège (HEL) | September 2016 - June 2019
+Bachelor in Computers and Systems. Graduated magna cum laude.
+</ResumeSection>

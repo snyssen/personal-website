@@ -1,5 +1,6 @@
 ---
 import LayoutWithHeaderAndFooter from "./LayoutWithHeaderAndFooter.astro";
+import ResumeSection from "../components/ResumeSection.astro";
 
 export interface Props {
     title: string;
@@ -15,9 +16,27 @@ const { title, description, image } = Astro.props;
     description={description}
     image={image}
 >
-    <article
-        class="p-2 mx-auto text-justify prose prose-zinc dark:prose-invert prose-img:rounded-xl"
-    >
+    <article class="mx-auto p-2 md:p-6">
+        <ResumeSection>
+            <div class="flex flex-row items-center">
+                <div
+                    class="flex items-center p-4 text-lg select-none font-bold rounded-full bg-gradient-to-br from-cyan-400 via-purple-600 to-violet-400 text-slate-50 shadow-sm"
+                >
+                    <span>S N</span>
+                </div>
+                <div class="flex-1"></div>
+                <a
+                    id="resume-download"
+                    href="/resume.pdf"
+                    rel="noopener noreferrer"
+                    aria-label="Download resume as PDF"
+                >
+                    <i
+                        class="las la-download text-6xl bg-gradient-to-br from-cyan-400 via-purple-600 to-violet-400 bg-clip-text text-transparent drop-shadow-sm transition ease-out delay-200 hover:-translate-y-1 hover:scale-105 hover:drop-shadow-xl"
+                    ></i>
+                </a>
+            </div>
+        </ResumeSection>
         <slot />
     </article>
 </LayoutWithHeaderAndFooter>
