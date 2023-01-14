@@ -6,8 +6,10 @@
   "scripts": {
     "dev": "astro dev",
     "start": "astro dev",
-    "build": "astro build",
+    "build": "astro check && astro build && npm run generate-pdf:ci",
     "preview": "astro preview",
+    "generate-pdf": "ts-node --project tsconfig-pdf.json ./scripts/generate-pdf.ts",
+    "generate-pdf:ci": "start-server-and-test preview 3000 generate-pdf",
     "astro": "astro"
   },
   "dependencies": {
@@ -19,6 +21,9 @@
     "tailwindcss": "^3.2.4"
   },
   "devDependencies": {
-    "@tailwindcss/typography": "^0.5.9"
+    "@tailwindcss/typography": "^0.5.9",
+    "playwright": "^1.29.2",
+    "start-server-and-test": "^1.15.2",
+    "ts-node": "^10.9.1"
   }
 }
