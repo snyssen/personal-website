@@ -6,7 +6,7 @@ import { chromium } from 'playwright';
     const browser = await chromium.launch();
     const page = await browser.newPage();
 
-    await page.goto('http://127.0.0.1:3000/resume', { waitUntil: 'networkidle' });
+    await page.goto('http://localhost:3000/resume', { waitUntil: 'networkidle' });
 
     console.log('Resume page loaded, removing components...');
     const header = page.locator('header');
@@ -20,15 +20,15 @@ import { chromium } from 'playwright';
 
     console.log('Generating PDF...');
     await page.pdf({
-        path: 'public/resume.pdf',
+        path: 'dist/resume.pdf',
         margin: {
-            top: '50px',
-            bottom: '80px',
+            top: '15px',
+            bottom: '15px',
         },
         printBackground: true,
     });
 
-    console.log('Resume PDF generated at public/resume.pdf. Closing Playwright browser...');
+    console.log('Resume PDF generated at dist/resume.pdf. Closing Playwright browser...');
     await browser.close();
     console.log('Done!');
 })();
