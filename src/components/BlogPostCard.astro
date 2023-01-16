@@ -1,47 +1,20 @@
 ---
+import type { BlogPost } from "../models/BlogPost.astro";
+
 export interface Props {
-    post: {
-        frontmatter: {
-            title: string;
-            description: string;
-            pubDate?: string;
-            updatedDate?: string;
-            heroImage?: string;
-            heroImageAlt?: string;
-            tags?: [
-                {
-                    name: string;
-                    colorClass: string;
-                }
-            ];
-        };
-        url: string;
-    };
+    post: BlogPost;
 }
 
-const {
-    post: {
-        frontmatter: {
-            title,
-            description,
-            pubDate,
-            updatedDate,
-            heroImage,
-            heroImageAlt,
-            tags,
-        },
-        url,
-    },
-} = Astro.props;
+const { post } = Astro.props;
 ---
 
-<a href={url} aria-label="Read blog post">
+<a href={post.url} aria-label="Read blog post">
     <div
         class="h-full w-full flex flex-col shadow-sm rounded-xl border dark:border-slate-600 group transition ease-out delay-200 hover:-translate-y-1 hover:scale-105 hover:shadow-xl"
     >
         <img
-            src={heroImage ?? "/placeholder-hero.jpg"}
-            alt={heroImageAlt}
+            src={post.frontmatter.heroImage ?? "/placeholder-hero.jpg"}
+            alt={post.frontmatter.heroImageAlt}
             class="w-full h-auto rounded-t-xl"
         />
         <div
@@ -50,26 +23,29 @@ const {
             <div class="flex flex-row justify-between items-start gap-x-1">
                 <div>
                     <h3 class="text-lg font-bold">
-                        {title}
+                        {post.frontmatter.title}
                     </h3>
-                    <time class="text-sm text-slate-400" datetime={pubDate}
-                        >{pubDate}</time
+                    <time
+                        class="text-sm text-slate-400"
+                        datetime={post.frontmatter.pubDate}
+                        >{post.frontmatter.pubDate}</time
                     >
                     {
-                        tags && tags.length > 0 && (
-                            <div class="flex flex-row flex-wrap gap-1">
-                                {tags.map((tag) => (
-                                    <span
-                                        class:list={[
-                                            tag.colorClass,
-                                            "text-sm text-slate-100 p-1 rounded-xl",
-                                        ]}
-                                    >
-                                        #{tag.name}
-                                    </span>
-                                ))}
-                            </div>
-                        )
+                        post.frontmatter.tags &&
+                            post.frontmatter.tags.length > 0 && (
+                                <div class="flex flex-row flex-wrap gap-1">
+                                    {post.frontmatter.tags.map((tag) => (
+                                        <span
+                                            class:list={[
+                                                tag.colorClass,
+                                                "text-sm text-slate-100 p-1 rounded-xl",
+                                            ]}
+                                        >
+                                            #{tag.name}
+                                        </span>
+                                    ))}
+                                </div>
+                            )
                     }
                 </div>
                 <div
@@ -79,7 +55,7 @@ const {
                 </div>
             </div>
             <p>
-                {description}
+                {post.frontmatter.description}
             </p>
         </div>
     </div>

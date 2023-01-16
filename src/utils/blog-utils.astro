@@ -1,11 +1,15 @@
 ---
+import type { BlogPost } from "../models/BlogPost.astro";
+
 export abstract class BlogUtils {
     public static async getPostsOrderedByDateDesc() {
-        return (await Astro.glob("../pages/blog/*.{md,mdx}")).sort(
-            (a, b) =>
-                new Date(b.frontmatter.pubDate).valueOf() -
-                new Date(a.frontmatter.pubDate).valueOf()
-        );
+        return (await Astro.glob("../pages/blog/*.{md,mdx}"))
+            .sort(
+                (a, b) =>
+                    new Date(b.frontmatter.pubDate).valueOf() -
+                    new Date(a.frontmatter.pubDate).valueOf()
+            )
+            .map((p) => p as BlogPost);
     }
 }
 ---
