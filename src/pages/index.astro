@@ -1,5 +1,9 @@
 ---
+import BlogPostCard from "../components/BlogPostCard.astro";
 import LayoutWithHeaderAndFooter from "../layouts/LayoutWithHeaderAndFooter.astro";
+import { BlogUtils } from "../utils/blog-utils.astro";
+
+const recentPosts = (await BlogUtils.getPostsOrderedByDateDesc()).slice(0, 4);
 ---
 
 <LayoutWithHeaderAndFooter>
@@ -39,5 +43,17 @@ import LayoutWithHeaderAndFooter from "../layouts/LayoutWithHeaderAndFooter.astr
 				></i></a
 			>
 		</div>
+		<section class="mt-8 lg:mt-12">
+			<h2 class="text-4xl mb-2">Recent blog posts</h2>
+			<div class="grid grid-cols-1 md:grid-cols-2 items-stretch gap-2">
+				{
+					recentPosts && recentPosts.length > 0 ? (
+						recentPosts.map((post) => <BlogPostCard post={post} />)
+					) : (
+						<p>No recent post</p>
+					)
+				}
+			</div>
+		</section>
 	</div>
 </LayoutWithHeaderAndFooter>
