@@ -8,6 +8,12 @@ export interface Props {
             updatedDate?: string;
             heroImage?: string;
             heroImageAlt?: string;
+            tags?: [
+                {
+                    name: string;
+                    colorClass: string;
+                }
+            ];
         };
         url: string;
     };
@@ -22,6 +28,7 @@ const {
             updatedDate,
             heroImage,
             heroImageAlt,
+            tags,
         },
         url,
     },
@@ -48,6 +55,22 @@ const {
                     <time class="text-sm text-slate-400" datetime={pubDate}
                         >{pubDate}</time
                     >
+                    {
+                        tags && tags.length > 0 && (
+                            <div class="flex flex-row flex-wrap gap-x-1">
+                                {tags.map((tag) => (
+                                    <span
+                                        class:list={[
+                                            tag.colorClass,
+                                            "text-sm text-slate-100 p-1 rounded-xl",
+                                        ]}
+                                    >
+                                        #{tag.name}
+                                    </span>
+                                ))}
+                            </div>
+                        )
+                    }
                 </div>
                 <div
                     class="bg-purple-600 transition ease-out delay-200 group-hover:bg-cyan-500 text-slate-100 rounded-xl p-2"
