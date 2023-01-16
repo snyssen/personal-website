@@ -3,4 +3,4 @@
 
 export const SITE_TITLE = 'snyssen\'s website';
 export const SITE_DESCRIPTION = 'Simon Nyssen\'s personal website and blog';
-export const SITE_IMAGE = "/placeholder-social.jpg";
+export const SITE_IMAGE = "/placeholder-hero.jpg";
