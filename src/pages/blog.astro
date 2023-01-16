@@ -1,36 +1,28 @@
 ---
+import BlogPostCard from "../components/BlogPostCard.astro";
 import LayoutWithHeaderAndFooter from "../layouts/LayoutWithHeaderAndFooter.astro";
+import { BlogUtils } from "../utils/blog-utils.astro";
 
 // Use Astro.glob() to fetch all posts, and then sort them by date.
-const posts = (await Astro.glob("./blog/*.{md,mdx}")).sort(
-	(a, b) =>
-		new Date(b.frontmatter.pubDate).valueOf() -
-		new Date(a.frontmatter.pubDate).valueOf()
-);
+const posts = await BlogUtils.getPostsOrderedByDateDesc();
 ---
 
 <LayoutWithHeaderAndFooter
 	title="Blog posts"
 	description="List of posts from snyssen's blog"
 >
-	<section>
-		<ul>
+	<section class="max-w-screen-xl mx-auto my-4 px-2">
+		<h1 class="text-4xl mb-4">All blog posts</h1>
+		<div
+			class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-2 md:gap-4"
+		>
 			{
-				posts.map((post) => (
-					<li>
-						<time datetime={post.frontmatter.pubDate}>
-							{new Date(
-								post.frontmatter.pubDate
-							).toLocaleDateString("en-us", {
-								year: "numeric",
-								month: "short",
-								day: "numeric",
-							})}
-						</time>
-						<a href={post.url}>{post.frontmatter.title}</a>
-					</li>
-				))
+				posts && posts.length > 0 ? (
+					posts.map((post) => <BlogPostCard post={post} />)
+				) : (
+					<p>No post to show</p>
+				)
 			}
-		</ul>
+		</div>
 	</section>
 </LayoutWithHeaderAndFooter>
