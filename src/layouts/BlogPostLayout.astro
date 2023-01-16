@@ -10,6 +10,12 @@ export interface Props {
         updatedDate?: string;
         heroImage?: string;
         heroImageAlt?: string;
+        tags?: [
+            {
+                name: string;
+                colorClass: string;
+            }
+        ];
     };
 }
 
@@ -21,6 +27,7 @@ const {
         updatedDate,
         heroImage,
         heroImageAlt,
+        tags,
     },
 } = Astro.props;
 ---
@@ -33,7 +40,6 @@ const {
     <article
         class="p-2 mx-auto text-justify prose prose-zinc dark:prose-invert prose-img:rounded-xl"
     >
-        <!-- TODO: Overlay text on image ? -->
         {
             heroImage && (
                 <img src={heroImage} alt={heroImageAlt} class="w-full mb-2" />
@@ -51,12 +57,28 @@ const {
             {
                 updatedDate && (
                     <span>
-                        Last updated on <time>{updatedDate}</time>
+                        - Last updated on <time>{updatedDate}</time>
                     </span>
                 )
             }
         </p>
-        <hr class="not-prose mt-1 mb-4" />
+        {
+            tags && tags.length > 0 && (
+                <div class="flex flex-row flex-wrap gap-1 my-2">
+                    {tags.map((tag) => (
+                        <span
+                            class:list={[
+                                tag.colorClass,
+                                "text-sm text-slate-100 p-1 rounded-xl",
+                            ]}
+                        >
+                            #{tag.name}
+                        </span>
+                    ))}
+                </div>
+            )
+        }
+        <hr class="not-prose mt-2 mb-4" />
         <slot />
     </article>
 </LayoutWithHeaderAndFooter>
