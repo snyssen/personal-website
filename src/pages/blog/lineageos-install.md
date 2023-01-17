@@ -2,6 +2,7 @@
 title: Install LineageOS with MicroG and playstore
 description: Install LineageOS with MicroG and full playstore support
 layout: ../../layouts/BlogPostLayout.astro
+heroImage: /blog-attachments/hero/lineage-os-logo.webp
 pubDate: Jan 16 2023
 tags:
     - name: misc

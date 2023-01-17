@@ -1,7 +1,8 @@
 ---
-title: Restore an SQL Server backup on Linux
-description: Because restoring a SQL Server backup from a Windows server onto your machine can be a pain
+title: Restore a MS SQL Server backup on Linux
+description: Because restoring a MS SQL Server backup from a Windows server onto your machine can be a pain
 layout: ../../layouts/BlogPostLayout.astro
+heroImage: /blog-attachments/hero/restore-sql-backup-linux.jpg
 pubDate: Jan 16 2023
 tags:
     - name: programming

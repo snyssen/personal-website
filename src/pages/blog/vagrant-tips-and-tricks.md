@@ -2,6 +2,7 @@
 title: "Developing with Vagrant - Tips & Tricks"
 description: Do you want to develop Ansible playbooks and test them under Vagrant? Here are some random tips&tricks
 layout: ../../layouts/BlogPostLayout.astro
+heroImage: /blog-attachments/hero/vagrant-tips-and-tricks.jpg
 pubDate: Jan 16 2023
 tags:
     - name: programming

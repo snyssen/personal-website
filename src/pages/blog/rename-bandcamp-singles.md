@@ -2,6 +2,7 @@
 title: Rename Bandcamp single for easier consumption by MusicBrainz Picard
 description: Learn how to organize singles downloaded from Bandcamp into artist/album/track so it can be consumed more easily
 layout: ../../layouts/BlogPostLayout.astro
+heroImage: /blog-attachments/hero/rename-bandcamp-singles.jpg
 pubDate: Jan 16 2023
 tags:
     - name: misc

@@ -2,6 +2,7 @@
 title: Infinite and responsive CSS grid
 description: Learn how to create infinitely long and responsive CSS grids for displaying various repeating items
 layout: ../../layouts/BlogPostLayout.astro
+heroImage: /blog-attachments/hero/infinite-and-responsive-css-grid.png
 pubDate: Jan 16 2023
 tags:
     - name: programming
@@ -11,10 +12,7 @@ tags:
 ---
 
 We often need to create grids that will display an unknown number of items responsively, for example in photo albums or in dashboards.
-
-![Screenshot showing an example of responsive and infinite grid](/blog-attachments/programming/css/demo-grid-1.png)
-
- There is actually a really simple way of how to do this:
+There is actually a really simple way of how to do this:
 
 ```css
 .grid-container {
