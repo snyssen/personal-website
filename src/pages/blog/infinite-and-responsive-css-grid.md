@@ -3,7 +3,7 @@ title: Infinite and responsive CSS grid
 description: Learn how to create infinitely long and responsive CSS grids for displaying various repeating items
 layout: ../../layouts/BlogPostLayout.astro
 heroImage: /blog-attachments/hero/infinite-and-responsive-css-grid.png
-pubDate: Jan 16 2023
+pubDate: May 03 2021
 tags:
     - name: programming
       colorClass: bg-sky-600

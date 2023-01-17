@@ -58,14 +58,14 @@ const {
       {
         pubDate && (
           <span>
-            Published on <time>{pubDate}</time>
+            Published on <time datetime={pubDate}>{pubDate}</time>
           </span>
         )
       }
       {
         updatedDate && (
           <span>
-            - Last updated on <time>{updatedDate}</time>
+            - Last updated on <time datetime={updatedDate}>{updatedDate}</time>
           </span>
         )
       }
