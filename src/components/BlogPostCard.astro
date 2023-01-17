@@ -1,6 +1,7 @@
 ---
 import type { BlogPost } from "../models/BlogPost.astro";
 import { SITE_IMAGE } from "../config";
+import { Image } from '@astrojs/image/components';
 
 export interface Props {
     post: BlogPost;
@@ -13,9 +14,12 @@ const { post } = Astro.props;
     <div
         class="h-full w-full flex flex-col shadow-sm rounded-xl border dark:border-slate-600 group transition ease-out delay-200 hover:-translate-y-1 hover:scale-105 hover:shadow-xl"
     >
-        <img
+        <Image
             src={post.frontmatter.heroImage ?? SITE_IMAGE}
-            alt={post.frontmatter.heroImageAlt}
+            alt={post.frontmatter.heroImageAlt ?? ""}
+            aspectRatio="16:9"
+            width={720}
+            format="webp"
             class="w-full h-auto rounded-t-xl"
         />
         <div
