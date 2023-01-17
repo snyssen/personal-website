@@ -3,12 +3,9 @@ const today = new Date();
 ---
 
 <footer
-	class="p-1 md:p-2 xl:p-4 border-t border-t-gray-300 dark:border-t-gray-600"
+  class="p-1 md:p-2 xl:p-4 mt-12 border-t border-t-gray-300 dark:border-t-gray-600"
 >
-	&copy; {today.getFullYear()} Simon Nyssen. All rights reserved. - build {
-		import.meta.env.APP_VERSION ?? "version undefined"
-	} - built with {Astro.generator} - Image sources: <a
-		href="https://www.vecteezy.com/free-vector/web"
-		class="underline">Web Vectors by Vecteezy</a
-	>
+  &copy; {today.getFullYear()} Simon Nyssen. All rights reserved. - build {
+    import.meta.env.APP_VERSION ?? "version undefined"
+  } - built with {Astro.generator}
 </footer>
