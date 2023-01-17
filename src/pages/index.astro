@@ -6,63 +6,64 @@ import { BlogUtils } from "../utils/blog-utils.astro";
 const recentPosts = (await BlogUtils.getPostsOrderedByDateDesc()).slice(0, 4);
 ---
 
-<LayoutWithHeaderAndFooter>
-	<div class="max-w-prose text-lg mx-auto p-2">
-		<p>Hey, nice to e-meet you! My name is</p>
-		<h1
-			class="text-6xl sm:text-7xl bg-gradient-to-br from-cyan-400 via-purple-600 to-violet-400 bg-clip-text text-transparent w-fit font-title mb-2"
-		>
-			Simon Nyssen,
-		</h1>
-		<p class="text-justify">
-			I am a belgian <span
-				class="text-xl font-bold underline underline-offset-4"
-				>full-stack software developer</span
-			> who is passionate about web technologies and self-hosting. You can
-			find more about me by checking out
-			<a
-				href="/resume"
-				class="bg-purple-600 text-slate-50 p-0.5 inline-block shadow-sm transition ease-out delay-200 hover:-translate-y-1 hover:scale-105 hover:bg-cyan-500 hover:shadow-xl"
-				>my resume
-			</a> or connecting with me on the following platforms:
-		</p>
-		<div class="flex flex-row flex-wrap gap-x-4 my-4">
-			<a href="https://github.com/snyssen"
-				><i
-					class="lab la-github text-6xl bg-gradient-to-br from-cyan-400 via-purple-600 to-violet-400 bg-clip-text text-transparent drop-shadow-sm transition ease-out delay-200 hover:-translate-y-1 hover:scale-105 hover:drop-shadow-xl"
-				></i></a
-			>
-			<a href="https://git.snyssen.be/snyssen"
-				><i
-					class="lab la-git text-6xl bg-gradient-to-br from-cyan-400 via-purple-600 to-violet-400 bg-clip-text text-transparent drop-shadow-sm transition ease-out delay-200 hover:-translate-y-1 hover:scale-105 hover:drop-shadow-xl"
-				></i></a
-			>
-			<a href="https://be.linkedin.com/in/simon-nyssen-007247163"
-				><i
-					class="lab la-linkedin-in text-6xl bg-gradient-to-br from-cyan-400 via-purple-600 to-violet-400 bg-clip-text text-transparent drop-shadow-sm transition ease-out delay-200 hover:-translate-y-1 hover:scale-105 hover:drop-shadow-xl"
-				></i></a
-			>
-		</div>
-		<section class="mt-8 lg:mt-12">
-			<h2 class="text-4xl mb-2">Recent blog posts</h2>
-			<div
-				class="grid grid-cols-1 md:grid-cols-2 items-stretch gap-4"
-			>
-				{
-					recentPosts && recentPosts.length > 0 ? (
-						recentPosts.map((post) => <BlogPostCard post={post} />)
-					) : (
-						<p>No recent post</p>
-					)
-				}
-			</div>
-			<div class="flex flex-row justify-end my-4">
-				<a
-					href="/blog"
-					class="bg-purple-600 transition ease-out delay-200 hover:-translate-y-1 hover:scale-105 hover:shadow-xl hover:bg-cyan-500 text-slate-100 rounded-xl p-2"
-					>See all <i class="las la-long-arrow-alt-right"></i></a
-				>
-			</div>
-		</section>
-	</div>
+<LayoutWithHeaderAndFooter
+  title="Homepage of snyssen's website"
+  description="Simon Nyssen is a full-stack software developer specialized in C#.NET and Angular. He also has experience with infrastructure management and DevOps. This is his personal website"
+>
+  <div class="max-w-prose text-lg mx-auto p-2">
+    <p>Hey, nice to e-meet you! My name is</p>
+    <h1
+      class="text-6xl sm:text-7xl bg-gradient-to-br from-cyan-400 via-purple-600 to-violet-400 bg-clip-text text-transparent w-fit font-title mb-2"
+    >
+      Simon Nyssen,
+    </h1>
+    <p class="text-justify">
+      I am a belgian <span
+        class="text-xl font-bold underline underline-offset-4"
+        >full-stack software developer</span
+      > who is passionate about web technologies and self-hosting. You can find more
+      about me by checking out
+      <a
+        href="/resume"
+        class="bg-purple-600 text-slate-50 p-0.5 inline-block shadow-sm transition ease-out delay-200 hover:-translate-y-1 hover:scale-105 hover:bg-cyan-500 hover:shadow-xl"
+        >my resume
+      </a> or connecting with me on the following platforms:
+    </p>
+    <div class="flex flex-row flex-wrap gap-x-4 my-4">
+      <a href="https://github.com/snyssen"
+        ><i
+          class="lab la-github text-6xl bg-gradient-to-br from-cyan-400 via-purple-600 to-violet-400 bg-clip-text text-transparent drop-shadow-sm transition ease-out delay-200 hover:-translate-y-1 hover:scale-105 hover:drop-shadow-xl"
+        ></i></a
+      >
+      <a href="https://git.snyssen.be/snyssen"
+        ><i
+          class="lab la-git text-6xl bg-gradient-to-br from-cyan-400 via-purple-600 to-violet-400 bg-clip-text text-transparent drop-shadow-sm transition ease-out delay-200 hover:-translate-y-1 hover:scale-105 hover:drop-shadow-xl"
+        ></i></a
+      >
+      <a href="https://be.linkedin.com/in/simon-nyssen-007247163"
+        ><i
+          class="lab la-linkedin-in text-6xl bg-gradient-to-br from-cyan-400 via-purple-600 to-violet-400 bg-clip-text text-transparent drop-shadow-sm transition ease-out delay-200 hover:-translate-y-1 hover:scale-105 hover:drop-shadow-xl"
+        ></i></a
+      >
+    </div>
+    <section class="mt-8 lg:mt-12">
+      <h2 class="text-4xl mb-2">Recent blog posts</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 items-stretch gap-4">
+        {
+          recentPosts && recentPosts.length > 0 ? (
+            recentPosts.map((post) => <BlogPostCard post={post} />)
+          ) : (
+            <p>No recent post</p>
+          )
+        }
+      </div>
+      <div class="flex flex-row justify-end my-4">
+        <a
+          href="/blog"
+          class="bg-purple-600 transition ease-out delay-200 hover:-translate-y-1 hover:scale-105 hover:shadow-xl hover:bg-cyan-500 text-slate-100 rounded-xl p-2"
+          >See all <i class="las la-long-arrow-alt-right"></i></a
+        >
+      </div>
+    </section>
+  </div>
 </LayoutWithHeaderAndFooter>
