@@ -30,21 +30,30 @@ const recentPosts = (await BlogUtils.getPostsOrderedByDateDesc()).slice(0, 4);
       </a> or connecting with me on the following platforms:
     </p>
     <div class="flex flex-row flex-wrap gap-x-4 my-4">
-      <a href="https://github.com/snyssen"
-        ><i
+      <a href="https://github.com/snyssen">
+        <span class="sr-only">My Github account</span>
+        <i
           class="lab la-github text-6xl bg-gradient-to-br from-cyan-400 via-purple-600 to-violet-400 bg-clip-text text-transparent drop-shadow-sm transition ease-out delay-200 hover:-translate-y-1 hover:scale-105 hover:drop-shadow-xl"
-        ></i></a
-      >
-      <a href="https://git.snyssen.be/snyssen"
-        ><i
+        ></i>
+      </a>
+      <a href="https://git.snyssen.be/snyssen">
+        <span class="sr-only">My self-hosted Gitea account</span>
+        <i
           class="lab la-git text-6xl bg-gradient-to-br from-cyan-400 via-purple-600 to-violet-400 bg-clip-text text-transparent drop-shadow-sm transition ease-out delay-200 hover:-translate-y-1 hover:scale-105 hover:drop-shadow-xl"
-        ></i></a
-      >
-      <a href="https://be.linkedin.com/in/simon-nyssen-007247163"
-        ><i
+        ></i>
+      </a>
+      <a href="https://be.linkedin.com/in/simon-nyssen-007247163">
+        <span class="sr-only">My Linkedin account</span>
+        <i
           class="lab la-linkedin-in text-6xl bg-gradient-to-br from-cyan-400 via-purple-600 to-violet-400 bg-clip-text text-transparent drop-shadow-sm transition ease-out delay-200 hover:-translate-y-1 hover:scale-105 hover:drop-shadow-xl"
-        ></i></a
-      >
+        ></i>
+      </a>
+      <a rel="me" href="https://hostux.social/@snyssen">
+        <span class="sr-only">My Mastodon account</span>
+        <i
+          class="lab la-mastodon text-6xl bg-gradient-to-br from-cyan-400 via-purple-600 to-violet-400 bg-clip-text text-transparent drop-shadow-sm transition ease-out delay-200 hover:-translate-y-1 hover:scale-105 hover:drop-shadow-xl"
+        ></i>
+      </a>
     </div>
     <section class="mt-8 lg:mt-12">
       <div class="flex flex-row items-baseline mb-4">
