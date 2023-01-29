@@ -4,9 +4,9 @@ import "../assets/css/line-awesome.min.css";
 import BaseHead from "../components/BaseHead.astro";
 
 export interface Props {
-    title: string;
-    description: string;
-    image: string;
+  title: string;
+  description: string;
+  image: string;
 }
 
 let { title, description, image } = Astro.props;
@@ -14,18 +14,24 @@ let { title, description, image } = Astro.props;
 
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <BaseHead title={title} description={description} image={image} />
-        <style is:global>
-            @tailwind base;
-            @tailwind components;
-            @tailwind utilities;
-        </style>
-        <slot name="extra-head" />
-    </head>
-    <body
-        class="min-h-screen text-slate-900 dark:text-slate-100 bg-white dark:bg-zinc-800 flex flex-col"
-    >
-        <slot />
-    </body>
+  <head>
+    <BaseHead title={title} description={description} image={image} />
+    <style is:global>
+      @tailwind base;
+      @tailwind components;
+      @tailwind utilities;
+
+      @layer components {
+        .gradient-icon-link {
+          @apply bg-gradient-to-br from-cyan-400 via-purple-600 to-violet-400 bg-clip-text text-transparent drop-shadow-sm transition ease-out delay-200 hover:-translate-y-1 hover:scale-105 hover:drop-shadow-xl;
+        }
+      }
+    </style>
+    <slot name="extra-head" />
+  </head>
+  <body
+    class="min-h-screen text-slate-900 dark:text-slate-100 bg-white dark:bg-zinc-800 flex flex-col"
+  >
+    <slot />
+  </body>
 </html>

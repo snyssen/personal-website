@@ -8,21 +8,26 @@ const posts = await BlogUtils.getPostsOrderedByDateDesc();
 ---
 
 <LayoutWithHeaderAndFooter
-	title="Blog posts"
-	description="List of posts from snyssen's blog"
+  title="Blog posts"
+  description="List of posts from snyssen's blog"
 >
-	<section class="max-w-screen-xl mx-auto my-4 px-2">
-		<h1 class="text-4xl mb-4">All blog posts</h1>
-		<div
-			class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4"
-		>
-			{
-				posts && posts.length > 0 ? (
-					posts.map((post) => <BlogPostCard post={post} />)
-				) : (
-					<p>No post to show</p>
-				)
-			}
-		</div>
-	</section>
+  <section class="max-w-screen-xl mx-auto my-4 px-2">
+    <div class="flex flex-row items-center mb-4">
+      <h1 class="text-4xl">All blog posts</h1>
+      <span class="flex-1"></span>
+      <a href="/rss.xml">
+        <span class="sr-only">RSS feed for all blog posts</span>
+        <i class="las la-rss text-4xl gradient-icon-link"></i>
+      </a>
+    </div>
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+      {
+        posts && posts.length > 0 ? (
+          posts.map((post) => <BlogPostCard post={post} />)
+        ) : (
+          <p>No post to show</p>
+        )
+      }
+    </div>
+  </section>
 </LayoutWithHeaderAndFooter>
