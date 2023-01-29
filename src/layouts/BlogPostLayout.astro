@@ -18,6 +18,7 @@ export interface Props {
       }
     ];
   };
+  rawContent: () => string;
 }
 
 const {
@@ -30,6 +31,7 @@ const {
     heroImageAlt,
     tags,
   },
+  rawContent,
 } = Astro.props;
 ---
 
@@ -89,4 +91,15 @@ const {
     <hr class="not-prose mt-2 mb-4" />
     <slot />
   </article>
+
+  <lunr-document>
+    <lunr-field name="title" value={title}></lunr-field>
+    <lunr-field name="description" value={description}></lunr-field>
+    {
+      tags && tags.length > 0 && (
+        <lunr-field name="tag" value={tags.map((t) => t.name).join(" ")} />
+      )
+    }
+    <lunr-text name="content">{rawContent()}</lunr-text>
+  </lunr-document>
 </LayoutWithHeaderAndFooter>
