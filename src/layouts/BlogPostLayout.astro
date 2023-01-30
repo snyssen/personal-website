@@ -95,11 +95,10 @@ const {
   <lunr-document>
     <lunr-field name="title" value={title}></lunr-field>
     <lunr-field name="description" value={description}></lunr-field>
-    {
-      tags && tags.length > 0 && (
-        <lunr-field name="tag" value={tags.map((t) => t.name).join(" ")} />
-      )
-    }
+    <lunr-field
+      name="tag"
+      value={tags && tags.length > 0 ? tags.map((t) => t.name).join(" ") : ""}
+    ></lunr-field>
     <lunr-text name="content">{rawContent()}</lunr-text>
   </lunr-document>
 </LayoutWithHeaderAndFooter>

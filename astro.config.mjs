@@ -24,6 +24,9 @@ export default defineConfig({
         builder.field("description", {
           boost: 5,
         });
+        builder.field("tag", {
+          boost: 8,
+        });
         builder.field("content", {
           boost: 1,
         });
