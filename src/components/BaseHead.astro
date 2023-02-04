@@ -61,3 +61,11 @@ const { title, description, image } = Astro.props;
     document.documentElement.classList.remove("dark");
   }
 </script>
+
+<!-- RSS feed -->
+<link
+  rel="alternate"
+  type="application/rss+xml"
+  title="RSS"
+  href={new URL("/rss.xml", Astro.site)}
+/>

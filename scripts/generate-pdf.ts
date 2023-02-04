@@ -10,13 +10,13 @@ import { chromium } from 'playwright';
 
     console.log('Resume page loaded, removing components...');
     const header = page.locator('header');
-    await header.evaluate((node) => (node.style.display = 'none'));
+    await header.evaluate((node: HTMLElement) => (node.style.display = 'none'));
 
     const downloadButton = page.locator('a#resume-download');
-    await downloadButton.evaluate((node) => (node.style.display = 'none'));
+    await downloadButton.evaluate((node: HTMLElement) => (node.style.display = 'none'));
 
     const footer = page.locator('footer');
-    await footer.evaluate((node) => (node.style.display = 'none'));
+    await footer.evaluate((node: HTMLElement) => (node.style.display = 'none'));
 
     console.log('Generating PDF...');
     await page.pdf({
