@@ -1,8 +1,8 @@
 ---
 export interface Props {
-	title: string;
-	description: string;
-	image: string;
+  title: string;
+  description: string;
+  image: string;
 }
 
 const canonicalURL = new URL(Astro.url.pathname, Astro.site);
@@ -41,16 +41,23 @@ const { title, description, image } = Astro.props;
 <meta property="twitter:description" content={description} />
 <meta property="twitter:image" content={new URL(image, Astro.url)} />
 
+<!-- Plausible analytics -->
+<script
+  defer
+  data-domain={Astro.site}
+  src="https://plausible.snyssen.be/js/script.js"
+></script>
+
 <!-- Dark theme -->
 <script is:inline>
-	// On page load or when changing themes, best to add inline in `head` to avoid FOUC
-	if (
-		localStorage.getItem("color-theme") === "dark" ||
-		(!("color-theme" in localStorage) &&
-			window.matchMedia("(prefers-color-scheme: dark)").matches)
-	) {
-		document.documentElement.classList.add("dark");
-	} else {
-		document.documentElement.classList.remove("dark");
-	}
+  // On page load or when changing themes, best to add inline in `head` to avoid FOUC
+  if (
+    localStorage.getItem("color-theme") === "dark" ||
+    (!("color-theme" in localStorage) &&
+      window.matchMedia("(prefers-color-scheme: dark)").matches)
+  ) {
+    document.documentElement.classList.add("dark");
+  } else {
+    document.documentElement.classList.remove("dark");
+  }
 </script>
