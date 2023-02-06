@@ -6,7 +6,7 @@ import { chromium } from 'playwright';
     const browser = await chromium.launch();
     const page = await browser.newPage();
 
-    await page.goto('http://localhost:3000/resume', { waitUntil: 'load' });
+    await page.goto('http://localhost:3000/resume', { waitUntil: 'load', timeout: 60 * 1000 });
 
     console.log('Resume page loaded, removing components...');
     const header = page.locator('header');
