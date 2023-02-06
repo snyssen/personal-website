@@ -10,7 +10,7 @@
     "build:ci": "astro build && npm run generate-pdf:ci",
     "preview": "astro preview",
     "generate-pdf": "ts-node --project tsconfig-pdf.json ./scripts/generate-pdf.ts",
-    "generate-pdf:ci": "start-server-and-test preview 3000 generate-pdf",
+    "generate-pdf:ci": "start-server-and-test dev 3000 generate-pdf",
     "astro": "astro"
   },
   "dependencies": {
