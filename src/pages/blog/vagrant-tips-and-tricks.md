@@ -1,9 +1,10 @@
 ---
-title: "Developing with Vagrant - Tips & Tricks"
+title: "Developing Ansible playbooks with Vagrant - Tips & Tricks"
 description: Do you want to develop Ansible playbooks and test them under Vagrant? Here are some random tips&tricks
 layout: ../../layouts/BlogPostLayout.astro
 heroImage: /blog-attachments/hero/vagrant-tips-and-tricks.jpg
 pubDate: Dec 28 2022
+updatedDate: Feb 17 2023
 tags:
     - name: programming
       colorClass: bg-sky-600
@@ -12,6 +13,8 @@ tags:
     - name: infra-as-code
       colorClass: bg-fuchsia-600
 ---
+
+This blog post is a (growing) collections of useful tips I gathered while developing my own Ansible playbooks and testing them under Vagrant. I hope they will prove as useful to you as they are to me!
 
 ## Simplify and secure your ansible-vault interactions
 
