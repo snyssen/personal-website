@@ -1,0 +1,17 @@
+---
+export interface Props {
+  iconClasses: string;
+  iconAltText?: string;
+  href: string;
+  text: string;
+}
+const { iconClasses, iconAltText, href, text = href } = Astro.props;
+---
+
+<div class="flex flex-row items-baseline space-x-2">
+  <div>
+    {iconAltText && <span class="sr-only">{iconAltText}</span>}
+    <i class={iconClasses}></i>
+  </div>
+  <a href={href}>{text}</a>
+</div>

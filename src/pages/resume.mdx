@@ -6,6 +6,7 @@ image: "/placeholder-hero.jpg"
 ---
 
 import ResumeSection from "../components/ResumeSection.astro";
+import LinkWithIconPrefix from "../components/LinkWithIconPrefix.astro";
 
 <ResumeSection>
 # Simon Nyssen
@@ -22,10 +23,26 @@ As a full-stack dev, I also have experience managing infrastructure on both Wind
 
 <ResumeSection title="Relevant links" justifyText={false}>
 
-- Personal website: https://snyssen.be
-- Linkedin: https://www.linkedin.com/in/simon-nyssen-007247163
-- GitHub: https://github.com/snyssen
-- Self-hosted Gitea: https://git.snyssen.be/snyssen
+<LinkWithIconPrefix
+  iconClasses="las la-hand-peace text-2xl"
+  iconAltText="Hand doing the sign peace, link next to it goes to my personal website"
+  href="https://snyssen.be"
+/>
+<LinkWithIconPrefix
+  iconClasses="lab la-github text-2xl"
+  iconAltText="Github logo"
+  href="https://github.com/snyssen"
+/>
+<LinkWithIconPrefix
+  iconClasses="lab la-git text-2xl"
+  iconAltText="git logo, link next to it goes to my self-hosted Gitea instance"
+  href="https://git.snyssen.be/snyssen"
+/>
+<LinkWithIconPrefix
+  iconClasses="lab la-linkedin-in text-2xl"
+  iconAltText="Github logo"
+  href="https://www.linkedin.com/in/simon-nyssen-007247163"
+/>
 
 </ResumeSection>
 
