@@ -6,44 +6,53 @@ image: "/placeholder-hero.jpg"
 ---
 
 import ResumeSection from "../components/ResumeSection.astro";
+import TextWithIconPrefix from "../components/TextWithIconPrefix.astro";
 import LinkWithIconPrefix from "../components/LinkWithIconPrefix.astro";
+import TwoColumnsLayout from "../components/Markdown/TwoColumnsLayout.astro";
 
-<ResumeSection>
-# Simon Nyssen
-
-## Full-stack developer
-
-Huy, Belgium | contact@snyssen.be
-
-I am passionate about web technologies at large, be it for creating websites, managing infrastructures, or everything in between.
-Most of my experience has been on the dotnet framework (especially ASP.NET) and Angular, but I am also proficient with other frameworks such as Astro and Preact.
-As a full-stack dev, I also have experience managing infrastructure on both Windows and (preferably) Linux, databases (mostly SQL Server), and general DevOps (Agile, Continuous Integration, Continuous Deployments).
-
-</ResumeSection>
-
-<ResumeSection title="Relevant links" justifyText={false}>
-
-<LinkWithIconPrefix
-  iconClasses="las la-hand-peace text-2xl"
-  iconAltText="Hand doing the sign peace, link next to it goes to my personal website"
-  href="https://snyssen.be"
-/>
-<LinkWithIconPrefix
-  iconClasses="lab la-github text-2xl"
-  iconAltText="Github logo"
-  href="https://github.com/snyssen"
-/>
-<LinkWithIconPrefix
-  iconClasses="lab la-git text-2xl"
-  iconAltText="git logo, link next to it goes to my self-hosted Gitea instance"
-  href="https://git.snyssen.be/snyssen"
-/>
-<LinkWithIconPrefix
-  iconClasses="lab la-linkedin-in text-2xl"
-  iconAltText="Github logo"
-  href="https://www.linkedin.com/in/simon-nyssen-007247163"
-/>
-
+<ResumeSection title="Contact information" justifyText={false}>
+  <TwoColumnsLayout>
+    <div slot="col-1">
+      <LinkWithIconPrefix
+        iconClasses="las la-at text-2xl"
+        iconAltText="Arobase, with my email address next to it"
+        href="mailto:contact@snyssen.be"
+        text="contact@snyssen.be"
+      />
+      <TextWithIconPrefix
+        iconClasses="las la-map-marker text-2xl"
+        iconAltText="Map marker, representing where I live"
+      >
+        <span>Huy, Belgium</span>
+      </TextWithIconPrefix>
+      <LinkWithIconPrefix
+        iconClasses="las la-hand-peace text-2xl"
+        iconAltText="Hand doing the sign peace, link next to it goes to my personal website"
+        href="https://snyssen.be"
+        text="snyssen.be"
+      />
+    </div>
+    <div slot="col-2">
+      <LinkWithIconPrefix
+        iconClasses="lab la-github text-2xl"
+        iconAltText="Github logo"
+        href="https://github.com/snyssen"
+        text="github.com/snyssen"
+      />
+      <LinkWithIconPrefix
+        iconClasses="lab la-git text-2xl"
+        iconAltText="git logo, link next to it goes to my self-hosted Gitea instance"
+        href="https://git.snyssen.be/snyssen"
+        text="git.snyssen.be/snyssen"
+      />
+      <LinkWithIconPrefix
+        iconClasses="lab la-linkedin-in text-2xl"
+        iconAltText="Github logo"
+        href="https://www.linkedin.com/in/simon-nyssen-007247163"
+        text="linkedin.com/in/simon-nyssen-007247163"
+      />
+    </div>
+  </TwoColumnsLayout>
 </ResumeSection>
 
 <ResumeSection title="Work Experience">

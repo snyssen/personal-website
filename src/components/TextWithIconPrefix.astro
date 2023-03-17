@@ -1,0 +1,15 @@
+---
+export interface Props {
+  iconClasses: string;
+  iconAltText?: string;
+}
+const { iconClasses, iconAltText } = Astro.props;
+---
+
+<div class="flex flex-row items-center space-x-2">
+  <div>
+    {iconAltText && <span class="sr-only">{iconAltText}</span>}
+    <i class={iconClasses}></i>
+  </div>
+  <slot />
+</div>
