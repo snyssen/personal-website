@@ -29,7 +29,7 @@ import { chromium } from 'playwright';
         path: 'dist/resume.pdf',
         margin: {
             top: '15px',
-            bottom: '15px',
+            bottom: '20px',
         },
         printBackground: true,
     });
