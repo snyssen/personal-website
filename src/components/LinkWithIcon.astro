@@ -1,0 +1,26 @@
+---
+import TextWithIcon from "./TextWithIcon.astro";
+
+export interface Props {
+  iconClasses: string;
+  iconAltText?: string;
+  isSuffix?: boolean;
+  text: string;
+  href: string;
+}
+const {
+  iconClasses,
+  iconAltText,
+  isSuffix = false,
+  href,
+  text = href,
+} = Astro.props;
+---
+
+<TextWithIcon
+  iconClasses={iconClasses}
+  iconAltText={iconAltText}
+  isSuffix={isSuffix}
+>
+  <a href={href}>{text}</a>
+</TextWithIcon>

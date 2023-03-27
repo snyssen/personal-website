@@ -6,46 +6,49 @@ image: "/placeholder-hero.jpg"
 ---
 
 import ResumeSection from "../components/ResumeSection.astro";
-import TextWithIconPrefix from "../components/TextWithIconPrefix.astro";
-import LinkWithIconPrefix from "../components/LinkWithIconPrefix.astro";
+import TextWithIcon from "../components/TextWithIcon.astro";
+import LinkWithIcon from "../components/LinkWithIcon.astro";
+import MarkdownLink from "../components/Markdown/MarkdownLink.astro";
 import TwoColumnsLayout from "../components/Markdown/TwoColumnsLayout.astro";
+
+export const components = { a: MarkdownLink };
 
 <ResumeSection title="Contact information" justifyText={false}>
   <TwoColumnsLayout>
-    <div slot="col-1">
-      <LinkWithIconPrefix
+    <div slot="col-1" class="flex flex-col">
+      <LinkWithIcon
         iconClasses="las la-at text-2xl"
         iconAltText="Arobase, with my email address next to it"
         href="mailto:contact@snyssen.be"
         text="contact@snyssen.be"
       />
-      <TextWithIconPrefix
+      <TextWithIcon
         iconClasses="las la-map-marker text-2xl"
         iconAltText="Map marker, representing where I live"
       >
         <span>Huy, Belgium</span>
-      </TextWithIconPrefix>
-      <LinkWithIconPrefix
+      </TextWithIcon>
+      <LinkWithIcon
         iconClasses="las la-hand-peace text-2xl"
         iconAltText="Hand doing the sign peace, link next to it goes to my personal website"
         href="https://snyssen.be"
         text="snyssen.be"
       />
     </div>
-    <div slot="col-2">
-      <LinkWithIconPrefix
+    <div slot="col-2" class="flex flex-col">
+      <LinkWithIcon
         iconClasses="lab la-github text-2xl"
         iconAltText="Github logo"
         href="https://github.com/snyssen"
         text="github.com/snyssen"
       />
-      <LinkWithIconPrefix
+      <LinkWithIcon
         iconClasses="lab la-git text-2xl"
         iconAltText="git logo, link next to it goes to my self-hosted Gitea instance"
         href="https://git.snyssen.be/snyssen"
         text="git.snyssen.be/snyssen"
       />
-      <LinkWithIconPrefix
+      <LinkWithIcon
         iconClasses="lab la-linkedin-in text-2xl"
         iconAltText="Github logo"
         href="https://www.linkedin.com/in/simon-nyssen-007247163"

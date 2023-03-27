@@ -1,0 +1,16 @@
+---
+import TextWithIcon from "../TextWithIcon.astro";
+
+const props = Astro.props;
+---
+
+<TextWithIcon
+  iconClasses="las la-external-link-alt text-sm"
+  iconAltText="Icon representing an external link"
+  isSuffix={true}
+  spaced={false}
+>
+  <a {...props}>
+    <slot />
+  </a>
+</TextWithIcon>
