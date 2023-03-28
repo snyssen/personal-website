@@ -23,7 +23,7 @@ const {
     !isSuffix && (
       <div>
         {iconAltText && <span class="sr-only">{iconAltText}</span>}
-        <i class={iconClasses} />
+        <i class={iconClasses} aria-hidden="true" />
       </div>
     )
   }
@@ -32,7 +32,7 @@ const {
     isSuffix && (
       <div>
         {iconAltText && <span class="sr-only">{iconAltText}</span>}
-        <i class={iconClasses} />
+        <i class={iconClasses} aria-hidden="true" />
       </div>
     )
   }
