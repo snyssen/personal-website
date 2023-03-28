@@ -6,96 +6,99 @@ image: "/placeholder-hero.jpg"
 ---
 
 import ResumeSection from "../components/ResumeSection.astro";
-import LinkWithIconPrefix from "../components/LinkWithIconPrefix.astro";
+import TextWithIcon from "../components/TextWithIcon.astro";
+import LinkWithIcon from "../components/LinkWithIcon.astro";
+import MarkdownLink from "../components/Markdown/MarkdownLink.astro";
+import TwoColumnsLayout from "../components/Markdown/TwoColumnsLayout.astro";
 
-<ResumeSection>
-# Simon Nyssen
+export const components = { a: MarkdownLink };
 
-## Full-stack developer
-
-Huy, Belgium | contact@snyssen.be
-
-I am passionate about web technologies at large, be it for creating websites, managing infrastructures, or everything in between.
-Most of my experience has been on the dotnet framework (especially ASP.NET) and Angular, but I am also proficient with other frameworks such as Astro and Preact.
-As a full-stack dev, I also have experience managing infrastructure on both Windows and (preferably) Linux, databases (mostly SQL Server), and general DevOps (Agile, Continuous Integration, Continuous Deployments).
-
-</ResumeSection>
-
-<ResumeSection title="Relevant links" justifyText={false}>
-
-<LinkWithIconPrefix
-  iconClasses="las la-hand-peace text-2xl"
-  iconAltText="Hand doing the sign peace, link next to it goes to my personal website"
-  href="https://snyssen.be"
-/>
-<LinkWithIconPrefix
-  iconClasses="lab la-github text-2xl"
-  iconAltText="Github logo"
-  href="https://github.com/snyssen"
-/>
-<LinkWithIconPrefix
-  iconClasses="lab la-git text-2xl"
-  iconAltText="git logo, link next to it goes to my self-hosted Gitea instance"
-  href="https://git.snyssen.be/snyssen"
-/>
-<LinkWithIconPrefix
-  iconClasses="lab la-linkedin-in text-2xl"
-  iconAltText="Github logo"
-  href="https://www.linkedin.com/in/simon-nyssen-007247163"
-/>
-
+<ResumeSection title="Contact information" justifyText={false}>
+  <TwoColumnsLayout>
+    <div slot="col-1" class="flex flex-col">
+      <LinkWithIcon
+        iconClasses="las la-at text-2xl"
+        iconAltText="Arobase, with my email address next to it"
+        href="mailto:contact@snyssen.be"
+        text="contact@snyssen.be"
+      />
+      <TextWithIcon
+        iconClasses="las la-map-marker text-2xl"
+        iconAltText="Map marker, representing where I live"
+      >
+        <span>Huy, Belgium</span>
+      </TextWithIcon>
+      <LinkWithIcon
+        iconClasses="las la-hand-peace text-2xl"
+        iconAltText="Hand doing the sign peace, link next to it goes to my personal website"
+        href="https://snyssen.be"
+        text="snyssen.be"
+      />
+    </div>
+    <div slot="col-2" class="flex flex-col">
+      <LinkWithIcon
+        iconClasses="lab la-github text-2xl"
+        iconAltText="Github logo"
+        href="https://github.com/snyssen"
+        text="github.com/snyssen"
+      />
+      <LinkWithIcon
+        iconClasses="lab la-git text-2xl"
+        iconAltText="git logo, link next to it goes to my self-hosted Gitea instance"
+        href="https://git.snyssen.be/snyssen"
+        text="git.snyssen.be/snyssen"
+      />
+      <LinkWithIcon
+        iconClasses="lab la-linkedin-in text-2xl"
+        iconAltText="Github logo"
+        href="https://www.linkedin.com/in/snyssen"
+        text="linkedin.com/in/snyssen"
+      />
+    </div>
+  </TwoColumnsLayout>
 </ResumeSection>
 
 <ResumeSection title="Work Experience">
+
 ### Full-stack developer | [Neuromedia](https://neuromedia.io/) | July 2019 - Current
 
-Worked in a small team (less than 10 people, at most 4 developers) on a wide range of projects related to online media audience measurement.
+Worked with a small team on a wide range of projects related to online media audience measurement
 
-| Project                                                            | Description                                                                                                                                                                                                                                                                                                                                                                                                                 | Technologies                                                                         |
-| ------------------------------------------------------------------ | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------ |
-| [CasterStats](https://www.casterstats.com)                         | high precision, real-time & large-scale BI solution for audience reporting specialized in IP radio & TV broadcasters, telcos & OTTs. The software is used to measure thousands of TV & radio stations worldwide, including all Belgian companies such as RTBF, VRT, DPG Media, IPM, RTL, etc.                                                                                                                               | C#.NET - ASP.NET Core - Angular - SQL Server - Hangfire - DevExpress                 |
-| Neuromedia Analytics                                               | Rewrite of CasterStats, still in development. Brings a cleaner and easier to use interface as well as new features such as in-page player actions tracking and an even more plugin ready ecosystem that allows the easy implementation of custom metrics and dimensions, data sources, etc.                                                                                                                                 | C#.NET - ASP.NET Core - Angular - SQL Server - RavenDB - Hangfire - DevExpress - MEF |
-| CIM Dashboard                                                      | Custom made interface for the [CIM Radio Stream Monitor (RSM) study](https://www.cim.be/fr/radio). Interface makes use of the data provided by CasterStats. Made the migration from .NET 4.5 to .NET Core 3.1 then .NET 5                                                                                                                                                                                                   | C#.NET - ASP.NET Core - AngularJS - SQL Server                                       |
-| [OnFocus](http://www.onfocusphotographers.com/index.html) ingester | Desktop application that allows photographers of attraction parks (Marineland, Atonium, etc.) to propose digital versions of photos taken in an automated way. The photos are automatically ingested by the system, a QR code added, uploaded to a web server and printed. The QR code once used sends to an online page that allows to download the original or to buy frames, keychains and other objects with the photo. | C#.NET - .NET WPF - ZXing                                                            |
-| AudioViz                                                           | AudioViz is an online service currently under construction that allows content creators to have video automatically generated from any audio. Whether they are podcasters, music producers or others, they can easily reach a new audience on video platforms like YouTube or others.                                                                                                                                       | C#.NET - ASP.NET Core - FFMPEG - Hangfire - RavenDB - SendGrid                       |
-| Linux infra management                                             | Infrastructure-as-code project for managing the newer Linux-based infrastructure of Neuromedia. An array of virtual machines reproducing the production environment can be deployed in one command for development and testing before the actual provisioning.                                                                                                                                                              | Ansible - Bash - Vagrant                                                             |
-| Others                                                             | Also built a lot of smaller internal tools for managing configurations, deployments, integrating with 3rd party APIs, monitoring services, ingesting and cataloging data, etc.                                                                                                                                                                                                                                              | C#.NET - Bash - Ansible - Vagrant                                                    |
+#### Achievements
 
-### Developer internship | [303% Media](https://303.media/#!home) | February 2019 - May 2019
+- Created a new **Angular** front-end in about 2 months, providing user-serviceable audience dashboards and internal administration tools for CasterStats, which enabled marketing team to showcase the product at [IBC](https://en.wikipedia.org/wiki/International_Broadcasting_Convention) in September 2019 and attract a new influx of customers
+- Migrated our legacy customer-tailored dashboard from **.NET 4** to **.NET 5 (Core)** in under a week, thus making sure we were ready to containerize and deploy the application on Linux as well as keeping current with the framework evolution
+- Introduced company to [IaC](https://en.wikipedia.org/wiki/Infrastructure_as_code) using **Ansible** and **Docker Compose** while migrating internal tools and databases from Windows to **Linux servers**, allowing for a more resilient and easier to scale and maintain infrastructure. **Documented** the process so inexperienced coworkers could use the new tools themselves
+- Lead **daily scrums** and **pair programming** sessions with interns in order to introduce them to the company's projects and tools, as well as help them produce MVPs that would eventually be deployed in production environments. Pushed for the employment of 2 of those talented interns over the years
+- Rewrote company's [CI](https://en.wikipedia.org/wiki/Continuous_integration) pipelines in **Bitbucket** and **Teamcity**, and managed deployment scripts in **Octopus**. Propagated builds and deployments information back into **Jira** so user stories could be tracked from inception to actual use
 
-Spent internship at 303% Media, a sister company to Neuromedia, as part of my studies.
+### Student internship | [303% Media](https://303.media/#!home) | February 2019 - May 2019
 
-| Project  | Description                                                                                                                                                                                                                                                                   | Technologies                                                                                    |
-| -------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------- |
-| Traxflow | A centralized platform that automatically manages the flow of promotional music productions for music players and broadcasters. This tool automatically processes the flow of incoming music productions and makes the work of broadcasters faster, easier and more reliable. | C#.NET - ASP.NET Core - AngularJS - Ionic - Hangfire - Entity Framework - SQL Server - SendGrid |
+Upgraded Traxflow, a platform bridging the gap between music producers and broadcasters
+
+#### Achievements
+
+- Fixed performance issues with the main background job of the application by implementing **queries pagination** and **multithreading**, cutting its average execution time significantly and preventing the server from crashing during large loads
+- Learned and used the **Ionic** framework to produce a PoC of a Traxflow mobile app in less than a week
 
 </ResumeSection>
 
 <ResumeSection title="Personal projects">
 ### [Self-hosted infrastructure](https://github.com/snyssen/infra-snyssen.be)
 
-Initially a simple collection of scripts for a manually managed server at home, this project as grown into a full blown personal infrastructure and my biggest pride as a tech person. The now 3 separate machines at my home provide a lot of the services I rely on daily, and are entirely provisioned using Ansible playbooks and container images.
-
-#### Technologies and tools
-
-Fedora Server - Ansible - Docker
+**Ansible** and **Docker** provisioning for my home servers. This infrastructure provide services I rely on daily, and is a good way to safely experiment with server technologies before using them in a professional setting
 
 ### [Webb Launcher](https://git.snyssen.be/snyssen/webb-launcher)
 
-A simple web start page built with Astro. Bundled as a container image, it can easily be self-hosted.
-
-#### Technologies and tools
-
-Astro - Preact - Drone CI - Docker
+Start page for the web, built with **Astro** and **Preact**
 
 </ResumeSection>
 
-<ResumeSection title="Languages">
+<ResumeSection title="Spoken languages">
 
-| Language | Level          |
-| -------- | -------------- |
-| French   | Native speaker |
-| English  | Fluent (C1)    |
+|                    | French         | English     |
+| ------------------ | -------------- | ----------- |
+| **Current level:** | Native speaker | Fluent (C1) |
 
 </ResumeSection>
 <ResumeSection title="Education">

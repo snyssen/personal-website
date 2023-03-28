@@ -1,0 +1,39 @@
+---
+export interface Props {
+  iconClasses: string;
+  iconAltText?: string;
+  isSuffix?: boolean;
+  spaced?: boolean;
+}
+const {
+  iconClasses,
+  iconAltText,
+  isSuffix = false,
+  spaced = true,
+} = Astro.props;
+---
+
+<div
+  class:list={[
+    "inline-flex flex-row items-center m-0",
+    { "space-x-2": spaced },
+  ]}
+>
+  {
+    !isSuffix && (
+      <div>
+        {iconAltText && <span class="sr-only">{iconAltText}</span>}
+        <i class={iconClasses} aria-hidden="true" />
+      </div>
+    )
+  }
+  <slot />
+  {
+    isSuffix && (
+      <div>
+        {iconAltText && <span class="sr-only">{iconAltText}</span>}
+        <i class={iconClasses} aria-hidden="true" />
+      </div>
+    )
+  }
+</div>
