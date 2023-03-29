@@ -28,8 +28,8 @@ import { chromium } from 'playwright';
     await page.pdf({
         path: 'dist/resume.pdf',
         margin: {
-            top: '20px',
-            bottom: '20px',
+            top: '24px',
+            bottom: '24px',
         },
         printBackground: true,
     });
