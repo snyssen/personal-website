@@ -7,11 +7,12 @@ export interface Props {
     title: string;
     description: string;
     image: string;
+    updatedDate: string;
   };
 }
 
 const {
-  content: { title, description, image },
+  content: { title, description, image, updatedDate },
 } = Astro.props;
 ---
 
@@ -45,6 +46,13 @@ const {
             class="las la-download text-7xl bg-gradient-to-b from-cyan-400 via-purple-600 to-violet-400 bg-clip-text text-transparent drop-shadow-sm transition ease-out delay-200 hover:-translate-y-1 hover:scale-105 hover:drop-shadow-xl"
           ></i>
         </a>
+      </div>
+      <div class="flex flex-row">
+        <span class="text-sm">
+          Last update:
+          <time class="font-semibold" datetime={updatedDate}>{updatedDate}</time
+          >
+        </span>
       </div>
     </ResumeSection>
     <slot />
