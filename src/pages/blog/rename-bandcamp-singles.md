@@ -4,10 +4,13 @@ description: Learn how to organize singles downloaded from Bandcamp into artist/
 layout: ../../layouts/BlogPostLayout.astro
 heroImage: /blog-attachments/hero/rename-bandcamp-singles.jpg
 pubDate: Oct 15 2022
+updatedDate: Jun 23 2023
 tags:
     - name: misc
       colorClass: bg-indigo-600
 ---
+
+> **Edit**: I have now realized that there is a package `prename` in Fedora for installing the Perl rename, so I have updated the instructions
 
 If you're like me, you probably have a bad habit of hoarding a lot of music from [Bandcamp](https://bandcamp.com) (that "buy entire discography" button has done some damage). Right after purchasing then downloading a bunch of albums, my first reflex is to enrich the metadata using [MusicBrainz's Picard](https://picard.musicbrainz.org) program. And the first thing you would do once inside Picard would be to cluster the releases automatically.
 
@@ -16,11 +19,9 @@ Unfortunately, if among the albums you just downloaded there happens to be some 
 If you are on Linux, you might have heard about a nice tool called `rename`. This tool is very handy for renaming a lot of files at once, and is also very useful for our purpose: organizing a bunch of separate files into folders. Here is the command I use:
 
 ```sh
-/usr/local/bin/rename 's|(.*) - (.*).flac$|$1/$2/$2.flac|' *.flac
+rename 's|(.*) - (.*).flac$|$1/$2/$2.flac|' *.flac
 ```
 
-> **Note:** You will need the *Perl based* `rename` utility for this. On some distributions (such as Fedora), the default `rename` utility is a dumbed down version that takes 3 arguments, instead of the more powerful and regex based Perl one. You will thus need to install the Perl utility using *cpan*. You can follow [this solution](https://stackoverflow.com/questions/22577767/get-the-perl-rename-utility-instead-of-the-built-in-rename) for this purpose.
->
-> **Note 2:** I left the `/usr/local/bin/` at the beginning of the command on purpose, as it is where the Perl utility should be installed by default. Doing so should make sure that it is the correct utility that is used.
+> **Note:** You will need the **Perl** `rename` utility for this. On some distributions (such as Fedora), the default `rename` utility is a dumbed down version that takes 3 arguments, instead of the more powerful and regex based Perl one. To install the Perl rename on Fedora you can use `sudo dnf install prename` and then replace `rename` with `prename` in the command above.
 
 For a given single such as `Extra Terra & Rogue VHS - Arrakis.flac`, the end result should be `Extra Terra & Rogue VHS/Arrakis/Arrakis.flac` thanks to the above command.
