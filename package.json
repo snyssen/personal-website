@@ -19,7 +19,7 @@
     "@astrojs/preact": "^3.0.0",
     "@astrojs/rss": "^3.0.0",
     "@astrojs/sitemap": "^3.0.0",
-    "@astrojs/tailwind": "^3.0.1",
+    "@astrojs/tailwind": "^5.0.0",
     "@siverv/astro-lunr": "^0.0.3",
     "astro": "^2.0.6",
     "preact": "^10.11.3",
