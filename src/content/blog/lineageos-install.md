@@ -1,9 +1,10 @@
 ---
 title: Install LineageOS with MicroG and playstore
 description: Install LineageOS with MicroG and full playstore support
-layout: ../../layouts/BlogPostLayout.astro
-heroImage: /blog-attachments/hero/lineage-os-logo.webp
-pubDate: July 23 2022
+image:
+  src: "@assets/blog-attachments/hero/lineage-os-logo.webp"
+  alt: Official lineage os logo
+pubDate: 2022-07-23
 tags:
     - name: misc
       colorClass: bg-indigo-600
@@ -13,7 +14,7 @@ You should first check that your device is compatible with LineageOS. To do so, 
 
 If you find your device, search for the link to the installation instructions. It should appear above the list of downloads:
 
-![Sreenshot showing where to find the installation instructions](/blog-attachments/miscellaneous/lineage-os-downloads.png)
+![Sreenshot showing where to find the installation instructions](@assets/blog-attachments/miscellaneous/lineage-os-downloads.png)
 
 You should then follow the instructions provided there **exactly** up to the point where **they install LineageOS from recovery.** At this point, you should head on to [https://download.lineage.microg.org](https://download.lineage.microg.org/) and search for the correct build for your device (i.e. _Guacamole_ for the OnePlus 7). In the folder for the correct build, download the latest version of the zip file containing the image to be flashed. Once you have the file, return to the instruction page for LineageOS and continue with their instruction but use the LineageOS for MicroG image you just downloaded instead.
 

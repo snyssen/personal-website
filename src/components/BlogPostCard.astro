@@ -1,24 +1,24 @@
 ---
-import type { BlogPost } from "../models/BlogPost.astro";
+import type { CollectionEntry } from 'astro:content';
 import { SITE_IMAGE } from "../config";
-import { Image } from "@astrojs/image/components";
+import { Image } from "astro:assets";
 
 export interface Props {
-  post: BlogPost;
+  post: CollectionEntry<'blog'>;
 }
 
 const { post } = Astro.props;
 ---
 
-<a href={post.url} aria-label="Read blog post">
+<a href={post.collection + "/" + post.slug} aria-label="Read blog post">
   <div
     class="h-full w-full flex flex-col shadow-sm rounded-xl border dark:border-slate-600 group transition ease-out delay-200 hover:-translate-y-1 hover:scale-105 hover:shadow-xl"
   >
     <Image
-      src={post.frontmatter.heroImage ?? SITE_IMAGE}
-      alt={post.frontmatter.heroImageAlt ?? ""}
-      aspectRatio="16:9"
-      width={720}
+      src={post.data.image.src ?? SITE_IMAGE}
+      alt={post.data.image.alt ?? ""}
+      width={1280}
+      height={720}
       format="webp"
       loading="lazy"
       class="w-full h-auto rounded-t-xl"
@@ -29,16 +29,16 @@ const { post } = Astro.props;
       <div class="flex flex-row justify-between items-start gap-x-1">
         <div>
           <h3 class="text-lg font-bold">
-            {post.frontmatter.title}
+            {post.data.title}
           </h3>
           <time
             class="text-sm text-slate-400"
-            datetime={post.frontmatter.pubDate}>{post.frontmatter.pubDate}</time
+            datetime={post.data.pubDate.toISOString()}>{post.data.pubDate.toLocaleDateString()}</time
           >
           {
-            post.frontmatter.tags && post.frontmatter.tags.length > 0 && (
+            post.data.tags && post.data.tags.length > 0 && (
               <div class="flex flex-row flex-wrap gap-1">
-                {post.frontmatter.tags.map((tag) => (
+                {post.data.tags.map((tag) => (
                   <span
                     class:list={[
                       tag.colorClass,
@@ -59,7 +59,7 @@ const { post } = Astro.props;
         </div>
       </div>
       <p>
-        {post.frontmatter.description}
+        {post.data.description}
       </p>
     </div>
   </div>

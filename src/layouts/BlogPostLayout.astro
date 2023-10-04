@@ -1,73 +1,61 @@
 ---
 import LayoutWithHeaderAndFooter from "./LayoutWithHeaderAndFooter.astro";
 import { SITE_IMAGE } from "../config";
-import { Image } from "@astrojs/image/components";
+import { Image } from "astro:assets";
+import type { CollectionEntry } from "astro:content";
 
 export interface Props {
-  content: {
-    title: string;
-    description: string;
-    pubDate?: string;
-    updatedDate?: string;
-    heroImage?: string;
-    heroImageAlt?: string;
-    tags?: [
-      {
-        name: string;
-        colorClass: string;
-      }
-    ];
-  };
-  rawContent: () => string;
+  content: CollectionEntry<'blog'>;
 }
 
 const {
   content: {
-    title,
-    description,
-    pubDate,
-    updatedDate,
-    heroImage,
-    heroImageAlt,
-    tags,
+    data: {
+      title,
+      description,
+      pubDate,
+      updatedDate,
+      image,
+      tags,
+    },
+    body
   },
-  rawContent,
 } = Astro.props;
 ---
 
 <LayoutWithHeaderAndFooter
   title={title}
   description={description}
-  image={heroImage ?? SITE_IMAGE}
+  image={image.url ?? SITE_IMAGE}
 >
   <article
     class="p-2 mx-auto text-justify prose prose-zinc dark:prose-invert prose-img:rounded-xl prose-pre:w-[95vw] prose-pre:max-w-full"
   >
     {
-      heroImage && (
+      image && (
         <Image
-          src={heroImage}
-          alt={heroImageAlt ?? ""}
-          aspectRatio="16:9"
+          src={image.src}
+          alt={image.alt}
+          height={1080}
           width={1920}
           format="webp"
           class="w-full mb-2"
         />
       )
     }
-    <h1 class="not-prose mb-1">{title}</h1>
-    <p class="not-prose m-0 text-sm">
+    <h1 class="mb-1">{title}</h1>
+    <p class="m-0 text-sm">
       {
         pubDate && (
           <span>
-            Published on <time datetime={pubDate}>{pubDate}</time>
+            Published on <time datetime={pubDate.toISOString()}>{pubDate.toLocaleDateString()}</time>
           </span>
         )
       }
       {
         updatedDate && (
           <span>
-            - Last updated on <time datetime={updatedDate}>{updatedDate}</time>
+            - Last updated on <time datetime={updatedDate.toISOString()}>{updatedDate.toLocaleDateString()}</time>
           </span>
         )
       }
@@ -99,6 +87,6 @@ const {
       name="tag"
       value={tags && tags.length > 0 ? tags.map((t) => t.name).join(" ") : ""}
     ></lunr-field>
-    <lunr-text name="content">{rawContent()}</lunr-text>
+    <lunr-text name="content">{body}</lunr-text>
   </lunr-document>
 </LayoutWithHeaderAndFooter>
