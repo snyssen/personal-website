@@ -12,7 +12,7 @@ import { chromium } from 'playwright';
         await route.abort();
     });
 
-    await page.goto('http://localhost:3000/resume', { waitUntil: 'load', timeout: 60 * 1000 });
+    await page.goto('http://localhost:4321/resume', { waitUntil: 'load', timeout: 60 * 1000 });
 
     console.log('Resume page loaded, removing components...');
     const header = page.locator('header');
