@@ -1,9 +1,10 @@
 ---
 title: Generate new (random) integer ID when ID column is not identity
 description: Tip to generate integer IDs in SQL databases when the ID column does not have the identity specification
-layout: ../../layouts/BlogPostLayout.astro
-heroImage: /blog-attachments/hero/int-id-when-no-identity.jpg
-pubDate: Nov 09 2022
+image:
+  src: "@assets/blog-attachments/hero/int-id-when-no-identity.jpg"
+  alt: Conceptualized image showing a digital fingerprint, linked by electronic traces to servers
+pubDate: 2022-11-09
 tags:
     - name: programming
       colorClass: bg-sky-600

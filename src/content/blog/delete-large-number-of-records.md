@@ -1,9 +1,10 @@
 ---
 title: Safely delete large number of records by using a loop
 description: Deleting a large number of rows is risky in SQL as it involves a resource intensive transaction. This article presents a method to split that single transaction into multiple smaller ones.
-layout: ../../layouts/BlogPostLayout.astro
-heroImage: /blog-attachments/hero/delete-large-number-of-records.jpg
-pubDate: Dec 17 2022
+image:
+  src: "@assets/blog-attachments/hero/delete-large-number-of-records.jpg"
+  alt: A seated bearded man holding a hammer in his left hand while looking pensively at it, suggesting that he is tempted to use it to break the computer that is in front of him
+pubDate: 2022-12-17
 tags:
     - name: programming
       colorClass: bg-sky-600
