@@ -1,5 +1,12 @@
 # Changelog
 
+## [2.0.2](https://github.com/snyssen/personal-website/compare/v2.0.1...v2.0.2) (2023-10-07)
+
+
+### Bug Fixes
+
+* **layout:** update link to source code ([4dd13e2](https://github.com/snyssen/personal-website/commit/4dd13e2280af6098ce1d1593f80b6dbb8e79f243))
+
 ## [2.0.1](https://github.com/snyssen/personal-website/compare/v2.0.0...v2.0.1) (2023-10-07)
 
 
