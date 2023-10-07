@@ -1,5 +1,12 @@
 # Changelog
 
+## [2.0.1](https://github.com/snyssen/personal-website/compare/v2.0.0...v2.0.1) (2023-10-07)
+
+
+### Bug Fixes
+
+* **build:** add release-please pat so it can trigger publish pipeline ([5f2926a](https://github.com/snyssen/personal-website/commit/5f2926a754aab3f38717e89f0d12041c652f2d62))
+
 ## [2.0.0](https://github.com/snyssen/personal-website/compare/v1.4.5...v2.0.0) (2023-10-07)
 
 
