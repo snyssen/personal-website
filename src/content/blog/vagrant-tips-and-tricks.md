@@ -60,7 +60,7 @@ echo ".vault_pass" >> .gitignore
 
 And finally, add the file to your `ansible.cfg` file so it will be picked up by ansible automatically:
 
-```cfg
+```ini
 [defaults]
 # There may be other settings here
 vault_password_file = .vault_pass
