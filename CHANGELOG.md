@@ -1,5 +1,12 @@
 # Changelog
 
+## [2.0.4](https://github.com/snyssen/personal-website/compare/v2.0.3...v2.0.4) (2023-11-01)
+
+
+### Bug Fixes
+
+* **deps:** update astrojs packages ([#64](https://github.com/snyssen/personal-website/issues/64)) ([635ef64](https://github.com/snyssen/personal-website/commit/635ef6488f4a8198c580eb8e02b9b9a927d87c75))
+
 ## [2.0.3](https://github.com/snyssen/personal-website/compare/v2.0.2...v2.0.3) (2023-11-01)
 
 
