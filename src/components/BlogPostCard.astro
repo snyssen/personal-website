@@ -10,7 +10,7 @@ export interface Props {
 const { post } = Astro.props;
 ---
 
-<a href={post.collection + "/" + post.slug} aria-label="Read blog post">
+<a href={"/" + post.collection + "/" + post.slug} aria-label="Read blog post">
   <div
     class="h-full w-full flex flex-col shadow-sm rounded-xl border dark:border-slate-600 group transition ease-out delay-200 hover:-translate-y-1 hover:scale-105 hover:shadow-xl"
   >
