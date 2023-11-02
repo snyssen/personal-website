@@ -1,5 +1,12 @@
 # Changelog
 
+## [2.0.5](https://github.com/snyssen/personal-website/compare/v2.0.4...v2.0.5) (2023-11-02)
+
+
+### Bug Fixes
+
+* **blog:** fix links to blog posts ([f8545a4](https://github.com/snyssen/personal-website/commit/f8545a4721135511fa53f88bc6e72e8f56d832d8))
+
 ## [2.0.4](https://github.com/snyssen/personal-website/compare/v2.0.3...v2.0.4) (2023-11-01)
 
 
