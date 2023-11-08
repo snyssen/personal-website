@@ -30,7 +30,7 @@
     "@types/lunr": "2.3.6",
     "@types/react": "18.2.34",
     "playwright": "1.39.0",
-    "start-server-and-test": "2.0.1",
+    "start-server-and-test": "2.0.2",
     "ts-node": "10.9.1"
   }
 }
