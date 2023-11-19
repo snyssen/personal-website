@@ -1,5 +1,19 @@
 # Changelog
 
+## [2.0.6](https://github.com/snyssen/personal-website/compare/v2.0.5...v2.0.6) (2023-11-19)
+
+
+### Bug Fixes
+
+* **deps:** group playwright packages ([3b1b6d6](https://github.com/snyssen/personal-website/commit/3b1b6d6ecfee468920980c2a72ed821953522b20))
+* **deps:** update astrojs packages ([#78](https://github.com/snyssen/personal-website/issues/78)) ([654c534](https://github.com/snyssen/personal-website/commit/654c534e7ae0a312d3dbacbab54be4ee20b7f111))
+* **deps:** update astrojs packages ([#81](https://github.com/snyssen/personal-website/issues/81)) ([6932ff5](https://github.com/snyssen/personal-website/commit/6932ff53acfff8e2763f2428456481836580e864))
+* **deps:** update dependency astro to v3.4.3 ([#70](https://github.com/snyssen/personal-website/issues/70)) ([f0a0885](https://github.com/snyssen/personal-website/commit/f0a0885fada064569b6232e1fe0253f381656ab3))
+* **deps:** update dependency astro to v3.4.4 ([#76](https://github.com/snyssen/personal-website/issues/76)) ([8452e72](https://github.com/snyssen/personal-website/commit/8452e723d13f5342951a15a273a6252579099be3))
+* **deps:** update dependency preact to v10.18.2 ([#71](https://github.com/snyssen/personal-website/issues/71)) ([db89a77](https://github.com/snyssen/personal-website/commit/db89a77faf2efc6db946408d53768cce2c31b9fe))
+* **deps:** update dependency preact to v10.19.1 ([#79](https://github.com/snyssen/personal-website/issues/79)) ([10e445c](https://github.com/snyssen/personal-website/commit/10e445ca1fa8d06b9d338658f667f5b611cc1b42))
+* **deps:** update dependency preact to v10.19.2 ([#80](https://github.com/snyssen/personal-website/issues/80)) ([195360f](https://github.com/snyssen/personal-website/commit/195360ffba478c2fa32256722db481504b0f8924))
+
 ## [2.0.5](https://github.com/snyssen/personal-website/compare/v2.0.4...v2.0.5) (2023-11-02)
 
 
