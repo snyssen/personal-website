@@ -1,5 +1,17 @@
 # Changelog
 
+## [2.0.7](https://github.com/snyssen/personal-website/compare/v2.0.6...v2.0.7) (2023-12-08)
+
+
+### Bug Fixes
+
+* **build/pdf:** use vanilla node and js for generating pdf ([187bbfa](https://github.com/snyssen/personal-website/commit/187bbfa17dde0e1ca05c585e1d0c51cbdfb63e4d))
+* **deps:** update dependency @astrojs/tailwind to v5.0.3 ([#97](https://github.com/snyssen/personal-website/issues/97)) ([9fb9405](https://github.com/snyssen/personal-website/commit/9fb940501426168216a0844c24eca43f3dff05d4))
+* **deps:** update dependency astro to v3.6.0 ([#88](https://github.com/snyssen/personal-website/issues/88)) ([8f562a2](https://github.com/snyssen/personal-website/commit/8f562a261bc00ac6292afa20d9756db38d05f8be))
+* **deps:** update dependency astro to v3.6.4 ([#90](https://github.com/snyssen/personal-website/issues/90)) ([18cec8c](https://github.com/snyssen/personal-website/commit/18cec8c3bd62eddd0ab313779275121b872c717a))
+* **deps:** update dependency sharp to v0.33.0 ([#92](https://github.com/snyssen/personal-website/issues/92)) ([fd53778](https://github.com/snyssen/personal-website/commit/fd53778fb6e9c68390b68da87f9c824527cfe698))
+* **deps:** update dependency tailwindcss to v3.3.6 ([#95](https://github.com/snyssen/personal-website/issues/95)) ([50046ce](https://github.com/snyssen/personal-website/commit/50046ceea184dd371a10b4de1d17c9b57fa9f567))
+
 ## [2.0.6](https://github.com/snyssen/personal-website/compare/v2.0.5...v2.0.6) (2023-11-19)
 
 
