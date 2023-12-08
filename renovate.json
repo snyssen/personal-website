@@ -17,6 +17,14 @@
     },
     {
       "matchPackagePatterns": [
+        "^@types"
+      ],
+      "groupName": [
+        "types packages"
+      ]
+    },
+    {
+      "matchPackagePatterns": [
         "playwright",
         "mcr.microsoft.com/playwright"
       ],
