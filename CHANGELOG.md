@@ -1,5 +1,20 @@
 # Changelog
 
+## [2.1.0](https://github.com/snyssen/personal-website/compare/v2.0.7...v2.1.0) (2023-12-18)
+
+
+### Features
+
+* **blog-content:** add article on automated releases versioning ([25d531e](https://github.com/snyssen/personal-website/commit/25d531e38ab574f7ace8bed42457a47593a52fc3))
+
+
+### Bug Fixes
+
+* **deps:** update astrojs packages ([#98](https://github.com/snyssen/personal-website/issues/98)) ([a50287b](https://github.com/snyssen/personal-website/commit/a50287b1dac23a536a463d6e3549ea496353c61e))
+* **deps:** update dependency astro to v4.0.6 ([#104](https://github.com/snyssen/personal-website/issues/104)) ([8fb0ff3](https://github.com/snyssen/personal-website/commit/8fb0ff358d118ecb93a7d2e3af23a79085a24e82))
+* **deps:** update dependency preact to v10.19.3 ([#100](https://github.com/snyssen/personal-website/issues/100)) ([6d6a490](https://github.com/snyssen/personal-website/commit/6d6a49036f7954b0ff8131df3c0c3ede1575c453))
+* **deps:** update dependency sharp to v0.33.1 ([#105](https://github.com/snyssen/personal-website/issues/105)) ([319bfb5](https://github.com/snyssen/personal-website/commit/319bfb58e7d4e75c79ff1b6c420d51bc135fa2a3))
+
 ## [2.0.7](https://github.com/snyssen/personal-website/compare/v2.0.6...v2.0.7) (2023-12-08)
 
 
