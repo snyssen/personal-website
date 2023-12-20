@@ -3,15 +3,16 @@ title: Automated Releases Versioning and Publishing using Github Actions, Conven
 description: Check the tools I use for the versioning and publishing of my releases
 image:
   src: "@assets/blog-attachments/hero/automated-releases-versioning-and-publishing.png"
-  alt: Image of 4 laptops seemingly connected to a huge central microship.
+  alt: Image of arrows representing a cycle, followed by the text "Automated Releases Versioning and Publishing".
 pubDate: 2023-12-18
+updatedDate: 2023-12-20
 tags:
     - name: programming
       colorClass: bg-sky-600
     - name: devops
       colorClass: bg-emerald-600
 ---
-As with pretty much any IT task I do, I try to automate as much of the little things I can. As such, I have recently changed how I manage the versioning and publishing of my packages, using a standard automated procedure for project. In this blog post, I will present to you each of the components of that new methodology and how they are put together, step-by-step.
+As with pretty much any IT task I do, I try to automate as much of the little things I can. As such, I have recently changed how I manage the versioning and publishing of my packages, using a standard automated procedure for every project. In this blog post, I will present to you each of the components of that new methodology and how they are put together, step-by-step.
 
 ## 1. Conventional Commits
 
