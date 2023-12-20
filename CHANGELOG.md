@@ -1,5 +1,14 @@
 # Changelog
 
+## [2.1.1](https://github.com/snyssen/personal-website/compare/v2.1.0...v2.1.1) (2023-12-20)
+
+
+### Bug Fixes
+
+* **blog-content:** fix error in image description ([ca655df](https://github.com/snyssen/personal-website/commit/ca655df17e81377aee30a58c37f17cfbe5c0a59c))
+* **deps:** update dependency tailwindcss to v3.3.7 ([#106](https://github.com/snyssen/personal-website/issues/106)) ([2b62bac](https://github.com/snyssen/personal-website/commit/2b62bac13d2ba2e1f8e6ca42fdc0d888a1e29b92))
+* **deps:** update dependency tailwindcss to v3.4.0 ([#108](https://github.com/snyssen/personal-website/issues/108)) ([57e662c](https://github.com/snyssen/personal-website/commit/57e662cb95ca8cfccac65cdf000066f21b07b96f))
+
 ## [2.1.0](https://github.com/snyssen/personal-website/compare/v2.0.7...v2.1.0) (2023-12-18)
 
 
