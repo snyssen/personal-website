@@ -1,9 +1,10 @@
 ---
 title: Infinite and responsive CSS grid
 description: Learn how to create infinitely long and responsive CSS grids for displaying various repeating items
-layout: ../../layouts/BlogPostLayout.astro
-heroImage: /blog-attachments/hero/infinite-and-responsive-css-grid.png
-pubDate: May 03 2021
+image:
+  src: "@assets/blog-attachments/hero/infinite-and-responsive-css-grid.png"
+  alt: Screenshot of a website showing a grid of cards
+pubDate: 2021-05-03
 tags:
     - name: programming
       colorClass: bg-sky-600
@@ -32,7 +33,7 @@ As said in the comments, the line `grid-template-columns: repeat(auto-fit, minm
 
  If you want the same horizontal and vertical gaps you can also simply use the `gap` keyword which combines both `row-gap` and `column-gap`. Another option if you want to also set the height of the cells (and not only the width as show previously) is to also include `the grid-template-rows` property.
 
-![Screenshot showing another example of a css grid](/blog-attachments/programming/css/demo-grid-2.png)
+![Screenshot showing another example of a css grid](@assets/blog-attachments/programming/css/demo-grid-2.png)
 
 ```css
 .grid-container {
@@ -55,7 +56,7 @@ Finally, you can also handle the creation of extra rows and columns using `auto
 
 Note that you can also use flex layout to create grids of repeating items of the same size:
 
-![Example of flex based infinite grid as used by Photoprism](/blog-attachments/programming/css/demo-grid-3.png)
+![Example of flex based infinite grid as used by Photoprism](@assets/blog-attachments/programming/css/demo-grid-3.png)
 
 The grid of PhotoPrism is made using flex layout
 

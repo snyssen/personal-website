@@ -1,10 +1,11 @@
 ---
 title: "Developing Ansible playbooks with Vagrant - Tips & Tricks"
 description: Do you want to develop Ansible playbooks and test them under Vagrant? Here are some random tips&tricks
-layout: ../../layouts/BlogPostLayout.astro
-heroImage: /blog-attachments/hero/vagrant-tips-and-tricks.jpg
-pubDate: Dec 28 2022
-updatedDate: Feb 17 2023
+image:
+  src: "@assets/blog-attachments/hero/vagrant-tips-and-tricks.jpg"
+  alt: Image of 4 laptops seemingly connected to a huge central microship.
+pubDate: 2022-12-28
+updatedDate: 2023-02-17
 tags:
     - name: programming
       colorClass: bg-sky-600
@@ -59,7 +60,7 @@ echo ".vault_pass" >> .gitignore
 
 And finally, add the file to your `ansible.cfg` file so it will be picked up by ansible automatically:
 
-```cfg
+```ini
 [defaults]
 # There may be other settings here
 vault_password_file = .vault_pass

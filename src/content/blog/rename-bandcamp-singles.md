@@ -1,10 +1,11 @@
 ---
 title: Rename Bandcamp single for easier consumption by MusicBrainz Picard
 description: Learn how to organize singles downloaded from Bandcamp into artist/album/track so it can be consumed more easily
-layout: ../../layouts/BlogPostLayout.astro
-heroImage: /blog-attachments/hero/rename-bandcamp-singles.jpg
-pubDate: Oct 15 2022
-updatedDate: Jun 23 2023
+image:
+  src: "@assets/blog-attachments/hero/rename-bandcamp-singles.jpg"
+  alt: Image split in half. Left half shows the bandcamp logo on a purple background; right half shows musicbrainz picard's logo on a blue background. A plus sign is shown in the middle.
+pubDate: 2022-10-15
+updatedDate: 2023-06-23
 tags:
     - name: misc
       colorClass: bg-indigo-600

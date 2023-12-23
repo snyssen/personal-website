@@ -1,7 +1,7 @@
 {
-  "name": "@example/blog",
+  "name": "personal-website",
   "type": "module",
-  "version": "0.0.1",
+  "version": "2.1.1",
   "private": true,
   "scripts": {
     "dev": "astro dev",
@@ -9,29 +9,27 @@
     "build": "astro build",
     "build:ci": "astro build && npm run generate-pdf:ci",
     "preview": "astro preview",
-    "generate-pdf": "ts-node --project tsconfig-pdf.json ./scripts/generate-pdf.ts",
-    "generate-pdf:ci": "start-server-and-test preview 3000 generate-pdf",
+    "generate-pdf": "node ./scripts/generate-pdf.js",
+    "generate-pdf:ci": "start-server-and-test preview http://localhost:4321 generate-pdf",
     "astro": "astro"
   },
   "dependencies": {
-    "@astrojs/image": "^0.14.0",
-    "@astrojs/mdx": "^0.16.0",
-    "@astrojs/preact": "^2.0.2",
-    "@astrojs/rss": "^2.1.0",
-    "@astrojs/sitemap": "^1.0.1",
-    "@astrojs/tailwind": "^3.0.1",
-    "@siverv/astro-lunr": "^0.0.3",
-    "astro": "^2.0.6",
-    "preact": "^10.11.3",
-    "sharp": "^0.31.3",
-    "tailwindcss": "^3.2.4"
+    "@astrojs/mdx": "2.0.2",
+    "@astrojs/preact": "3.0.1",
+    "@astrojs/rss": "4.0.1",
+    "@astrojs/sitemap": "3.0.3",
+    "@astrojs/tailwind": "5.0.4",
+    "@siverv/astro-lunr": "0.0.3",
+    "astro": "4.0.7",
+    "preact": "10.19.3",
+    "sharp": "0.33.1",
+    "tailwindcss": "3.4.0"
   },
   "devDependencies": {
-    "@tailwindcss/typography": "^0.5.9",
-    "@types/lunr": "^2.3.4",
-    "@types/react": "^18.0.27",
-    "playwright": "^1.29.2",
-    "start-server-and-test": "^1.15.2",
-    "ts-node": "^10.9.1"
+    "@tailwindcss/typography": "0.5.10",
+    "@types/lunr": "2.3.7",
+    "@types/react": "18.2.45",
+    "playwright": "1.40.1",
+    "start-server-and-test": "2.0.3"
   }
 }
