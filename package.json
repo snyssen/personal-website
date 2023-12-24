@@ -19,7 +19,6 @@
     "@astrojs/rss": "4.0.1",
     "@astrojs/sitemap": "3.0.3",
     "@astrojs/tailwind": "5.0.4",
-    "@siverv/astro-lunr": "0.0.3",
     "astro": "4.0.7",
     "preact": "10.19.3",
     "sharp": "0.33.1",
@@ -27,7 +26,6 @@
   },
   "devDependencies": {
     "@tailwindcss/typography": "0.5.10",
-    "@types/lunr": "2.3.7",
     "@types/react": "18.2.45",
     "playwright": "1.40.1",
     "start-server-and-test": "2.0.3"

@@ -77,14 +77,4 @@ const {
     <hr class="not-prose mt-2 mb-4" />
     <slot />
   </article>
-
-  <lunr-document>
-    <lunr-field name="title" value={title}></lunr-field>
-    <lunr-field name="description" value={description}></lunr-field>
-    <lunr-field
-      name="tag"
-      value={tags && tags.length > 0 ? tags.map((t) => t.name).join(" ") : ""}
-    ></lunr-field>
-    <lunr-text name="content">{body}</lunr-text>
-  </lunr-document>
 </LayoutWithHeaderAndFooter>
