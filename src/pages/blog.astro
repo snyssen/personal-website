@@ -13,7 +13,7 @@ const posts = await BlogUtils.getPostsOrderedByDateDesc();
   description="List of posts from snyssen's blog"
 >
   <section class="max-w-screen-xl mx-auto my-4 px-2">
-    <!-- <SearchInput client:idle /> -->
+    <div id="search" class="mb-4"></div>
     <div class="flex flex-row items-center mb-4">
       <h1 class="text-4xl">All blog posts</h1>
       <span class="flex-1"></span>
@@ -33,3 +33,44 @@ const posts = await BlogUtils.getPostsOrderedByDateDesc();
     </div>
   </section>
 </LayoutWithHeaderAndFooter>
+
+<link href="/pagefind/pagefind-ui.css" rel="stylesheet">
+<script src="/pagefind/pagefind-ui.js" is:inline></script>
+<script is:inline>
+	window.addEventListener('DOMContentLoaded', (event) => {
+			new PagefindUI({ element: "#search", showSubResults: true });
+	});
+</script>
+<style is:global>
+  body {
+    --pagefind-ui-scale: 1;
+    /* bg-purple-500 */
+    --pagefind-ui-primary: rgb(168 85 247 / var(--tw-bg-opacity));
+    /* text-slate-900 */
+    --pagefind-ui-text: rgb(15 23 42 / var(--tw-text-opacity));
+    /* bg-gray-50 */
+    --pagefind-ui-background: rgb(249 250 251 / var(--tw-bg-opacity));
+    /* shadow-sm */
+    --pagefind-ui-border: rgb(0 0 0 / 0.05);
+    --pagefind-ui-tag: rgb(0 0 0 / 0.05);
+    /* border */
+    --pagefind-ui-border-width: 1px;
+    /* rounded-xl */
+    --pagefind-ui-border-radius: 0.75rem;
+    --pagefind-ui-image-border-radius: 0.75rem;
+
+    --pagefind-ui-image-box-ratio: 3 / 2;
+
+    /* serif font */
+    --pagefind-ui-font: "Kaisei HarunoUmi";
+  }
+  html.dark > body {
+    /* text-slate-100 */
+    --pagefind-ui-text: rgb(241 245 249 / var(--tw-text-opacity));
+    /* bg-zinc-700 */
+    --pagefind-ui-background: rgb(63 63 70 / var(--tw-bg-opacity));
+    /* border-slate-600 */
+    --pagefind-ui-border: rgb(71 85 105 / var(--tw-border-opacity));
+    --pagefind-ui-tag: rgb(71 85 105 / var(--tw-border-opacity));
+  }
+</style>
