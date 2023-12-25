@@ -6,8 +6,9 @@
   "scripts": {
     "dev": "astro dev",
     "start": "astro dev",
-    "build": "astro build && npx -y pagefind --site dist",
-    "build:ci": "astro build && npm run generate-pdf:ci",
+    "build": "astro build",
+    "pagefind": "npx -y pagefind --site dist",
+    "build:ci": "npm run build && npm run pagefind && npm run generate-pdf:ci",
     "preview": "astro preview",
     "generate-pdf": "node ./scripts/generate-pdf.js",
     "generate-pdf:ci": "start-server-and-test preview http://localhost:4321 generate-pdf",
