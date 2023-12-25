@@ -1,5 +1,12 @@
 # Changelog
 
+## [2.2.1](https://github.com/snyssen/personal-website/compare/v2.2.0...v2.2.1) (2023-12-25)
+
+
+### Bug Fixes
+
+* **build:** fix build with pagefind ([953c837](https://github.com/snyssen/personal-website/commit/953c837504449f4fd5b2ea57f69ffd655d92e4ff))
+
 ## [2.2.0](https://github.com/snyssen/personal-website/compare/v2.1.1...v2.2.0) (2023-12-24)
 
 
