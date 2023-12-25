@@ -1,5 +1,17 @@
 # Changelog
 
+## [2.2.0](https://github.com/snyssen/personal-website/compare/v2.1.1...v2.2.0) (2023-12-24)
+
+
+### Features
+
+* **blog:** add search input ([45893f4](https://github.com/snyssen/personal-website/commit/45893f4879332feeabdb5133361d2dba4556ec96))
+
+
+### Bug Fixes
+
+* **deps:** update astrojs packages ([#109](https://github.com/snyssen/personal-website/issues/109)) ([0d3a6e3](https://github.com/snyssen/personal-website/commit/0d3a6e3103894163ac3a2eb0efa40fcdaf12e123))
+
 ## [2.1.1](https://github.com/snyssen/personal-website/compare/v2.1.0...v2.1.1) (2023-12-20)
 
 
