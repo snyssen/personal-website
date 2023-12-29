@@ -3,7 +3,7 @@ title: "Developing Ansible playbooks with Vagrant - Tips & Tricks"
 description: Do you want to develop Ansible playbooks and test them under Vagrant? Here are some random tips&tricks
 image:
   src: "@assets/blog-attachments/hero/vagrant-tips-and-tricks.jpg"
-  alt: Image of 4 laptops seemingly connected to a huge central microship.
+  alt: Four laptops seemingly connected to a huge central microship.
 pubDate: 2022-12-28
 updatedDate: 2023-02-17
 tags:

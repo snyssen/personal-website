@@ -3,7 +3,7 @@ title: Restore a MS SQL Server backup on Linux
 description: Because restoring a MS SQL Server backup from a Windows server onto your machine can be a pain
 image:
   src: "@assets/blog-attachments/hero/restore-sql-backup-linux.jpg"
-  alt: Image of a bearded man seen from the back, sat in front of a computer screen. A loading wheel appears on said screen along with the title "Recovery"
+  alt: Bearded man seen from the back, sat in front of a computer screen. A loading wheel appears on said screen along with the title "Recovery"
 pubDate: 2022-02-07
 tags:
     - name: programming

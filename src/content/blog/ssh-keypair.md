@@ -3,7 +3,7 @@ title: Manage SSH keys between a Linux client and Server
 description: Learn how to create an SSH key-pair a copy the public key onto a remote server for passwordless access
 image:
   src: "@assets/blog-attachments/hero/ssh-keypair.jpg"
-  alt: Image showing a big padlock along with the title "SSH". A server is visible in the background.
+  alt: Big padlock along with the title "SSH". A physical server is visible in the background.
 pubDate: 2021-11-16
 tags:
     - name: sys-admin

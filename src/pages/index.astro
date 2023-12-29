@@ -35,6 +35,7 @@ const recentPosts = (await BlogUtils.getPostsOrderedByDateDesc()).slice(0, 4);
         href="https://github.com/snyssen"
         aria-label="My Github account"
       >
+        <span class="hidden">My Github account</span>
         <i
           class="lab la-github text-6xl gradient-icon-link"
           aria-hidden="true"
@@ -42,19 +43,10 @@ const recentPosts = (await BlogUtils.getPostsOrderedByDateDesc()).slice(0, 4);
       </a>
       <a
         rel="me"
-        href="https://git.snyssen.be/snyssen"
-        aria-label="My self-hosted Gitea account"
-      >
-        <i
-          class="lab la-git text-6xl gradient-icon-link"
-          aria-hidden="true"
-          title="My self-hosted Gitea account"></i>
-      </a>
-      <a
-        rel="me"
         href="https://be.linkedin.com/in/simon-nyssen-007247163"
         aria-label="My Linkedin account"
       >
+        <span class="hidden">My Linkedin account</span>
         <i
           class="lab la-linkedin-in text-6xl gradient-icon-link"
           aria-hidden="true"
@@ -65,6 +57,7 @@ const recentPosts = (await BlogUtils.getPostsOrderedByDateDesc()).slice(0, 4);
         href="https://hostux.social/@snyssen"
         aria-label="My Mastodon account"
       >
+        <span class="hidden">My Mastodon account</span>
         <i
           class="lab la-mastodon text-6xl gradient-icon-link"
           aria-hidden="true"

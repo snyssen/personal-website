@@ -3,7 +3,7 @@ title: Automated Releases Versioning and Publishing using Github Actions, Conven
 description: Check the tools I use for the versioning and publishing of my releases
 image:
   src: "@assets/blog-attachments/hero/automated-releases-versioning-and-publishing.png"
-  alt: Image of arrows representing a cycle, followed by the text "Automated Releases Versioning and Publishing".
+  alt: Arrows representing a cycle, followed by the text "Automated Releases Versioning and Publishing".
 pubDate: 2023-12-18
 updatedDate: 2023-12-20
 tags:
