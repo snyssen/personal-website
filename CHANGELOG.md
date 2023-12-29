@@ -1,5 +1,20 @@
 # Changelog
 
+## [2.3.0](https://github.com/snyssen/personal-website/compare/v2.2.1...v2.3.0) (2023-12-29)
+
+
+### Features
+
+* add 404 page ([36c9725](https://github.com/snyssen/personal-website/commit/36c972595100cb0b0ba5cb778caadf1e64963de8)), closes [#69](https://github.com/snyssen/personal-website/issues/69)
+* **blog:** add the expressive-code package ([4650e1a](https://github.com/snyssen/personal-website/commit/4650e1a0a0ce2e1c21345e442612c300127b6430))
+
+
+### Bug Fixes
+
+* **deps:** pin dependency astro-expressive-code to 0.30.1 ([#115](https://github.com/snyssen/personal-website/issues/115)) ([16b3dd7](https://github.com/snyssen/personal-website/commit/16b3dd784262b61475658a92338f1caf13a7e589))
+* **deps:** update astrojs packages ([#112](https://github.com/snyssen/personal-website/issues/112)) ([e7cb959](https://github.com/snyssen/personal-website/commit/e7cb9597719ca60f1a9056f5fb272e23cdb083a8))
+* fix (almost) all accessibility issues ([ce9dd9b](https://github.com/snyssen/personal-website/commit/ce9dd9b31f625c918f85e1a6c607809c6f951e7b))
+
 ## [2.2.1](https://github.com/snyssen/personal-website/compare/v2.2.0...v2.2.1) (2023-12-25)
 
 
