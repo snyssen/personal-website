@@ -1,5 +1,12 @@
 # Changelog
 
+## [2.3.1](https://github.com/snyssen/personal-website/compare/v2.3.0...v2.3.1) (2023-12-29)
+
+
+### Bug Fixes
+
+* **blog:** fix code blocks width on mobile ([d60ce15](https://github.com/snyssen/personal-website/commit/d60ce1586216b794d44095f7be99b4d42a8c589f))
+
 ## [2.3.0](https://github.com/snyssen/personal-website/compare/v2.2.1...v2.3.0) (2023-12-29)
 
 
