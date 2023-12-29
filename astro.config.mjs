@@ -7,4 +7,7 @@ import preact from "@astrojs/preact";
 export default defineConfig({
   site: process.env.WEBSITE_URI ?? "http://localhost:4321",
   integrations: [mdx(), sitemap(), tailwind(), preact()],
+  image: {
+    domains: ["httpgoats.com"],
+  },
 });
