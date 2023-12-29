@@ -78,3 +78,10 @@ const {
     <slot />
   </article>
 </LayoutWithHeaderAndFooter>
+
+<style is:global>
+  div.expressive-code {
+    /* takes screen width and remove .p-2 x2 from it */
+    max-width: calc(100vw - (2*0.5rem));
+  }
+</style>
