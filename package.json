@@ -28,7 +28,7 @@
   },
   "devDependencies": {
     "@tailwindcss/typography": "0.5.10",
-    "@types/react": "18.2.47",
+    "@types/react": "18.2.48",
     "playwright": "1.41.0",
     "start-server-and-test": "2.0.3"
   }
