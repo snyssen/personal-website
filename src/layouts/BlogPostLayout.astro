@@ -3,9 +3,12 @@ import LayoutWithHeaderAndFooter from "./LayoutWithHeaderAndFooter.astro";
 import { SITE_IMAGE } from "../config";
 import { Image } from "astro:assets";
 import type { CollectionEntry } from "astro:content";
+import type { MarkdownHeading } from "astro";
+import BlogPostToc from "@components/BlogPostToc.astro";
 
 export interface Props {
   content: CollectionEntry<'blog'>;
+  headings: MarkdownHeading[];
 }
 
 const {
@@ -20,6 +23,7 @@ const {
     },
     body
   },
+  headings
 } = Astro.props;
 ---
 
@@ -29,53 +33,62 @@ const {
   image={image.src.src ?? SITE_IMAGE}
 >
   <article
-    class="p-2 mx-auto text-justify prose prose-zinc dark:prose-invert prose-img:rounded-xl prose-pre:w-[95vw] prose-pre:max-w-full"
+    class="p-2 mx-auto text-justify max-w-screen-xl flex flex-col items-stretch"
     data-pagefind-body>
-    {
-      image && (
-        <Image
-          src={image.src}
-          alt={image.alt}
-          format="webp"
-          class="w-full mb-2 object-contain"
-        />
-      )
-    }
-    <h1 class="mb-1">{title}</h1>
-    <p class="m-0 text-sm">
+    <div class="flex flex-col items-center">
       {
-        pubDate && (
-          <span>
-            Published on <time datetime={pubDate.toISOString()}>{pubDate.toLocaleDateString()}</time>
-          </span>
+        image && (
+          <Image
+            src={image.src}
+            alt={image.alt}
+            format="webp"
+            class="w-full mb-2 object-contain rounded-xl"
+          />
         )
       }
-      {
-        updatedDate && (
-          <span>
-            - Last updated on <time datetime={updatedDate.toISOString()}>{updatedDate.toLocaleDateString()}</time>
-          </span>
-        )
-      }
-    </p>
-    {
-      tags && tags.length > 0 && (
-        <div class="flex flex-row flex-wrap gap-1 my-2">
-          {tags.map((tag) => (
-            <span
-              class:list={[
-                tag.colorClass,
-                "text-sm text-slate-100 p-1 rounded-xl",
-              ]}
-            >
-              #{tag.name}
+      <h1 class="mb-1 font-bold text-4xl text-center">{title}</h1>
+      <p class="m-0 text-sm">
+        {
+          pubDate && (
+            <span>
+              Published on <time datetime={pubDate.toISOString()}>{pubDate.toLocaleDateString()}</time>
             </span>
-          ))}
-        </div>
-      )
-    }
-    <hr class="not-prose mt-2 mb-4" />
-    <slot />
+          )
+        }
+        {
+          updatedDate && (
+            <span>
+              - Last updated on <time datetime={updatedDate.toISOString()}>{updatedDate.toLocaleDateString()}</time>
+            </span>
+          )
+        }
+      </p>
+      {
+        tags && tags.length > 0 && (
+          <div class="flex flex-row flex-wrap gap-1 my-2">
+            {tags.map((tag) => (
+              <span
+                class:list={[
+                  tag.colorClass,
+                  "text-sm text-slate-100 p-1 rounded-xl",
+                ]}
+              >
+                #{tag.name}
+              </span>
+            ))}
+          </div>
+        )
+      }
+    </div>
+    <div class="flex flex-col xl:flex-row gap-x-8 gap-y-2 justify-center items-center">
+      <div class="flex-auto"></div>
+      <BlogPostToc headings={headings} />
+      <section class="prose prose-zinc dark:prose-invert prose-img:rounded-xl prose-pre:w-[95vw] prose-pre:max-w-full
+        prose-h1:scroll-m-24 prose-h2:scroll-m-24 prose-h3:scroll-m-24 prose-h4:scroll-m-24 prose-h5:scroll-m-24 prose-h6:scroll-m-24">
+        <hr class="not-prose mt-2 xl:mt-0 mb-4 dark:border-slate-600" />
+        <slot />
+      </section>
+    </div>
   </article>
 </LayoutWithHeaderAndFooter>
 
@@ -85,3 +98,30 @@ const {
     max-width: calc(100vw - (2*0.5rem));
   }
 </style>
+
+<script>
+  addIntersectionObserver();
+
+  function addIntersectionObserver() {
+    const observer = new IntersectionObserver((intersectionEntries) => {
+      for (let entry of intersectionEntries) {
+        const { id } = entry.target;
+        const tocHeadingEl = document.querySelector(`#toc a[href="#${id}"]`);
+        if (!tocHeadingEl) return;
+        if (entry.isIntersecting) {
+          document.querySelectorAll("#toc a").forEach((e) => e.classList.remove("current-heading"));
+          tocHeadingEl.classList.add("current-heading");
+        }
+      }
+    }, {
+      threshold: 1,
+      rootMargin : "0px 0px -33%"
+    });
+
+    document
+      .querySelectorAll("article section :is(h2,h3,h4)")
+      .forEach((heading) => {
+        observer.observe(heading)
+      });
+  }
+</script>

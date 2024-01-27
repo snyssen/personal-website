@@ -1,0 +1,37 @@
+---
+// Borrowed from https://kld.dev/building-table-of-contents/
+import type { MarkdownHeading } from 'astro';
+import { type HeadingsTreeNode } from '../models/HeadingsTreeNode';
+import BlogPostTocHeading from './BlogPostTocHeading.astro';
+
+export type Props = {
+    headings : MarkdownHeading[];
+}
+const { headings: headingsFlat } = Astro.props;
+const headingsTree = buildToc(headingsFlat);
+
+function buildToc(headings: MarkdownHeading[]) {
+  const headingsTree: HeadingsTreeNode[] = [];
+  const parentHeadings = new Map();
+  headings.forEach((h) => {
+    const heading: HeadingsTreeNode = { heading: h, subHeadings: [] };
+    parentHeadings.set(h.depth, heading);
+    // Change 2 to 1 if your markdown includes your <h1>
+    if (h.depth === 2) {
+      headingsTree.push(heading);
+    } else {
+      parentHeadings.get(h.depth - 1).subHeadings.push(heading);
+    }
+  });
+  return headingsTree;
+}
+
+---
+{headingsTree && headingsTree.length > 0 ?
+<aside id="toc" class="flex-1 xl:order-2 xl:sticky xl:top-24 xl:self-start p-2 border dark:border-slate-600 bg-gray-50 dark:bg-zinc-700 rounded-xl">
+  <h2 class="text-2xl font-bold">Table of Content</h2>
+  <ul class="list-none pl-0 text-lg text-left">
+    {headingsTree.map((heading) => <BlogPostTocHeading heading={heading} />)}
+  </ul>
+</aside>
+: <div class="flex-auto xl:order-2"></div>}

@@ -1,0 +1,30 @@
+---
+import { type HeadingsTreeNode } from '../models/HeadingsTreeNode';
+
+export type Props = {
+  heading: HeadingsTreeNode;
+}
+
+const { heading: { heading, subHeadings} } = Astro.props;
+---
+
+<li class="m-0">
+  <a class="no-underline hover:underline underline-offset-4" href={'#' + heading.slug}>
+    {heading.text}
+  </a>
+  {
+    subHeadings.length > 0 && (
+      <ul class="list-none pl-8">
+        {subHeadings.map((sh) => (
+          <Astro.self heading={sh} />
+        ))}
+      </ul>
+    )
+  }
+</li>
+
+<style>
+  .current-heading {
+    @apply font-bold text-purple-600
+  }
+</style>
