@@ -1,5 +1,30 @@
 # Changelog
 
+## [2.4.0](https://github.com/snyssen/personal-website/compare/v2.3.1...v2.4.0) (2024-01-27)
+
+
+### Features
+
+* **blog:** add icon after external links ([202e641](https://github.com/snyssen/personal-website/commit/202e64103957d78c0b7a7a53a522762257483856))
+* **blog:** add links on headings ([9825fbb](https://github.com/snyssen/personal-website/commit/9825fbb7f9e6894450335d0c8b66eb438d8b5fc2))
+* **blog:** add ToC to all blog posts that have headings ([1c83ff7](https://github.com/snyssen/personal-website/commit/1c83ff75d7738c08676eb3a9792cdee10b8d931b))
+
+
+### Bug Fixes
+
+* **deps:** pin dependencies ([#133](https://github.com/snyssen/personal-website/issues/133)) ([0ccb7e7](https://github.com/snyssen/personal-website/commit/0ccb7e74632e9f94f802a8a7211dd34edfaff264))
+* **deps:** update astrojs packages ([#121](https://github.com/snyssen/personal-website/issues/121)) ([7821ee8](https://github.com/snyssen/personal-website/commit/7821ee80c6baf24fb00d358339eda8eefa1b171b))
+* **deps:** update astrojs packages ([#125](https://github.com/snyssen/personal-website/issues/125)) ([bc1a699](https://github.com/snyssen/personal-website/commit/bc1a699ee498d925aedf7afd5851013ef5affa84))
+* **deps:** update astrojs packages ([#130](https://github.com/snyssen/personal-website/issues/130)) ([11d2e2b](https://github.com/snyssen/personal-website/commit/11d2e2b6293728308cb4b84951798c6b54daebdb))
+* **deps:** update astrojs packages ([#132](https://github.com/snyssen/personal-website/issues/132)) ([d438118](https://github.com/snyssen/personal-website/commit/d4381184c6926a024c43e0873687443b96ee18d1))
+* **deps:** update astrojs packages ([#134](https://github.com/snyssen/personal-website/issues/134)) ([ea29c60](https://github.com/snyssen/personal-website/commit/ea29c6081c1f9f2c050828605898e7d7f4cbf9cf))
+* **deps:** update astrojs packages ([#135](https://github.com/snyssen/personal-website/issues/135)) ([3a8c252](https://github.com/snyssen/personal-website/commit/3a8c2528fe4a4cedddf05d8b54e62c1eeaa15845))
+* **deps:** update dependency astro to v4.0.9 ([#119](https://github.com/snyssen/personal-website/issues/119)) ([2d45a9c](https://github.com/snyssen/personal-website/commit/2d45a9cf09b1b2af8552f92fc6ad04af0074d92a))
+* **deps:** update dependency astro to v4.1.3 ([#128](https://github.com/snyssen/personal-website/issues/128)) ([bf680fb](https://github.com/snyssen/personal-website/commit/bf680fb4034ee27e8d3c11f0c3d902d41ff9e4ea))
+* **deps:** update dependency astro-expressive-code to v0.31.0 ([#124](https://github.com/snyssen/personal-website/issues/124)) ([3a4671e](https://github.com/snyssen/personal-website/commit/3a4671e345e5ecc923a43839001a99ccf77c2f98))
+* **deps:** update dependency sharp to v0.33.2 ([#126](https://github.com/snyssen/personal-website/issues/126)) ([cbef1b0](https://github.com/snyssen/personal-website/commit/cbef1b0618585366823c80d3891558b1ad557b71))
+* **deps:** update dependency tailwindcss to v3.4.1 ([#122](https://github.com/snyssen/personal-website/issues/122)) ([a776afe](https://github.com/snyssen/personal-website/commit/a776afed3b5b5528e1b3ed422d9c98e111b83352))
+
 ## [2.3.1](https://github.com/snyssen/personal-website/compare/v2.3.0...v2.3.1) (2023-12-29)
 
 
