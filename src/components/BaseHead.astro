@@ -51,7 +51,7 @@ const { title, description, image } = Astro.props;
 
 <!-- Dark theme -->
 <script is:inline>
-  // These functions are re-used by the dark them switch
+  // These functions are re-used by the dark theme switch
   const setLightTheme = (save = false) => {
         document.documentElement.classList.remove("dark");
         document.documentElement.setAttribute("data-theme", "github-light");

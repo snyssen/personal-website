@@ -53,6 +53,7 @@
         themeToggleDarkIcon.classList.toggle("hidden");
         themeToggleLightIcon.classList.toggle("hidden");
 
+        // setXTheme functions are defined in BaseHead.astro
         // if set via local storage previously
         if (localStorage.getItem("color-theme")) {
             if (localStorage.getItem("color-theme") === "light") {
