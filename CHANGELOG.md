@@ -1,5 +1,19 @@
 # Changelog
 
+## [2.5.0](https://github.com/snyssen/personal-website/compare/v2.4.0...v2.5.0) (2024-02-03)
+
+
+### Features
+
+* **blog:** add comments section using Giscus ([51f8fb3](https://github.com/snyssen/personal-website/commit/51f8fb3c6a7034eac08219c498551245752c281a))
+
+
+### Bug Fixes
+
+* **deps:** update astrojs packages ([#138](https://github.com/snyssen/personal-website/issues/138)) ([11470bb](https://github.com/snyssen/personal-website/commit/11470bbff9a4daf20219481221cebb0d0f7e2074))
+* **deps:** update dependency astro to v4.3.2 ([#141](https://github.com/snyssen/personal-website/issues/141)) ([4b5d903](https://github.com/snyssen/personal-website/commit/4b5d903c38dd7387cac51b7df26f2319dc6f6c4e))
+* **deps:** update dependency astro-expressive-code to v0.32.3 ([#136](https://github.com/snyssen/personal-website/issues/136)) ([e5caad3](https://github.com/snyssen/personal-website/commit/e5caad387c587be588486df2fcd6412905c8d44c))
+
 ## [2.4.0](https://github.com/snyssen/personal-website/compare/v2.3.1...v2.4.0) (2024-01-27)
 
 
