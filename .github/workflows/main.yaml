@@ -30,10 +30,12 @@ jobs:
           password: ${{ secrets.GITHUB_TOKEN }}
       - name: Prepare tags for Docker meta
         id: tags
+        env:
+          is_release: ${{ steps.rp.outputs.release_created }}
+          version: v${{ steps.rp.outputs.major }}.${{ steps.rp.outputs.minor }}.${{ steps.rp.outputs.patch }}
         run: |
           tags=""
-          if [[ "${{ steps.rp.outputs.release_created }}" = 'true' ]]; then
-            version="v${{ steps.rp.outputs.major }}.${{ steps.rp.outputs.minor }}.${{ steps.rp.outputs.patch }}"
+          if [[ "$is_release" = 'true' ]]; then
             tags="type=semver,pattern={{version}},value=$version
           type=semver,pattern={{major}},value=$version
           type=semver,pattern={{major}}.{{minor}},value=$version"
@@ -47,7 +49,6 @@ jobs:
             echo EOF
           } >> "$GITHUB_OUTPUT"
       - name: Docker meta
-        if: steps.rp.outputs.release_created
         id: meta
         uses: docker/metadata-action@v5
         with:
