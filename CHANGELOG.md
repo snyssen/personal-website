@@ -1,5 +1,15 @@
 # Changelog
 
+## [2.5.1](https://github.com/snyssen/personal-website/compare/v2.5.0...v2.5.1) (2024-02-10)
+
+
+### Bug Fixes
+
+* **deps:** update astrojs packages ([#148](https://github.com/snyssen/personal-website/issues/148)) ([ee14801](https://github.com/snyssen/personal-website/commit/ee14801aff92ccc7d87a5776206d59a04fc96eef))
+* **deps:** update dependency astro to v4.3.5 ([#149](https://github.com/snyssen/personal-website/issues/149)) ([f2b3736](https://github.com/snyssen/personal-website/commit/f2b3736029ca2a3442ff0df9257644358d2ac605))
+* **deps:** update dependency astro-expressive-code to v0.32.4 ([#145](https://github.com/snyssen/personal-website/issues/145)) ([bdcfc53](https://github.com/snyssen/personal-website/commit/bdcfc53aa339e74c2c0a8b243910dece789ada3c))
+* **deps:** update dependency preact to v10.19.4 ([#150](https://github.com/snyssen/personal-website/issues/150)) ([85cdb4f](https://github.com/snyssen/personal-website/commit/85cdb4fd8ec1498bbe22e814cc5fb259c9ee546c))
+
 ## [2.5.0](https://github.com/snyssen/personal-website/compare/v2.4.0...v2.5.0) (2024-02-03)
 
 
