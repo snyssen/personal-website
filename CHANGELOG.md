@@ -1,5 +1,13 @@
 # Changelog
 
+## [2.5.2](https://github.com/snyssen/personal-website/compare/v2.5.1...v2.5.2) (2024-02-13)
+
+
+### Bug Fixes
+
+* **blog-content:** update the automated releases post with the standardized workflow ([6130b7a](https://github.com/snyssen/personal-website/commit/6130b7a8e4debfaa3afcfd88798ddd9460a0791a))
+* **deps:** update dependency astro to v4.3.6 ([#152](https://github.com/snyssen/personal-website/issues/152)) ([0c76618](https://github.com/snyssen/personal-website/commit/0c7661845a041891c360bfda26846e2474299af5))
+
 ## [2.5.1](https://github.com/snyssen/personal-website/compare/v2.5.0...v2.5.1) (2024-02-10)
 
 
