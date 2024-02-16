@@ -5,7 +5,7 @@ image:
   src: "@assets/blog-attachments/hero/automated-releases-versioning-and-publishing.png"
   alt: Arrows representing a cycle, followed by the text "Automated Releases Versioning and Publishing".
 pubDate: 2023-12-18
-updatedDate: 2024-02-13
+updatedDate: 2024-02-16
 tags:
     - name: programming
       colorClass: bg-sky-600
@@ -93,16 +93,17 @@ env:
   REGISTRY: ghcr.io
   REGISTRY_USERNAME: ${{ github.actor }}
   REGISTRY_PASSWORD: ${{ secrets.GITHUB_TOKEN }}
-  # github.repository as <account>/<repo>
+  # Image name will be <account>/<repo>, but you could put anything here
   IMAGE_NAME: ${{ github.repository }}
   # For release-please, see available types at https://github.com/google-github-actions/release-please-action/tree/v4/?tab=readme-ov-file#release-types-supported
-  PROJECT_TYPE: node
+  PROJECT_TYPE: simple
 jobs:
   release:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
       - id: rp
+        if: github.event_name != 'pull_request' && github.ref_name == 'main'
         uses: google-github-actions/release-please-action@v4
         with:
           release-type: ${{ env.PROJECT_TYPE }}
@@ -115,6 +116,7 @@ jobs:
       - name: Prepare tags for Docker meta
         id: tags
         env:
+          # When release please is skipped, these values will be empty
           is_release: ${{ steps.rp.outputs.release_created }}
           version: v${{ steps.rp.outputs.major }}.${{ steps.rp.outputs.minor }}.${{ steps.rp.outputs.patch }}
         run: |
@@ -138,6 +140,12 @@ jobs:
         with:
           images: ${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}
           tags: ${{ steps.tags.outputs.tags }}
+      # (optional) necessary for multi-platform images
+      - name: Set up QEMU
+        uses: docker/setup-qemu-action@v3
+      # (optional) necessary for multi-platform images
+      - name: Set up Docker Buildx
+        uses: docker/setup-buildx-action@v3
       - name: Build and push
         uses: docker/build-push-action@v5
         with:
@@ -145,8 +153,10 @@ jobs:
           push: ${{ github.event_name != 'pull_request' }}
           tags: ${{ steps.meta.outputs.tags }}
           labels: ${{ steps.meta.outputs.labels }}
+      # Make sure your image can be built for these platforms!
+          platforms: linux/amd64,linux/arm64,linux/arm/v7
+      # (optional) Add build arguments. I like to have the version available to the build so the app can show it.
           build-args: APP_VERSION=${{ steps.meta.outputs.version }}
-
 ```
 
 Let's go through what it does and how to configure it for your own use:
@@ -172,11 +182,14 @@ env:
     - *This is a **release** commit*, i.e. a merge commit coming from a release PR: this is the signal for a new release, so the image will be tagged with the new version (with separate tags for granularity, e.g. `1`, `1.2` and `1.2.3` for release 1.2.3) as well as the `latest` tag;
     - *This is a **standard** commit*, i.e. any commit that is not a release one: the image will be tagged with the branch name, or the PR ID in the case of a pull request event.
   - The Docker meta step uses the output of the previous step to actually generate the list of tags and the image name. It is more generally used to provide metadata of the project to the generated images, such as the project source, etc.
-  - Finally, the image is built according to all of the information prepared above, and is pushed to your registry, **unless the workflow was triggered by a pull request**. I also like to enter the version as a build argument so the app can display its own version (as you will see on the footer of this website).
+  - Install QEMU for multi-platform builds. Can be removed if you only intend to build for x86/amd64.
+  - Install BuildX for multi-platform builds. Can be removed if you only intend to build for x86/amd64.
+  - Finally, the image is built according to all of the information prepared above, and is pushed to your registry, **unless the workflow was triggered by a pull request**. You may enable multi-platform builds if your image supports it. I also like to enter the version as a build argument so the app can display its own version (as you will see on the footer of this website).
 
 ## Projects using this method
 
 - [This website](https://github.com/snyssen/personal-website)
 - The [Webb Launcher](https://github.com/snyssen/webb-launcher) start page
 - The [compose_deploy](https://github.com/snyssen/ansible_role_compose_deploy) Ansible role
+- [Wallos](https://github.com/ellite/Wallos)
 - Probably more to come :)
