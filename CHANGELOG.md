@@ -1,5 +1,13 @@
 # Changelog
 
+## [2.5.3](https://github.com/snyssen/personal-website/compare/v2.5.2...v2.5.3) (2024-02-16)
+
+
+### Bug Fixes
+
+* **blog-content:** update releases blog post with lessons learned from integrating in Wallos ([15b8144](https://github.com/snyssen/personal-website/commit/15b8144e18a9df8867a34d87ea01baa6d4138958))
+* **deps:** update dependency astro to v4.4.0 ([#154](https://github.com/snyssen/personal-website/issues/154)) ([8109bc8](https://github.com/snyssen/personal-website/commit/8109bc8d798399cff17e61e86f246f146da3d6df))
+
 ## [2.5.2](https://github.com/snyssen/personal-website/compare/v2.5.1...v2.5.2) (2024-02-13)
 
 
