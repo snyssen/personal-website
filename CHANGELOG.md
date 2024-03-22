@@ -1,5 +1,22 @@
 # Changelog
 
+## [2.5.4](https://github.com/snyssen/personal-website/compare/v2.5.3...v2.5.4) (2024-03-22)
+
+
+### Bug Fixes
+
+* **deps:** update astrojs packages ([#160](https://github.com/snyssen/personal-website/issues/160)) ([d7fe1d4](https://github.com/snyssen/personal-website/commit/d7fe1d4ee2866975e1564e66467abac4bf890187))
+* **deps:** update astrojs packages ([#162](https://github.com/snyssen/personal-website/issues/162)) ([627b22d](https://github.com/snyssen/personal-website/commit/627b22d2cbd379164a8d88b45b3d9c867cce349a))
+* **deps:** update astrojs packages ([#164](https://github.com/snyssen/personal-website/issues/164)) ([11ff0b9](https://github.com/snyssen/personal-website/commit/11ff0b9ac54d622bb93a22454aba2cfcd98989e5))
+* **deps:** update astrojs packages ([#170](https://github.com/snyssen/personal-website/issues/170)) ([ac3d7f9](https://github.com/snyssen/personal-website/commit/ac3d7f96e09a03f4de6017e6041eae47dadb1c68))
+* **deps:** update astrojs packages ([#172](https://github.com/snyssen/personal-website/issues/172)) ([982a39b](https://github.com/snyssen/personal-website/commit/982a39bc4453d7c64777dd808f4a9fc332bba241))
+* **deps:** update dependency astro to v4.4.8 ([#166](https://github.com/snyssen/personal-website/issues/166)) ([71d4513](https://github.com/snyssen/personal-website/commit/71d4513f0100b5bcc00ab6f89c290612bc8d879f))
+* **deps:** update dependency astro to v4.4.9 ([#169](https://github.com/snyssen/personal-website/issues/169)) ([092ba6e](https://github.com/snyssen/personal-website/commit/092ba6e5bdfb72b1081ee2a882f07e6013d54f32))
+* **deps:** update dependency astro-expressive-code to v0.33.2 ([#161](https://github.com/snyssen/personal-website/issues/161)) ([2e9a77d](https://github.com/snyssen/personal-website/commit/2e9a77d573908118c3da86d82f21b0b0bba059f9))
+* **deps:** update dependency preact to v10.19.5 ([#156](https://github.com/snyssen/personal-website/issues/156)) ([1971fa8](https://github.com/snyssen/personal-website/commit/1971fa8ab9d49189c5243c4f71f8debb0044838a))
+* **deps:** update dependency preact to v10.19.6 ([#163](https://github.com/snyssen/personal-website/issues/163)) ([33700fc](https://github.com/snyssen/personal-website/commit/33700fc654df1bb1e0d665e81ace1694a66f955a))
+* **deps:** update dependency preact to v10.20.0 ([#174](https://github.com/snyssen/personal-website/issues/174)) ([166dc4d](https://github.com/snyssen/personal-website/commit/166dc4d531a9dbaff9124ac9b6f296b615c39e4e))
+
 ## [2.5.3](https://github.com/snyssen/personal-website/compare/v2.5.2...v2.5.3) (2024-02-16)
 
 
