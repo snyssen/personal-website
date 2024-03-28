@@ -1,5 +1,20 @@
 # Changelog
 
+## [2.6.0](https://github.com/snyssen/personal-website/compare/v2.5.4...v2.6.0) (2024-03-28)
+
+
+### Features
+
+* **resume:** add current employment and remove outdated gitea link ([6c851d4](https://github.com/snyssen/personal-website/commit/6c851d47eafff01753b68f64ba4d7198e2c13e5d))
+
+
+### Bug Fixes
+
+* **deps:** update astrojs packages ([#179](https://github.com/snyssen/personal-website/issues/179)) ([5f38951](https://github.com/snyssen/personal-website/commit/5f38951c315fee1e823861ab7fb157ffd4ed450a))
+* **deps:** update dependency preact to v10.20.1 ([#176](https://github.com/snyssen/personal-website/issues/176)) ([41c4e8a](https://github.com/snyssen/personal-website/commit/41c4e8ac853a5a8f1e2a2c79dcabb868e870d624))
+* **deps:** update dependency sharp to v0.33.3 ([#177](https://github.com/snyssen/personal-website/issues/177)) ([d924599](https://github.com/snyssen/personal-website/commit/d9245991b58eea6506194505b0894e26cee21ce7))
+* **deps:** update dependency tailwindcss to v3.4.3 ([#180](https://github.com/snyssen/personal-website/issues/180)) ([326d8b0](https://github.com/snyssen/personal-website/commit/326d8b0effa742401e0f0b67df0ae13f693c4e56))
+
 ## [2.5.4](https://github.com/snyssen/personal-website/compare/v2.5.3...v2.5.4) (2024-03-22)
 
 
