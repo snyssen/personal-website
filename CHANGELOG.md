@@ -1,5 +1,13 @@
 # Changelog
 
+## [2.6.1](https://github.com/snyssen/personal-website/compare/v2.6.0...v2.6.1) (2024-04-10)
+
+
+### Bug Fixes
+
+* **deps:** update astrojs packages ([#182](https://github.com/snyssen/personal-website/issues/182)) ([4ce0513](https://github.com/snyssen/personal-website/commit/4ce0513e169f03c9e3e7411ddafb6e4cc4f6956e))
+* **deps:** update dependency preact to v10.20.2 ([#185](https://github.com/snyssen/personal-website/issues/185)) ([f477b8c](https://github.com/snyssen/personal-website/commit/f477b8c1c245d586ce608523538d4a4e633d6d43))
+
 ## [2.6.0](https://github.com/snyssen/personal-website/compare/v2.5.4...v2.6.0) (2024-03-28)
 
 
