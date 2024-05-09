@@ -1,5 +1,5 @@
 # stage 1
-FROM mcr.microsoft.com/playwright:v1.43.1-focal as builder
+FROM mcr.microsoft.com/playwright:v1.44.0-focal as builder
 ARG APP_VERSION="version undefined"
 ARG WEBSITE_URI="https://snyssen.be"
 ENV APP_VERSION ${APP_VERSION}
