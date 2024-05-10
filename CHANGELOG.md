@@ -1,5 +1,17 @@
 # Changelog
 
+## [2.6.2](https://github.com/snyssen/personal-website/compare/v2.6.1...v2.6.2) (2024-05-09)
+
+
+### Bug Fixes
+
+* **deps:** update astrojs packages ([#187](https://github.com/snyssen/personal-website/issues/187)) ([44fdd19](https://github.com/snyssen/personal-website/commit/44fdd19984c4b0e7dd6c6c439a08ad3cd792ec9b))
+* **deps:** update astrojs packages ([#191](https://github.com/snyssen/personal-website/issues/191)) ([53b11c0](https://github.com/snyssen/personal-website/commit/53b11c03497329fe87cd510d3654d8d8873abf0b))
+* **deps:** update astrojs packages ([#193](https://github.com/snyssen/personal-website/issues/193)) ([5e0d650](https://github.com/snyssen/personal-website/commit/5e0d6501c84d60041d6a95c327bb82d05494a79a))
+* **deps:** update astrojs packages ([#194](https://github.com/snyssen/personal-website/issues/194)) ([37a538e](https://github.com/snyssen/personal-website/commit/37a538ecbdf9906589e341a49940fbcffb8f63c6))
+* **deps:** update astrojs packages ([#198](https://github.com/snyssen/personal-website/issues/198)) ([61c216b](https://github.com/snyssen/personal-website/commit/61c216bc841a206088d554c8e13ee8127877dcc2))
+* **deps:** update dependency @astrojs/mdx to v3 ([#199](https://github.com/snyssen/personal-website/issues/199)) ([4d158ae](https://github.com/snyssen/personal-website/commit/4d158ae9d3988435a183b655b43e907eda98afa8))
+
 ## [2.6.1](https://github.com/snyssen/personal-website/compare/v2.6.0...v2.6.1) (2024-04-10)
 
 
