@@ -1,5 +1,14 @@
 # Changelog
 
+## [2.6.3](https://github.com/snyssen/personal-website/compare/v2.6.2...v2.6.3) (2024-06-11)
+
+
+### Bug Fixes
+
+* **deps:** update astrojs packages ([#201](https://github.com/snyssen/personal-website/issues/201)) ([d6e6bf4](https://github.com/snyssen/personal-website/commit/d6e6bf47d863147aa5d03d4c734c8feafea107e8))
+* **deps:** update astrojs packages ([#204](https://github.com/snyssen/personal-website/issues/204)) ([78e23f6](https://github.com/snyssen/personal-website/commit/78e23f6fdcb57ddff9a42d9bc1bf9d3aa68e0802))
+* **search:** add missing images ([2145e41](https://github.com/snyssen/personal-website/commit/2145e41b0cae2be37659a163f5c1a77ecd8a31b2))
+
 ## [2.6.2](https://github.com/snyssen/personal-website/compare/v2.6.1...v2.6.2) (2024-05-09)
 
 
