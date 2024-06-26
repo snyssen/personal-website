@@ -1,5 +1,19 @@
 # Changelog
 
+## [2.7.0](https://github.com/snyssen/personal-website/compare/v2.6.3...v2.7.0) (2024-06-26)
+
+
+### Features
+
+* rework spacings on mobile ([53e69a9](https://github.com/snyssen/personal-website/commit/53e69a961798f88f3549b9a95992130ab4edfc6e))
+
+
+### Bug Fixes
+
+* **ci:** ensure astro preview is accessible in docker environment ([83b4566](https://github.com/snyssen/personal-website/commit/83b4566830de51cfb330a24c86406dfc78bab2bd))
+* **deps:** update astrojs packages ([#206](https://github.com/snyssen/personal-website/issues/206)) ([68a6e63](https://github.com/snyssen/personal-website/commit/68a6e63895e4d99e7b3fdf463a0a5a3fef359395))
+* **deps:** update astrojs packages ([#209](https://github.com/snyssen/personal-website/issues/209)) ([5aeb89b](https://github.com/snyssen/personal-website/commit/5aeb89b59ea08e3de4e5d3f23c14772c5c09ffd9))
+
 ## [2.6.3](https://github.com/snyssen/personal-website/compare/v2.6.2...v2.6.3) (2024-06-11)
 
 
