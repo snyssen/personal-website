@@ -1,5 +1,13 @@
 # Changelog
 
+## [2.7.1](https://github.com/snyssen/personal-website/compare/v2.7.0...v2.7.1) (2024-07-06)
+
+
+### Bug Fixes
+
+* **deps:** update dependency astro to v4.11.5 ([#212](https://github.com/snyssen/personal-website/issues/212)) ([c555f10](https://github.com/snyssen/personal-website/commit/c555f10fd626186ce84c3cfa44bdcac21c32b274))
+* **deps:** update dependency preact to v10.22.1 ([#213](https://github.com/snyssen/personal-website/issues/213)) ([86e9fad](https://github.com/snyssen/personal-website/commit/86e9fade337455ac29c6f4fe46e78f9881e96d2c))
+
 ## [2.7.0](https://github.com/snyssen/personal-website/compare/v2.6.3...v2.7.0) (2024-06-26)
 
 
