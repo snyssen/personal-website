@@ -1,5 +1,12 @@
 # Changelog
 
+## [2.7.2](https://github.com/snyssen/personal-website/compare/v2.7.1...v2.7.2) (2024-08-03)
+
+
+### Bug Fixes
+
+* **deps:** update all non-major dependencies ([#215](https://github.com/snyssen/personal-website/issues/215)) ([7573aa2](https://github.com/snyssen/personal-website/commit/7573aa2686509a37fb11ef329b5c6a193b6b9257))
+
 ## [2.7.1](https://github.com/snyssen/personal-website/compare/v2.7.0...v2.7.1) (2024-07-06)
 
 
