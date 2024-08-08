@@ -26,10 +26,10 @@
     "rehype-autolink-headings": "7.1.0",
     "rehype-external-links": "3.0.0",
     "sharp": "0.33.4",
-    "tailwindcss": "3.4.7"
+    "tailwindcss": "3.4.9"
   },
   "devDependencies": {
-    "@tailwindcss/typography": "0.5.13",
+    "@tailwindcss/typography": "0.5.14",
     "@types/react": "18.3.3",
     "playwright": "1.45.3",
     "remark-capitalize-headings": "2.0.1",
