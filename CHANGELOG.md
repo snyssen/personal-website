@@ -1,5 +1,16 @@
 # Changelog
 
+## [2.7.2](https://github.com/snyssen/personal-website/compare/v2.7.1...v2.7.2) (2024-09-01)
+
+
+### Bug Fixes
+
+* **deps:** update all non-major dependencies ([#215](https://github.com/snyssen/personal-website/issues/215)) ([7573aa2](https://github.com/snyssen/personal-website/commit/7573aa2686509a37fb11ef329b5c6a193b6b9257))
+* **deps:** update astrojs packages ([#217](https://github.com/snyssen/personal-website/issues/217)) ([064427f](https://github.com/snyssen/personal-website/commit/064427fbcbb0623b0a5e444139cd1c27e071518e))
+* **deps:** update astrojs packages ([#221](https://github.com/snyssen/personal-website/issues/221)) ([c25d46e](https://github.com/snyssen/personal-website/commit/c25d46e82c077f14585b5e66250a45237b1f6fc5))
+* **deps:** update astrojs packages ([#224](https://github.com/snyssen/personal-website/issues/224)) ([7b40c57](https://github.com/snyssen/personal-website/commit/7b40c572e588f106eb84e0ce6ebe4c449fcd9e7b))
+* **deps:** update dependency astro to v4.14.5 ([#223](https://github.com/snyssen/personal-website/issues/223)) ([6b5d0c9](https://github.com/snyssen/personal-website/commit/6b5d0c9c2286a119908eb36c1000f35292d089ce))
+
 ## [2.7.1](https://github.com/snyssen/personal-website/compare/v2.7.0...v2.7.1) (2024-07-06)
 
 
