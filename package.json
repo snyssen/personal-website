@@ -22,17 +22,17 @@
     "@astrojs/tailwind": "5.1.1",
     "astro": "4.15.8",
     "astro-expressive-code": "0.37.0",
-    "preact": "10.23.2",
+    "preact": "10.24.0",
     "rehype-autolink-headings": "7.1.0",
     "rehype-external-links": "3.0.0",
     "sharp": "0.33.5",
-    "tailwindcss": "3.4.11"
+    "tailwindcss": "3.4.12"
   },
   "devDependencies": {
     "@tailwindcss/typography": "0.5.15",
-    "@types/react": "18.3.5",
+    "@types/react": "18.3.8",
     "playwright": "1.47.1",
     "remark-capitalize-headings": "2.0.1",
-    "start-server-and-test": "2.0.7"
+    "start-server-and-test": "2.0.8"
   }
 }
