@@ -1,5 +1,17 @@
 # Changelog
 
+## [2.8.0](https://github.com/snyssen/personal-website/compare/v2.7.4...v2.8.0) (2024-09-26)
+
+
+### Features
+
+* add umami analytics ([ad76a6a](https://github.com/snyssen/personal-website/commit/ad76a6a8cd12c092e6f4e46dc44389b255ebb16e))
+
+
+### Bug Fixes
+
+* **deps:** update dependency astro to v4.15.9 ([#237](https://github.com/snyssen/personal-website/issues/237)) ([dfa9f47](https://github.com/snyssen/personal-website/commit/dfa9f4788b442ac781298fecd865b2ffa4dd0ced))
+
 ## [2.7.4](https://github.com/snyssen/personal-website/compare/v2.7.3...v2.7.4) (2024-09-20)
 
 
