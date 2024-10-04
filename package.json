@@ -22,7 +22,7 @@
     "@astrojs/tailwind": "5.1.1",
     "astro": "4.15.9",
     "astro-expressive-code": "0.37.0",
-    "preact": "10.24.1",
+    "preact": "10.24.2",
     "rehype-autolink-headings": "7.1.0",
     "rehype-external-links": "3.0.0",
     "sharp": "0.33.5",
@@ -30,7 +30,7 @@
   },
   "devDependencies": {
     "@tailwindcss/typography": "0.5.15",
-    "@types/react": "18.3.9",
+    "@types/react": "18.3.11",
     "playwright": "1.47.2",
     "remark-capitalize-headings": "2.0.1",
     "start-server-and-test": "2.0.8"
