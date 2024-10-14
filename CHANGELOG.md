@@ -1,5 +1,17 @@
 # Changelog
 
+## [2.8.1](https://github.com/snyssen/personal-website/compare/v2.8.0...v2.8.1) (2024-10-14)
+
+
+### Bug Fixes
+
+* **deps:** update astrojs packages ([#240](https://github.com/snyssen/personal-website/issues/240)) ([dbe3a75](https://github.com/snyssen/personal-website/commit/dbe3a75aae14122fc95bb89ea73ffdee21c8c0d7))
+* **deps:** update astrojs packages ([#242](https://github.com/snyssen/personal-website/issues/242)) ([7b74181](https://github.com/snyssen/personal-website/commit/7b7418144268378ccea784b812a239e0c8926dee))
+* **deps:** update dependency astro to v4.16.3 ([#244](https://github.com/snyssen/personal-website/issues/244)) ([68c9fad](https://github.com/snyssen/personal-website/commit/68c9fade928e34b47de57f9e81e7208a86da0c14))
+* **deps:** update dependency preact to v10.24.3 ([#245](https://github.com/snyssen/personal-website/issues/245)) ([87b1bef](https://github.com/snyssen/personal-website/commit/87b1befeb89bac383e0a582c6cdf94f0c91d589f))
+* remove plausible analytics ([938ac4e](https://github.com/snyssen/personal-website/commit/938ac4e4874ca47e76853bf736af989b1d8fa512))
+* update analytics link ([fb0f5c7](https://github.com/snyssen/personal-website/commit/fb0f5c7fd6204840949268073175a457df5db9c3))
+
 ## [2.8.0](https://github.com/snyssen/personal-website/compare/v2.7.4...v2.8.0) (2024-09-26)
 
 
