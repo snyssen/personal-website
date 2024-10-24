@@ -1,5 +1,14 @@
 # Changelog
 
+## [2.8.2](https://github.com/snyssen/personal-website/compare/v2.8.1...v2.8.2) (2024-10-24)
+
+
+### Bug Fixes
+
+* **deps:** update astrojs packages ([#246](https://github.com/snyssen/personal-website/issues/246)) ([3767dbf](https://github.com/snyssen/personal-website/commit/3767dbf6464e520aa768d8f76aef928aca40fb7a))
+* **deps:** update dependency astro to v4.16.7 ([#250](https://github.com/snyssen/personal-website/issues/250)) ([b31da3e](https://github.com/snyssen/personal-website/commit/b31da3ebef37f040b0a71ffeccf8e66cb7651898))
+* **deps:** update dependency tailwindcss to v3.4.14 ([#247](https://github.com/snyssen/personal-website/issues/247)) ([0af7f62](https://github.com/snyssen/personal-website/commit/0af7f62b03fec0014edda7f45d905c83e2c16e90))
+
 ## [2.8.1](https://github.com/snyssen/personal-website/compare/v2.8.0...v2.8.1) (2024-10-14)
 
 
