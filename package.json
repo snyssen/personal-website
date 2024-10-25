@@ -31,7 +31,7 @@
   "devDependencies": {
     "@tailwindcss/typography": "0.5.15",
     "@types/react": "18.3.12",
-    "playwright": "1.48.1",
+    "playwright": "1.48.2",
     "remark-capitalize-headings": "2.0.1",
     "start-server-and-test": "2.0.8"
   }
