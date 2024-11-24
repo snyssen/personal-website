@@ -8,21 +8,17 @@
   ],
   "packageRules": [
     {
-      "matchPackagePatterns": [
-        "astro",
-        "^@astrojs"
-      ],
-      "groupName": [
-        "astrojs packages"
+      "groupName": "astrojs packages",
+      "matchPackageNames": [
+        "/astro/",
+        "/^@astrojs/"
       ]
     },
     {
-      "matchPackagePatterns": [
-        "playwright",
-        "mcr.microsoft.com/playwright"
-      ],
-      "groupName": [
-        "playwright"
+      "groupName": "playwright",
+      "matchPackageNames": [
+        "/playwright/",
+        "/mcr.microsoft.com/playwright/"
       ]
     }
   ]
