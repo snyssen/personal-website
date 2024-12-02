@@ -2,24 +2,10 @@
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "extends": [
     "config:recommended",
+    "group:playwrightMonorepo",
     "group:allNonMajor",
     ":pinAllExceptPeerDependencies",
-    ":semanticCommits"
-  ],
-  "packageRules": [
-    {
-      "groupName": "astrojs packages",
-      "matchPackageNames": [
-        "/astro/",
-        "/^@astrojs/"
-      ]
-    },
-    {
-      "groupName": "playwright",
-      "matchPackageNames": [
-        "/playwright/",
-        "/mcr.microsoft.com/playwright/"
-      ]
-    }
+    ":semanticCommits",
+    ":automergeMinor"
   ]
 }
