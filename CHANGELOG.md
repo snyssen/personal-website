@@ -1,5 +1,23 @@
 # Changelog
 
+## [2.8.3](https://github.com/snyssen/personal-website/compare/v2.8.2...v2.8.3) (2024-12-21)
+
+
+### Bug Fixes
+
+* **deps:** group playwright updates together ([e30fef7](https://github.com/snyssen/personal-website/commit/e30fef7017f43f4b11a8684c8b7a39b9cce719f9))
+* **deps:** update all non-major dependencies ([#257](https://github.com/snyssen/personal-website/issues/257)) ([743a689](https://github.com/snyssen/personal-website/commit/743a6896c10222bcf6e38f185e4c9758671264f1))
+* **deps:** update all non-major dependencies ([#261](https://github.com/snyssen/personal-website/issues/261)) ([b868db0](https://github.com/snyssen/personal-website/commit/b868db03145b473facab9cbcb35476c36e24aa02))
+* **deps:** update all non-major dependencies ([#266](https://github.com/snyssen/personal-website/issues/266)) ([739307e](https://github.com/snyssen/personal-website/commit/739307eb9afaefe04f6bbeedc0cab5aa271376ca))
+* **deps:** update all non-major dependencies ([#270](https://github.com/snyssen/personal-website/issues/270)) ([a1acca8](https://github.com/snyssen/personal-website/commit/a1acca80a7658e52214b432bf08e4cc26c1f7c3e))
+* **deps:** update all non-major dependencies ([#271](https://github.com/snyssen/personal-website/issues/271)) ([221d106](https://github.com/snyssen/personal-website/commit/221d10625f0ada3cebbb5a0b8d566252c5436bb3))
+* **deps:** update astrojs packages ([#253](https://github.com/snyssen/personal-website/issues/253)) ([23bb6c0](https://github.com/snyssen/personal-website/commit/23bb6c0f317c344c2bdae54f40f6e5fc0a6e2f92))
+* **deps:** update astrojs packages ([#255](https://github.com/snyssen/personal-website/issues/255)) ([57f1d0f](https://github.com/snyssen/personal-website/commit/57f1d0fc62704b0970ee967e808f40cf232458cb))
+* **deps:** update astrojs packages ([#256](https://github.com/snyssen/personal-website/issues/256)) ([6e44faa](https://github.com/snyssen/personal-website/commit/6e44faa0d7e9aa508471e4ae4bb049e9f46d04a1))
+* **deps:** update dependency @astrojs/tailwind to v5.1.3 ([#263](https://github.com/snyssen/personal-website/issues/263)) ([0cf2029](https://github.com/snyssen/personal-website/commit/0cf2029fc4a687daf4103030a9e6ed6d057beaa4))
+* **deps:** update dependency @astrojs/tailwind to v5.1.4 ([#272](https://github.com/snyssen/personal-website/issues/272)) ([deb1c6e](https://github.com/snyssen/personal-website/commit/deb1c6eca7d338fadc03c86f7a332293ec1a2bcb))
+* **deps:** update dependency tailwindcss to v3.4.16 ([#264](https://github.com/snyssen/personal-website/issues/264)) ([7041a63](https://github.com/snyssen/personal-website/commit/7041a63a486430a3ce707824ccea6898e08b0dfb))
+
 ## [2.8.2](https://github.com/snyssen/personal-website/compare/v2.8.1...v2.8.2) (2024-10-24)
 
 
