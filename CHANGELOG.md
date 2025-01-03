@@ -1,5 +1,13 @@
 # Changelog
 
+## [2.8.4](https://github.com/snyssen/personal-website/compare/v2.8.3...v2.8.4) (2025-01-03)
+
+
+### Bug Fixes
+
+* **deps:** update dependency @astrojs/rss to v4.0.11 ([#275](https://github.com/snyssen/personal-website/issues/275)) ([df9a9dc](https://github.com/snyssen/personal-website/commit/df9a9dc6fd94e148ef7efcb9ced88a4f2ada0cb7))
+* **deps:** update dependency preact to v10.25.4 ([#273](https://github.com/snyssen/personal-website/issues/273)) ([fac5eb4](https://github.com/snyssen/personal-website/commit/fac5eb44a0ea7e135ee7ade34bb44509cb181815))
+
 ## [2.8.3](https://github.com/snyssen/personal-website/compare/v2.8.2...v2.8.3) (2024-12-21)
 
 
