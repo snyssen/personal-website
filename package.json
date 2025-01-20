@@ -21,7 +21,7 @@
     "@astrojs/sitemap": "3.2.1",
     "@astrojs/tailwind": "5.1.4",
     "astro": "4.16.18",
-    "astro-expressive-code": "0.40.0",
+    "astro-expressive-code": "0.40.1",
     "preact": "10.25.4",
     "rehype-autolink-headings": "7.1.0",
     "rehype-external-links": "3.0.0",
