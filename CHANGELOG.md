@@ -1,5 +1,17 @@
 # Changelog
 
+## [2.8.4](https://github.com/snyssen/personal-website/compare/v2.8.3...v2.8.4) (2025-02-02)
+
+
+### Bug Fixes
+
+* **deps:** update all non-major dependencies ([#278](https://github.com/snyssen/personal-website/issues/278)) ([24d6362](https://github.com/snyssen/personal-website/commit/24d63626939fa5fc101f3f89d80294a4451c38a6))
+* **deps:** update dependency @astrojs/rss to v4.0.11 ([#275](https://github.com/snyssen/personal-website/issues/275)) ([df9a9dc](https://github.com/snyssen/personal-website/commit/df9a9dc6fd94e148ef7efcb9ced88a4f2ada0cb7))
+* **deps:** update dependency @astrojs/tailwind to v5.1.5 ([#280](https://github.com/snyssen/personal-website/issues/280)) ([bb6ba26](https://github.com/snyssen/personal-website/commit/bb6ba266f37d966e2b37c79f2650fda03c84ae44))
+* **deps:** update dependency astro-expressive-code to v0.39.0 ([#277](https://github.com/snyssen/personal-website/issues/277)) ([15402d3](https://github.com/snyssen/personal-website/commit/15402d3bfd9c0226f805e62018eaca65c3b9915f))
+* **deps:** update dependency astro-expressive-code to v0.40.1 ([#279](https://github.com/snyssen/personal-website/issues/279)) ([5f105ea](https://github.com/snyssen/personal-website/commit/5f105ea696326ad1de2680714c8ed82c3d3e9f73))
+* **deps:** update dependency preact to v10.25.4 ([#273](https://github.com/snyssen/personal-website/issues/273)) ([fac5eb4](https://github.com/snyssen/personal-website/commit/fac5eb44a0ea7e135ee7ade34bb44509cb181815))
+
 ## [2.8.3](https://github.com/snyssen/personal-website/compare/v2.8.2...v2.8.3) (2024-12-21)
 
 
