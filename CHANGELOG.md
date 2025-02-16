@@ -1,5 +1,17 @@
 # Changelog
 
+## [2.9.0](https://github.com/snyssen/personal-website/compare/v2.8.4...v2.9.0) (2025-02-16)
+
+
+### Features
+
+* update link to my Sharkey profile ([15a54ee](https://github.com/snyssen/personal-website/commit/15a54eeb2f71b82d0f00b176dbf0b423c01f395d))
+
+
+### Bug Fixes
+
+* **deps:** update dependency astro-expressive-code to v0.40.2 ([#286](https://github.com/snyssen/personal-website/issues/286)) ([1e7bc33](https://github.com/snyssen/personal-website/commit/1e7bc3340c5f222afe3dbb3af599878539e6eeb6))
+
 ## [2.8.4](https://github.com/snyssen/personal-website/compare/v2.8.3...v2.8.4) (2025-02-02)
 
 
