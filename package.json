@@ -22,7 +22,7 @@
     "@astrojs/tailwind": "5.1.5",
     "astro": "4.16.18",
     "astro-expressive-code": "0.40.2",
-    "preact": "10.26.2",
+    "preact": "10.26.3",
     "rehype-autolink-headings": "7.1.0",
     "rehype-external-links": "3.0.0",
     "sharp": "0.33.5",
