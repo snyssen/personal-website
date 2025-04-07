@@ -1,5 +1,17 @@
 # Changelog
 
+## [2.9.1](https://github.com/snyssen/personal-website/compare/v2.9.0...v2.9.1) (2025-04-07)
+
+
+### Bug Fixes
+
+* **deps:** update all non-major dependencies ([#288](https://github.com/snyssen/personal-website/issues/288)) ([b722a88](https://github.com/snyssen/personal-website/commit/b722a883ecebf03fd00f182949ae52080e500c70))
+* **deps:** update all non-major dependencies ([#295](https://github.com/snyssen/personal-website/issues/295)) ([18d32a8](https://github.com/snyssen/personal-website/commit/18d32a88e728cc863286442769a06bfdefebaa67))
+* **deps:** update dependency preact to v10.26.3 ([#290](https://github.com/snyssen/personal-website/issues/290)) ([6ea9498](https://github.com/snyssen/personal-website/commit/6ea949885fe9cdd93f904ac3323debf31f76d723))
+* **deps:** update dependency preact to v10.26.4 ([#291](https://github.com/snyssen/personal-website/issues/291)) ([1abe667](https://github.com/snyssen/personal-website/commit/1abe667c847de37a2f5f13495532abc5f445a38b))
+* **deps:** update dependency preact to v10.26.5 ([#298](https://github.com/snyssen/personal-website/issues/298)) ([a47a33d](https://github.com/snyssen/personal-website/commit/a47a33d9e2ef54c09852d626c07e76007c338a6e))
+* **deps:** update dependency sharp to v0.34.0 ([#297](https://github.com/snyssen/personal-website/issues/297)) ([a42eae7](https://github.com/snyssen/personal-website/commit/a42eae74481cf5ff2fb6e7f415eaf0956632d955))
+
 ## [2.9.0](https://github.com/snyssen/personal-website/compare/v2.8.4...v2.9.0) (2025-02-16)
 
 
