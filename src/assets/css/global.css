@@ -1,10 +1,11 @@
-@import "tailwindcss";
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import 'tailwindcss';
 
-@layer components {
-    .gradient-icon-link {
-      @apply bg-gradient-to-br from-cyan-400 via-purple-600 to-violet-400 bg-clip-text text-transparent drop-shadow-sm transition ease-out delay-200 hover:-translate-y-1 hover:scale-105 hover:drop-shadow-xl;
-    }
-  }
+@config '../../../tailwind.config.cjs';
+
+@utility gradient-icon-link {
+  @apply bg-linear-to-br from-cyan-400 via-purple-600 to-violet-400 bg-clip-text text-transparent drop-shadow-xs transition ease-out delay-200 hover:-translate-y-1 hover:scale-105 hover:drop-shadow-xl;
+}
+
+.current-heading {
+    @apply font-bold text-purple-600
+}

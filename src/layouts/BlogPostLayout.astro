@@ -33,7 +33,7 @@ const {
   image={image.src.src ?? SITE_IMAGE}
 >
   <article
-    class="pt-2 mx-auto text-justify max-w-screen-xl flex flex-col items-stretch"
+    class="pt-2 mx-auto text-justify max-w-(--breakpoint-xl) flex flex-col items-stretch"
     data-pagefind-body>
     <div class="flex flex-col items-center">
       {
@@ -125,7 +125,7 @@ const {
     if (!iframe) return;
     iframe.contentWindow.postMessage({ giscus: { setConfig: config} }, 'https://giscus.app');
   };
-  
+
   const setCommentsThemeFromLocalStorage = () => {
     updateCommentsSectionConfig({
       theme: localStorage.getItem("color-theme")
