@@ -1,5 +1,21 @@
 # Changelog
 
+## [2.9.1](https://github.com/snyssen/personal-website/compare/v2.9.0...v2.9.1) (2025-04-13)
+
+
+### Bug Fixes
+
+* **deps:** pin dependencies ([#300](https://github.com/snyssen/personal-website/issues/300)) ([56131d2](https://github.com/snyssen/personal-website/commit/56131d2456d0065038d35467676cf18f0a829362))
+* **deps:** update all non-major dependencies ([#288](https://github.com/snyssen/personal-website/issues/288)) ([b722a88](https://github.com/snyssen/personal-website/commit/b722a883ecebf03fd00f182949ae52080e500c70))
+* **deps:** update all non-major dependencies ([#295](https://github.com/snyssen/personal-website/issues/295)) ([18d32a8](https://github.com/snyssen/personal-website/commit/18d32a88e728cc863286442769a06bfdefebaa67))
+* **deps:** update astro monorepo (major) ([#262](https://github.com/snyssen/personal-website/issues/262)) ([c5cb63a](https://github.com/snyssen/personal-website/commit/c5cb63a6a36c88ff07390bffe12ec18c38b947b2))
+* **deps:** update dependency preact to v10.26.3 ([#290](https://github.com/snyssen/personal-website/issues/290)) ([6ea9498](https://github.com/snyssen/personal-website/commit/6ea949885fe9cdd93f904ac3323debf31f76d723))
+* **deps:** update dependency preact to v10.26.4 ([#291](https://github.com/snyssen/personal-website/issues/291)) ([1abe667](https://github.com/snyssen/personal-website/commit/1abe667c847de37a2f5f13495532abc5f445a38b))
+* **deps:** update dependency preact to v10.26.5 ([#298](https://github.com/snyssen/personal-website/issues/298)) ([a47a33d](https://github.com/snyssen/personal-website/commit/a47a33d9e2ef54c09852d626c07e76007c338a6e))
+* **deps:** update dependency sharp to v0.34.0 ([#297](https://github.com/snyssen/personal-website/issues/297)) ([a42eae7](https://github.com/snyssen/personal-website/commit/a42eae74481cf5ff2fb6e7f415eaf0956632d955))
+* **deps:** update dependency sharp to v0.34.1 ([#299](https://github.com/snyssen/personal-website/issues/299)) ([f50d8f7](https://github.com/snyssen/personal-website/commit/f50d8f79272d0b79692ceb440485bb535c796ecd))
+* **deps:** update dependency tailwindcss to v4 ([#284](https://github.com/snyssen/personal-website/issues/284)) ([6d9d885](https://github.com/snyssen/personal-website/commit/6d9d88582f5fac5e9e026a92a68d4bab3e940b78))
+
 ## [2.9.0](https://github.com/snyssen/personal-website/compare/v2.8.4...v2.9.0) (2025-02-16)
 
 
