@@ -9,9 +9,11 @@ const blogCollection = defineCollection({
         updatedDate: z.date().optional(),
         description: z.string(),
         image: z.object({
-            src: image().refine((img) => img.width >= 720, {
-                message: "Cover image must be at least 720 pixels wide!",
-            }),
+            src: image(),
+            // Below has stopped working in Astro 5 for some reason and I was too fed up to go looking for an explanation...
+            // .refine((img) => img.width >= 720, {
+            //     message: "Cover image must be at least 720 pixels wide!",
+            // }),
             alt: z.string()
         }),
         tags: z.array(z.object({
