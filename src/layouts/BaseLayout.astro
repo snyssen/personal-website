@@ -1,6 +1,7 @@
 ---
 import "../assets/css/fonts.css";
 import "../assets/css/line-awesome.min.css";
+import "../assets/css/global.css";
 import BaseHead from "../components/BaseHead.astro";
 
 export interface Props {
@@ -12,21 +13,10 @@ export interface Props {
 let { title, description, image } = Astro.props;
 ---
 
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <BaseHead title={title} description={description} image={image} />
-    <style is:global>
-      @tailwind base;
-      @tailwind components;
-      @tailwind utilities;
-
-      @layer components {
-        .gradient-icon-link {
-          @apply bg-gradient-to-br from-cyan-400 via-purple-600 to-violet-400 bg-clip-text text-transparent drop-shadow-sm transition ease-out delay-200 hover:-translate-y-1 hover:scale-105 hover:drop-shadow-xl;
-        }
-      }
-    </style>
     <slot name="extra-head" />
   </head>
   <body
