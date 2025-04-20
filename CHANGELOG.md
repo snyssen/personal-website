@@ -1,5 +1,12 @@
 # Changelog
 
+## [2.9.2](https://github.com/snyssen/personal-website/compare/v2.9.1...v2.9.2) (2025-04-20)
+
+
+### Bug Fixes
+
+* **deps:** update all non-major dependencies ([#302](https://github.com/snyssen/personal-website/issues/302)) ([f29a68d](https://github.com/snyssen/personal-website/commit/f29a68d6601a8656be8b71b3c6e3005db96ddee4))
+
 ## [2.9.1](https://github.com/snyssen/personal-website/compare/v2.9.0...v2.9.1) (2025-04-13)
 
 
