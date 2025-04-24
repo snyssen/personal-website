@@ -15,13 +15,13 @@
     "astro": "astro"
   },
   "dependencies": {
-    "@astrojs/mdx": "4.2.4",
-    "@astrojs/preact": "4.0.9",
+    "@astrojs/mdx": "4.2.5",
+    "@astrojs/preact": "4.0.10",
     "@astrojs/rss": "4.0.11",
-    "@astrojs/sitemap": "3.3.0",
+    "@astrojs/sitemap": "3.3.1",
     "@tailwindcss/vite": "4.1.4",
-    "astro": "5.7.4",
-    "astro-expressive-code": "0.41.1",
+    "astro": "5.7.5",
+    "astro-expressive-code": "0.41.2",
     "preact": "10.26.5",
     "rehype-autolink-headings": "7.1.0",
     "rehype-external-links": "3.0.0",
