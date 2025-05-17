@@ -1,5 +1,17 @@
 # Changelog
 
+## [2.9.3](https://github.com/snyssen/personal-website/compare/v2.9.2...v2.9.3) (2025-05-17)
+
+
+### Bug Fixes
+
+* **deps:** update all non-major dependencies ([#304](https://github.com/snyssen/personal-website/issues/304)) ([c97826e](https://github.com/snyssen/personal-website/commit/c97826e879e95251154d6c21e120ade98307d98d))
+* **deps:** update all non-major dependencies ([#306](https://github.com/snyssen/personal-website/issues/306)) ([037287e](https://github.com/snyssen/personal-website/commit/037287eba0b90320adc7b81dbb32d627c92996b0))
+* **deps:** update all non-major dependencies ([#307](https://github.com/snyssen/personal-website/issues/307)) ([53cac27](https://github.com/snyssen/personal-website/commit/53cac2798304db560a2a86553103358264bb5e7d))
+* **deps:** update all non-major dependencies ([#308](https://github.com/snyssen/personal-website/issues/308)) ([8f56557](https://github.com/snyssen/personal-website/commit/8f56557985121a1abe54c9196c25c9c7111da153))
+* **deps:** update all non-major dependencies ([#309](https://github.com/snyssen/personal-website/issues/309)) ([5b013b0](https://github.com/snyssen/personal-website/commit/5b013b0c7f63b3bffc2253d0a4197ec8087b5756))
+* **deps:** update all non-major dependencies to v4.1.7 ([#310](https://github.com/snyssen/personal-website/issues/310)) ([d9d6850](https://github.com/snyssen/personal-website/commit/d9d6850661786a6d7db65076acbaafb3cc4f1957))
+
 ## [2.9.2](https://github.com/snyssen/personal-website/compare/v2.9.1...v2.9.2) (2025-04-20)
 
 
