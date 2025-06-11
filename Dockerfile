@@ -1,5 +1,5 @@
 # stage 1
-FROM mcr.microsoft.com/playwright:v1.52.0 AS builder
+FROM mcr.microsoft.com/playwright:v1.53.0 AS builder
 ARG APP_VERSION="version undefined"
 ARG WEBSITE_URI="https://snyssen.be"
 ENV APP_VERSION=${APP_VERSION}
