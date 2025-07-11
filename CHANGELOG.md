@@ -1,5 +1,12 @@
 # Changelog
 
+## [2.10.1](https://github.com/snyssen/personal-website/compare/v2.10.0...v2.10.1) (2025-07-11)
+
+
+### Bug Fixes
+
+* update build so it works with SSR ([a7db373](https://github.com/snyssen/personal-website/commit/a7db3732479e78d30a10e4358736fb7e84bb9734))
+
 ## [2.10.0](https://github.com/snyssen/personal-website/compare/v2.9.4...v2.10.0) (2025-07-11)
 
 
