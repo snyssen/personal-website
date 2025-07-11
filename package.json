@@ -7,7 +7,7 @@
     "dev": "astro dev",
     "start": "astro dev",
     "build": "astro build",
-    "pagefind": "npx -y pagefind --site dist",
+    "pagefind": "npx -y pagefind --site dist/client",
     "build:ci": "npm run build && npm run pagefind && npm run generate-pdf:ci",
     "preview": "astro preview --host",
     "generate-pdf": "node ./scripts/generate-pdf.js",

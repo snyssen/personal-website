@@ -29,7 +29,7 @@ import { chromium } from "playwright";
 
   console.log("Generating PDF...");
   await page.pdf({
-    path: "dist/resume.pdf",
+    path: "dist/client/resume.pdf",
     margin: {
       top: "24px",
       bottom: "24px",
@@ -38,7 +38,7 @@ import { chromium } from "playwright";
   });
 
   console.log(
-    "Resume PDF generated at dist/resume.pdf. Closing Playwright browser..."
+    "Resume PDF generated at dist/client/resume.pdf. Closing Playwright browser..."
   );
   await browser.close();
   console.log("Done!");
