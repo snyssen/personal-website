@@ -1,5 +1,23 @@
 # Changelog
 
+## [2.10.0](https://github.com/snyssen/personal-website/compare/v2.9.4...v2.10.0) (2025-07-11)
+
+
+### Features
+
+* add WebFinger support ([642ca0f](https://github.com/snyssen/personal-website/commit/642ca0f4a7a62b5f5c8bae9d38bbd2ea9250e38c))
+
+
+### Bug Fixes
+
+* add node adapter to allow having dynamic endpoints ([8c975a6](https://github.com/snyssen/personal-website/commit/8c975a63e3dca1660589a69f1113dee7ce524f60))
+* **deps:** update all non-major dependencies to v4.1.11 ([#326](https://github.com/snyssen/personal-website/issues/326)) ([f8bc34e](https://github.com/snyssen/personal-website/commit/f8bc34eb279ee5e27b4a3822c4825e2633ec0efd))
+* **deps:** update dependency astro to v5.10.0 ([#324](https://github.com/snyssen/personal-website/issues/324)) ([ffdd22a](https://github.com/snyssen/personal-website/commit/ffdd22a43519fd31c802e3f92e068fd4165215ae))
+* **deps:** update dependency astro to v5.10.1 ([#325](https://github.com/snyssen/personal-website/issues/325)) ([e1298aa](https://github.com/snyssen/personal-website/commit/e1298aae2a9e9e92e621584b77d088258da374e1))
+* **deps:** update dependency astro to v5.11.0 ([#328](https://github.com/snyssen/personal-website/issues/328)) ([42950b9](https://github.com/snyssen/personal-website/commit/42950b939a7152b5a9617a9149d27713d41524ec))
+* **deps:** update dependency astro to v5.9.4 ([#321](https://github.com/snyssen/personal-website/issues/321)) ([d603243](https://github.com/snyssen/personal-website/commit/d6032436da3cc739de57be545cb2897949d80331))
+* **deps:** update dependency astro-expressive-code to v0.41.3 ([#329](https://github.com/snyssen/personal-website/issues/329)) ([a52bab7](https://github.com/snyssen/personal-website/commit/a52bab7f9224caa060ea0f3f9ecbf8f122d13915))
+
 ## [2.9.4](https://github.com/snyssen/personal-website/compare/v2.9.3...v2.9.4) (2025-06-14)
 
 
