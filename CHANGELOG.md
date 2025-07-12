@@ -1,5 +1,13 @@
 # Changelog
 
+## [2.10.2](https://github.com/snyssen/personal-website/compare/v2.10.1...v2.10.2) (2025-07-12)
+
+
+### Bug Fixes
+
+* **deps:** pin dependency @astrojs/node to 9.3.0 ([#331](https://github.com/snyssen/personal-website/issues/331)) ([917a8b7](https://github.com/snyssen/personal-website/commit/917a8b7cf59b86095acf02901d1b16d7d6c4a9d8))
+* **deps:** update dependency sharp to v0.34.3 ([#332](https://github.com/snyssen/personal-website/issues/332)) ([d28907d](https://github.com/snyssen/personal-website/commit/d28907d93760f24c2c2a9a3f06cc1da4368afa50))
+
 ## [2.10.1](https://github.com/snyssen/personal-website/compare/v2.10.0...v2.10.1) (2025-07-11)
 
 
