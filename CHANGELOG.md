@@ -1,5 +1,13 @@
 # Changelog
 
+## [2.10.3](https://github.com/snyssen/personal-website/compare/v2.10.2...v2.10.3) (2025-07-18)
+
+
+### Bug Fixes
+
+* **deps:** update all non-major dependencies ([#337](https://github.com/snyssen/personal-website/issues/337)) ([8c8df93](https://github.com/snyssen/personal-website/commit/8c8df9371fabf16fdf5c03ed37032947fa9d4806))
+* **deps:** update dependency astro to v5.11.1 ([#335](https://github.com/snyssen/personal-website/issues/335)) ([10e285f](https://github.com/snyssen/personal-website/commit/10e285fc0117353737c2256344a7552be11f4c63))
+
 ## [2.10.2](https://github.com/snyssen/personal-website/compare/v2.10.1...v2.10.2) (2025-07-12)
 
 
