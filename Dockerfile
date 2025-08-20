@@ -1,7 +1,7 @@
 FROM node:24.6.0 AS runtime
 WORKDIR /app
 
-FROM mcr.microsoft.com/playwright:v1.54.2 AS builder
+FROM mcr.microsoft.com/playwright:v1.55.0 AS builder
 ARG APP_VERSION="version undefined"
 ARG WEBSITE_URI="https://snyssen.be"
 ENV APP_VERSION=${APP_VERSION}
