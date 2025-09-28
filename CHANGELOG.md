@@ -1,5 +1,23 @@
 # Changelog
 
+## [2.10.4](https://github.com/snyssen/personal-website/compare/v2.10.3...v2.10.4) (2025-09-28)
+
+
+### Bug Fixes
+
+* **deps:** update all non-major dependencies ([#341](https://github.com/snyssen/personal-website/issues/341)) ([a27767d](https://github.com/snyssen/personal-website/commit/a27767d0ccc7fbb3f97d867d18f7b9d5602dde3f))
+* **deps:** update all non-major dependencies ([#345](https://github.com/snyssen/personal-website/issues/345)) ([c6b1a9b](https://github.com/snyssen/personal-website/commit/c6b1a9b5e1718c606254cd51a33e2971c73e0838))
+* **deps:** update all non-major dependencies ([#348](https://github.com/snyssen/personal-website/issues/348)) ([94c5413](https://github.com/snyssen/personal-website/commit/94c54134338b0d889bceecc26df7b3ec69e7fbed))
+* **deps:** update all non-major dependencies ([#349](https://github.com/snyssen/personal-website/issues/349)) ([15050b8](https://github.com/snyssen/personal-website/commit/15050b8fb56c87a66d44a743fb2804a9ac72fdf0))
+* **deps:** update all non-major dependencies ([#351](https://github.com/snyssen/personal-website/issues/351)) ([9512770](https://github.com/snyssen/personal-website/commit/951277019fe9783a4b49495810d05a943daf0375))
+* **deps:** update all non-major dependencies ([#352](https://github.com/snyssen/personal-website/issues/352)) ([5b2be22](https://github.com/snyssen/personal-website/commit/5b2be22dc1e01f2e2643e206f093648417121d36))
+* **deps:** update all non-major dependencies ([#353](https://github.com/snyssen/personal-website/issues/353)) ([dd9d95c](https://github.com/snyssen/personal-website/commit/dd9d95cfe22597a89c76c96af4a7576eca5ad565))
+* **deps:** update all non-major dependencies ([#354](https://github.com/snyssen/personal-website/issues/354)) ([1619104](https://github.com/snyssen/personal-website/commit/1619104c1ecc9fa31421ba330068f9e6c42a04e4))
+* **deps:** update all non-major dependencies ([#355](https://github.com/snyssen/personal-website/issues/355)) ([7c74ac6](https://github.com/snyssen/personal-website/commit/7c74ac61a01f109abd52d4afd9c30023732c3307))
+* **deps:** update all non-major dependencies ([#356](https://github.com/snyssen/personal-website/issues/356)) ([7b7eb52](https://github.com/snyssen/personal-website/commit/7b7eb520d8423efbb22301308fb1fc095c51bf6e))
+* **deps:** update all non-major dependencies ([#358](https://github.com/snyssen/personal-website/issues/358)) ([5d2e4af](https://github.com/snyssen/personal-website/commit/5d2e4aff48738f21416f954741c7a57b680c2cde))
+* **deps:** update dependency preact to v10.27.1 ([#346](https://github.com/snyssen/personal-website/issues/346)) ([9b090b2](https://github.com/snyssen/personal-website/commit/9b090b25a78314fea98ced39503362c207a2389f))
+
 ## [2.10.3](https://github.com/snyssen/personal-website/compare/v2.10.2...v2.10.3) (2025-08-04)
 
 
