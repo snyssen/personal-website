@@ -20,18 +20,18 @@
     "@astrojs/preact": "4.1.1",
     "@astrojs/rss": "4.0.12",
     "@astrojs/sitemap": "3.6.0",
-    "@tailwindcss/vite": "4.1.13",
+    "@tailwindcss/vite": "4.1.14",
     "astro": "5.14.1",
     "astro-expressive-code": "0.41.3",
     "preact": "10.27.2",
     "rehype-autolink-headings": "7.1.0",
     "rehype-external-links": "3.0.0",
     "sharp": "0.34.4",
-    "tailwindcss": "4.1.13"
+    "tailwindcss": "4.1.14"
   },
   "devDependencies": {
     "@tailwindcss/typography": "0.5.19",
-    "@types/react": "19.1.15",
+    "@types/react": "19.2.0",
     "playwright": "1.55.1",
     "remark-capitalize-headings": "3.0.0",
     "start-server-and-test": "2.1.2"
