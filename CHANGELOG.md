@@ -1,5 +1,17 @@
 # Changelog
 
+## [2.10.5](https://github.com/snyssen/personal-website/compare/v2.10.4...v2.10.5) (2025-10-25)
+
+
+### Bug Fixes
+
+* **deps:** update all non-major dependencies ([#360](https://github.com/snyssen/personal-website/issues/360)) ([dbae42e](https://github.com/snyssen/personal-website/commit/dbae42e25b87ba9cdcca59b61a85e3b899097500))
+* **deps:** update all non-major dependencies ([#364](https://github.com/snyssen/personal-website/issues/364)) ([4c83b61](https://github.com/snyssen/personal-website/commit/4c83b61cdc71d3c312c9340a356108047fd07f7b))
+* **deps:** update all non-major dependencies ([#365](https://github.com/snyssen/personal-website/issues/365)) ([955e51e](https://github.com/snyssen/personal-website/commit/955e51ef64f6b2a1b968b02eb947c82b00cd4084))
+* **deps:** update all non-major dependencies ([#368](https://github.com/snyssen/personal-website/issues/368)) ([36d11c2](https://github.com/snyssen/personal-website/commit/36d11c20d10be1d430ec0a611fb9223a66f7c86f))
+* **deps:** update all non-major dependencies ([#369](https://github.com/snyssen/personal-website/issues/369)) ([0d7ed0f](https://github.com/snyssen/personal-website/commit/0d7ed0fd0b63193d11f4728b652e45d9d9d243f9))
+* **deps:** update dependency astro to v5.14.6 ([#367](https://github.com/snyssen/personal-website/issues/367)) ([540c1f8](https://github.com/snyssen/personal-website/commit/540c1f85b49361bcd30324f15972705c5ed8c1a2))
+
 ## [2.10.4](https://github.com/snyssen/personal-website/compare/v2.10.3...v2.10.4) (2025-09-28)
 
 
