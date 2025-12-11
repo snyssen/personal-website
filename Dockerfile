@@ -1,4 +1,4 @@
-FROM node:24.11.1 AS runtime
+FROM node:24.12.0 AS runtime
 WORKDIR /app
 
 FROM mcr.microsoft.com/playwright:v1.57.0 AS builder
