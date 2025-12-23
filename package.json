@@ -23,7 +23,7 @@
     "@tailwindcss/vite": "4.1.18",
     "astro": "5.16.6",
     "astro-expressive-code": "0.41.5",
-    "preact": "10.28.0",
+    "preact": "10.28.1",
     "rehype-autolink-headings": "7.1.0",
     "rehype-external-links": "3.0.0",
     "sharp": "0.34.5",
