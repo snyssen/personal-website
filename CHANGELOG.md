@@ -1,5 +1,18 @@
 # Changelog
 
+## [2.10.6](https://github.com/snyssen/personal-website/compare/v2.10.5...v2.10.6) (2026-01-18)
+
+
+### Bug Fixes
+
+* **deps:** update all non-major dependencies ([#385](https://github.com/snyssen/personal-website/issues/385)) ([cf0fbd4](https://github.com/snyssen/personal-website/commit/cf0fbd44b8575eeae8120e01846817635104a299))
+* **deps:** update all non-major dependencies ([#387](https://github.com/snyssen/personal-website/issues/387)) ([f4f77b8](https://github.com/snyssen/personal-website/commit/f4f77b8d09008273fec54873e4f3c26905cb31a0))
+* **deps:** update all non-major dependencies ([#389](https://github.com/snyssen/personal-website/issues/389)) ([1b8f770](https://github.com/snyssen/personal-website/commit/1b8f7709299983e1ddcd5311a8cf2ffe42631c7f))
+* **deps:** update all non-major dependencies ([#390](https://github.com/snyssen/personal-website/issues/390)) ([7c7d265](https://github.com/snyssen/personal-website/commit/7c7d26537a3ce46fbeaf5039500727bdd27040e8))
+* **deps:** update all non-major dependencies ([#392](https://github.com/snyssen/personal-website/issues/392)) ([282ab93](https://github.com/snyssen/personal-website/commit/282ab93ccef16b653226c951eedb5d936daa9869))
+* **deps:** update dependency astro to v5.16.9 ([#391](https://github.com/snyssen/personal-website/issues/391)) ([595932d](https://github.com/snyssen/personal-website/commit/595932d524535db54b0080eab17eaf93427ba752))
+* **deps:** update dependency preact to v10.28.1 ([#388](https://github.com/snyssen/personal-website/issues/388)) ([e3d8531](https://github.com/snyssen/personal-website/commit/e3d85316530d23d702530673b51243b24a604733))
+
 ## [2.10.5](https://github.com/snyssen/personal-website/compare/v2.10.4...v2.10.5) (2025-12-06)
 
 
