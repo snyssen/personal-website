@@ -1,5 +1,12 @@
 # Changelog
 
+## [2.10.8](https://github.com/snyssen/personal-website/compare/v2.10.7...v2.10.8) (2026-01-30)
+
+
+### Bug Fixes
+
+* **deps:** update all non-major dependencies ([#396](https://github.com/snyssen/personal-website/issues/396)) ([ed2adf3](https://github.com/snyssen/personal-website/commit/ed2adf320336fcd496fa6454a91d08eb12e2b14b))
+
 ## [2.10.7](https://github.com/snyssen/personal-website/compare/v2.10.6...v2.10.7) (2026-01-25)
 
 
