@@ -56,9 +56,20 @@ export const components = { a: MarkdownLink };
 
 <ResumeSection title="Work Experience">
 
-### Solution Integrator | [Gambit Finance](https://gambit-finance.com/) | July 2023 - Now
+### Senior Software Engineer | [Neuromedia](https://neuromedia.io/) | January 2026 - Now
 
-Working on Kubernetes toolings and projects deployments in Azure and IBM Cloud
+Working on media monitoring and analytics solutions
+
+### Solution Integrator | [Gambit Finance](https://gambit-finance.com/) | July 2023 - January 2026
+
+Managed Kubernetes and Openshift clusters, Azure and IBM clouds operations, and on clients' premises deployments
+
+#### Achievements
+
+- Managed clusters and applications monitoring using **FluentBit**, **Elasticsearch** and **Kibana** (EFK stack), as well as **Prometheus** (through Thanos) and **Grafana**. Also used **Dynatrace** for a bit
+- Deployed applications using **Helm** on both **Kubernetes** and **Openshift** clusters
+- Worked with clients to deploy customized solutions onto their own infrastructure, respecting their constraints while optimizing RoI for Gambit
+- Helped with architecturing and deploying Gambit's SaaS offering on IBM Cloud
 
 ### Full-Stack Developer | [Neuromedia](https://neuromedia.io/) | July 2019 - July 2023
 
@@ -78,24 +89,35 @@ Worked with a small team on a wide range of projects related to online media aud
 
 Upgraded Traxflow, a platform bridging the gap between music producers and broadcasters
 
-#### Achievements
-
-- Fixed performance issues with the main background job of the application by implementing **queries pagination** and **multithreading**, cutting its average execution time significantly and preventing the server from crashing during large loads
-- Learned and used the **Ionic** framework to produce a PoC of a Traxflow mobile app in less than a week
-
 </ResumeSection>
 
 <ResumeSection title="Personal projects">
 
-### [Self-Hosted Infrastructure](https://github.com/snyssen/infra-snyssen.be)
+### [Mother of All Infra](https://github.com/snyssen/mother-of-all-infra)
 
-Automation scripts centered around the use of **Ansible** and **Docker** for deploying and managing various software stacks on my home servers,
-as well as handling general maintenance and disaster recovery situations.
+My personal IaC codebase, it uses **Nix**, **Terraform**, **Ansible** and **Docker** to manage all of my machines (both servers and personal computers) and their config.
+In particular, it allows me to self-host a complete personal cloud solution with:
+
+- Various websites hosting, including [snyssen.be](https://snyssen.be)
+- File, documents and calendar storage and handling
+- Full multimedia management solution
+- Smart home integrations
+- Federated social networks and messaging platforms
+- Automated backups of all devices and the servers themselves
+- Identity management with SSO
+- Secure networking with customized DNS management, mesh VPN integration, and dynamic firewalls
+- Monitoring of the entire infrastructure
+- etc.
+
 This infrastructure provides services I rely on daily, and is a good way to safely experiment with server technologies before using them in a professional setting
 
-### [Webb Launcher](https://git.snyssen.be/snyssen/webb-launcher)
+### [Webb Launcher](https://github.com/snyssen/webb-launcher)
 
 Self-hosted start page for the web, built with **Astro**
+
+### [Nix Dev Environment](https://github.com/snyssen/nix-dev-env)
+
+My own take on the perfect development environment templates for new and existing projects, based on **Nix*
 
 </ResumeSection>
 
