@@ -1,30 +1,19 @@
 {
-  inputs = {
-    utils.url = "github:numtide/flake-utils";
-    nixpkgs.url = "github:nixos/nixpkgs/nixos-unstable";
-  };
-  outputs = { self, nixpkgs, utils }:
-    utils.lib.eachDefaultSystem (system:
-      let pkgs = nixpkgs.legacyPackages.${system};
-      in {
-        # TODO: Update nix dev env structure
-        # TODO: Instal playwright the nix way -> https://primamateria.github.io/blog/playwright-nixos-webdev/
-        # TODO: Build package using Nix?
-        devShell = pkgs.mkShell {
-          buildInputs = with pkgs; [
-            nixfmt
-            nixd
-            just
-            pre-commit
-            nodejs_22
-            playwright-driver.browsers
-          ];
+  description =
+    "Dev environment powered by Nix and Direnv, with Just and Pre-Commits preloaded along your own dependencies.";
 
-          shellHook = ''
-            export PLAYWRIGHT_BROWSERS_PATH=${pkgs.playwright-driver.browsers}
-            export PLAYWRIGHT_SKIP_VALIDATE_HOST_REQUIREMENTS=true
-            export PLAYWRIGHT_HOST_PLATFORM_OVERRIDE="ubuntu-24.04"
-          '';
-        };
-      });
+  # Add all your dependencies here
+  inputs = {
+    nixpkgs.url = "github:NixOS/nixpkgs?ref=nixos-unstable";
+    blueprint.url = "github:numtide/blueprint";
+    blueprint.inputs.nixpkgs.follows = "nixpkgs";
+  };
+
+  # Load the blueprint
+  outputs = inputs:
+    inputs.blueprint {
+      inherit inputs;
+      prefix = "nix/";
+      nixpkgs.config.allowUnfree = true;
+    };
 }

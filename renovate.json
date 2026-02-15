@@ -16,5 +16,11 @@
         "/mcr.microsoft.com/playwright/"
       ]
     }
-  ]
+  ],
+  "nix": {
+    "enabled": true
+  },
+  "lockFileMaintenance": {
+    "enabled": true
+  }
 }
