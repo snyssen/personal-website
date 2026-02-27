@@ -1,5 +1,22 @@
 # Changelog
 
+## [2.11.0](https://github.com/snyssen/personal-website/compare/v2.10.7...v2.11.0) (2026-02-27)
+
+
+### Features
+
+* **resume:** [WIP] update following new employment ([70815fa](https://github.com/snyssen/personal-website/commit/70815fa8283a8630be0053145f38fdf79252db29))
+
+
+### Bug Fixes
+
+* **deps:** update all non-major dependencies ([#396](https://github.com/snyssen/personal-website/issues/396)) ([ed2adf3](https://github.com/snyssen/personal-website/commit/ed2adf320336fcd496fa6454a91d08eb12e2b14b))
+* **deps:** update all non-major dependencies ([#402](https://github.com/snyssen/personal-website/issues/402)) ([423227f](https://github.com/snyssen/personal-website/commit/423227fe31f039c9e29b24374e7b7081a445d16a))
+* **deps:** update all non-major dependencies ([#404](https://github.com/snyssen/personal-website/issues/404)) ([1d367e3](https://github.com/snyssen/personal-website/commit/1d367e31e73ea95b612de93ef0f81895ef009773))
+* **deps:** update all non-major dependencies ([#405](https://github.com/snyssen/personal-website/issues/405)) ([fb7d743](https://github.com/snyssen/personal-website/commit/fb7d7430483c28af5ad1344bb971c7b9684783f6))
+* **deps:** update dependency preact to v10.28.3 ([#399](https://github.com/snyssen/personal-website/issues/399)) ([44b9717](https://github.com/snyssen/personal-website/commit/44b9717c5b185163fb1ed6cb877c7549b79d15fc))
+* **nix:** add playwright browsers in devshell ([dcd5518](https://github.com/snyssen/personal-website/commit/dcd55188dbcbcbe70b7b01b68997c0908ef96bc2))
+
 ## [2.10.7](https://github.com/snyssen/personal-website/compare/v2.10.6...v2.10.7) (2026-01-25)
 
 
