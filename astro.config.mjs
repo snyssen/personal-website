@@ -24,7 +24,7 @@ export default defineConfig({
   ],
 
   image: {
-    domains: ["httpgoats.com"],
+    domains: [],
   },
 
   markdown: {

@@ -21,3 +21,6 @@ public/resume.pdf
 
 .astro/
 .direnv/
+
+# nix build output
+result

@@ -62,15 +62,27 @@ jobs:
         with:
           images: ${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}
           tags: ${{ steps.tags.outputs.tags }}
-      # necessary for builds caching
-      - name: Set up Docker Buildx
-        uses: docker/setup-buildx-action@v4
-      - name: Build and push
-        uses: docker/build-push-action@v7
-        with:
-          context: .
-          push: ${{ github.event_name != 'pull_request' }}
-          tags: ${{ steps.meta.outputs.tags }}
-          labels: ${{ steps.meta.outputs.labels }}
-          cache-from: type=gha
-          cache-to: type=gha,mode=max
+      - name: Install Nix
+        uses: DeterminateSystems/nix-installer-action@v16
+      - name: Set up Nix cache
+        uses: DeterminateSystems/magic-nix-cache-action@v9
+      - name: Build container image
+        run: nix build .#container
+      - name: Load image into Docker
+        id: load
+        run: |
+          loaded=$(docker load < result)
+          # Extract "name:tag" reported by docker load, e.g. "personal-website:latest"
+          image_ref=$(echo "$loaded" | grep -oP '(?<=Loaded image: ).*')
+          echo "image_ref=$image_ref" >> "$GITHUB_OUTPUT"
+      - name: Tag and push image
+        if: github.event_name != 'pull_request'
+        env:
+          IMAGE_REF: ${{ steps.load.outputs.image_ref }}
+          TAGS: ${{ steps.meta.outputs.tags }}
+        run: |
+          while IFS= read -r tag; do
+            [ -n "$tag" ] || continue
+            docker tag "$IMAGE_REF" "$tag"
+            docker push "$tag"
+          done <<< "$TAGS"
