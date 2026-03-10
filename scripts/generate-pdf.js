@@ -3,7 +3,15 @@ import { chromium } from "playwright";
 (async () => {
   console.log("Starting resume PDF generation.");
 
-  const browser = await chromium.launch();
+  const executablePath =
+    process.env.PLAYWRIGHT_CHROMIUM_EXECUTABLE_PATH ||
+    process.env.PLAYWRIGHT_LAUNCH_OPTIONS_EXECUTABLE_PATH;
+  const args = ["--no-sandbox", "--disable-setuid-sandbox"];
+
+  const browser = await chromium.launch({
+    executablePath: executablePath,
+    args: args,
+  });
   const page = await browser.newPage();
 
   // Remove deferred loading of plausible script because it is blocked in CI

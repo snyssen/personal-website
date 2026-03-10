@@ -1,7 +1,8 @@
 { pkgs, ... }:
 let
   packageJson = builtins.fromJSON (builtins.readFile ../../../package.json);
-  browsers = (builtins.fromJSON (builtins.readFile "${pkgs.playwright-driver}/browsers.json")).browsers;
+  browsers =
+    (builtins.fromJSON (builtins.readFile "${pkgs.playwright-driver}/browsers.json")).browsers;
   chromium-rev = (builtins.head (builtins.filter (b: b.name == "chromium") browsers)).revision;
 in
 pkgs.buildNpmPackage {
@@ -27,12 +28,28 @@ pkgs.buildNpmPackage {
   nativeBuildInputs = with pkgs; [
     pagefind
     playwright-driver.browsers
+    procps
+    libX11
+    libXcomposite
+    libXdamage
+    libXext
+    libXfixes
+    libXrandr
+    libxcb
+    libuuid
+    libxkbcommon
+    dbus
+    mesa
+    cups
+    nspr
+    nss
+    libdrm
   ];
 
   # Tell the playwright npm package not to download browsers; use the
   # nixpkgs-provided Chromium binary instead.
   PLAYWRIGHT_SKIP_BROWSER_DOWNLOAD = "1";
-  PLAYWRIGHT_LAUNCH_OPTIONS_EXECUTABLE_PATH = "${pkgs.playwright-driver.browsers}/chromium-${chromium-rev}/chrome-linux64/chrome";
+  PLAYWRIGHT_CHROMIUM_EXECUTABLE_PATH = "${pkgs.playwright-driver.browsers}/chromium-${chromium-rev}/chrome-linux64/chrome";
 
   # Bake the version (kept in sync by release-please) and site URL into
   # the build so Astro can embed them in the generated pages.
@@ -41,6 +58,25 @@ pkgs.buildNpmPackage {
 
   buildPhase = ''
     runHook preBuild
+    export LD_LIBRARY_PATH="${
+      pkgs.lib.makeLibraryPath [
+        pkgs.libX11
+        pkgs.libXcomposite
+        pkgs.libXdamage
+        pkgs.libXext
+        pkgs.libXfixes
+        pkgs.libXrandr
+        pkgs.libxcb
+        pkgs.libuuid
+        pkgs.libxkbcommon
+        pkgs.dbus
+        pkgs.mesa
+        pkgs.cups
+        pkgs.nspr
+        pkgs.nss
+        pkgs.libdrm
+      ]
+    }:$LD_LIBRARY_PATH"
     npm run build
     pagefind --site dist/client
     npm run generate-pdf:ci
