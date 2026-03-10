@@ -1,5 +1,12 @@
 # Changelog
 
+## [2.12.0](https://github.com/snyssen/personal-website/compare/v2.11.0...v2.12.0) (2026-03-10)
+
+
+### Features
+
+* replace Dockerfile with Nix-based container image build ([#410](https://github.com/snyssen/personal-website/issues/410)) ([b949f72](https://github.com/snyssen/personal-website/commit/b949f72a2b4c09fbc3d35920ccca415b9e36a809))
+
 ## [2.11.0](https://github.com/snyssen/personal-website/compare/v2.10.7...v2.11.0) (2026-03-05)
 
 
