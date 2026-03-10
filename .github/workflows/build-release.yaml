@@ -65,7 +65,7 @@ jobs:
       - name: Install Nix
         uses: DeterminateSystems/nix-installer-action@v16
       - name: Set up Nix cache
-        uses: DeterminateSystems/magic-nix-cache-action@v9
+        uses: DeterminateSystems/magic-nix-cache-action@v13
       - name: Build container image
         run: nix build .#container
       - name: Load image into Docker
