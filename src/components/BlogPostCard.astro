@@ -1,16 +1,19 @@
 ---
-import type { CollectionEntry } from 'astro:content';
+import type { CollectionEntry } from "astro:content";
 import { SITE_IMAGE } from "../config";
 import { Image } from "astro:assets";
 
 export interface Props {
-  post: CollectionEntry<'blog'>;
+  post: CollectionEntry<"blog">;
 }
 
 const { post } = Astro.props;
 ---
 
-<a href={"/" + post.collection + "/" + post.slug} aria-label="Read blog post">
+<a
+  href={"/" + post.collection + "/" + post.id.replace(/\.(md|mdx)$/, "")}
+  aria-label="Read blog post"
+>
   <div
     class="h-full w-full flex flex-col shadow-xs rounded-xl border dark:border-slate-600 group transition ease-out delay-200 hover:-translate-y-1 hover:scale-105 hover:shadow-xl"
   >
@@ -31,7 +34,8 @@ const { post } = Astro.props;
           </h3>
           <time
             class="text-sm text-slate-400"
-            datetime={post.data.pubDate.toISOString()}>{post.data.pubDate.toLocaleDateString()}</time
+            datetime={post.data.pubDate.toISOString()}
+            >{post.data.pubDate.toLocaleDateString()}</time
           >
           {
             post.data.tags && post.data.tags.length > 0 && (

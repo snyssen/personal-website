@@ -2,10 +2,10 @@ name: Build & Release
 on:
   push:
     branches:
-      - "*"
+      - "main"
   pull_request:
     branches:
-      - main
+      - "*"
 permissions:
   contents: write
   pull-requests: write
@@ -76,7 +76,6 @@ jobs:
           image_ref=$(echo "$loaded" | grep -oP '(?<=Loaded image: ).*')
           echo "image_ref=$image_ref" >> "$GITHUB_OUTPUT"
       - name: Tag and push image
-        if: github.event_name != 'pull_request'
         env:
           IMAGE_REF: ${{ steps.load.outputs.image_ref }}
           TAGS: ${{ steps.meta.outputs.tags }}

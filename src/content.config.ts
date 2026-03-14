@@ -1,8 +1,9 @@
 // 1. Import utilities from `astro:content`
 import { defineCollection, z } from 'astro:content';
+import { glob } from 'astro/loaders';
 // 2. Define your collection(s)
 const blogCollection = defineCollection({
-    type: 'content',
+    loader: glob({ pattern: '**/*.{md,mdx}', base: './src/content/blog' }),
     schema: ({ image }) => z.object({
         title: z.string(),
         pubDate: z.date(),
@@ -10,10 +11,6 @@ const blogCollection = defineCollection({
         description: z.string(),
         image: z.object({
             src: image(),
-            // Below has stopped working in Astro 5 for some reason and I was too fed up to go looking for an explanation...
-            // .refine((img) => img.width >= 720, {
-            //     message: "Cover image must be at least 720 pixels wide!",
-            // }),
             alt: z.string()
         }),
         tags: z.array(z.object({
