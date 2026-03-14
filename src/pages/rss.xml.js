@@ -15,6 +15,6 @@ export const GET = async (context) =>
       description: post.data.description,
       // Compute RSS link from post `slug`
       // This example assumes all posts are rendered as `/blog/[slug]` routes
-      link: `/${post.collection}/${post.slug}/`,
+      link: `/${post.collection}/${post.id}/`,
     })),
   });
