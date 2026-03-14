@@ -1,5 +1,14 @@
 # Changelog
 
+## [2.12.1](https://github.com/snyssen/personal-website/compare/v2.12.0...v2.12.1) (2026-03-14)
+
+
+### Bug Fixes
+
+* **deps:** update all non-major dependencies ([#415](https://github.com/snyssen/personal-website/issues/415)) ([c28fd5b](https://github.com/snyssen/personal-website/commit/c28fd5b2f31f297d6dbcfd3620d2776b0bf99e87))
+* **deps:** update astro monorepo (major) ([#411](https://github.com/snyssen/personal-website/issues/411)) ([fad7712](https://github.com/snyssen/personal-website/commit/fad771239fb9179bddabc45d74c2843b44abd6a5))
+* security review — patch npm CVEs, fix WebFinger bugs, add security headers ([#418](https://github.com/snyssen/personal-website/issues/418)) ([20ecf93](https://github.com/snyssen/personal-website/commit/20ecf93288653bc851ee7b028a19cffb5c80d29a))
+
 ## [2.12.0](https://github.com/snyssen/personal-website/compare/v2.11.0...v2.12.0) (2026-03-10)
 
 
