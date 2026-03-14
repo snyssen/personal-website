@@ -6,6 +6,10 @@ import { chromium } from "playwright";
   const executablePath =
     process.env.PLAYWRIGHT_CHROMIUM_EXECUTABLE_PATH ||
     process.env.PLAYWRIGHT_LAUNCH_OPTIONS_EXECUTABLE_PATH;
+  // --no-sandbox and --disable-setuid-sandbox are required in CI environments
+  // that lack user namespaces (e.g., Docker containers without privileged mode).
+  // The page rendered is the local, fully-trusted resume page, so the reduced
+  // sandboxing does not introduce meaningful risk here.
   const args = ["--no-sandbox", "--disable-setuid-sandbox"];
 
   const browser = await chromium.launch({

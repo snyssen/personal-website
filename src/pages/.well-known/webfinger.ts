@@ -20,9 +20,9 @@ export async function GET({ request, redirect }) {
     if (!resource) return new Response("Bad request", { status: 400 });
 
     // Retrieve "username" and domain part of email
-    const matches = resource.match(/acct:([\w\.]+)@([\w\.]+)/);
+    const matches = resource.match(/acct:([\w.+-]+)@([\w.-]+)/);
     // Should have 3 matches: global match + username and domain
-    if (!matches || matches.length !== 3) return new Response("Bad request", { status: 400 });;
+    if (!matches || matches.length !== 3) return new Response("Bad request", { status: 400 });
     const username = matches[1];
     const domain = matches[2];
 
@@ -31,12 +31,25 @@ export async function GET({ request, redirect }) {
     // search for resource on search domains
     const searchResults: WebFingerObject[] = [];
     for (const searchDomain of searchDomains) {
-        const searchParams = new URLSearchParams({ resource: `${username}@${searchDomain}` })
-        const searchResponse = await fetch(`https://${searchDomain}/.well-known/webfinger?${searchParams}`)
-        if (!searchResponse.ok) continue;
+        const searchParams = new URLSearchParams({ resource: `acct:${username}@${searchDomain}` })
+        const controller = new AbortController();
+        const timeoutId = setTimeout(() => controller.abort(), 5000);
+        try {
+            const searchResponse = await fetch(`https://${searchDomain}/.well-known/webfinger?${searchParams}`, { signal: controller.signal })
+            if (!searchResponse.ok) continue;
 
-        const searchJson = await searchResponse.json();
-        if (searchJson) searchResults.push(searchJson);
+            const searchJson = await searchResponse.json();
+            if (searchJson) searchResults.push(searchJson);
+        } catch (err) {
+            if (err instanceof Error && err.name === "AbortError") {
+                console.warn(`[webfinger] Upstream fetch to ${searchDomain} timed out`);
+            } else {
+                console.warn(`[webfinger] Upstream fetch to ${searchDomain} failed:`, err instanceof Error ? err.message : "unknown error");
+            }
+            continue;
+        } finally {
+            clearTimeout(timeoutId);
+        }
     }
 
     // Get auth issuers for domain
