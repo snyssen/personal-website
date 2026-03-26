@@ -34,6 +34,6 @@
     "@types/react": "19.2.14",
     "playwright": "1.58.2",
     "remark-capitalize-headings": "3.0.0",
-    "start-server-and-test": "2.1.5"
+    "start-server-and-test": "3.0.0"
   }
 }
