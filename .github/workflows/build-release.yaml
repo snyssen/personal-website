@@ -63,7 +63,7 @@ jobs:
           images: ${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}
           tags: ${{ steps.tags.outputs.tags }}
       - name: Install Nix
-        uses: DeterminateSystems/nix-installer-action@v21
+        uses: DeterminateSystems/nix-installer-action@v22
       - name: Set up Nix cache
         uses: DeterminateSystems/magic-nix-cache-action@v13
       - name: Build container image
