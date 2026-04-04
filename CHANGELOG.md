@@ -1,5 +1,15 @@
 # Changelog
 
+## [2.12.3](https://github.com/snyssen/personal-website/compare/v2.12.2...v2.12.3) (2026-04-04)
+
+
+### Bug Fixes
+
+* **deps:** update all non-major dependencies ([#422](https://github.com/snyssen/personal-website/issues/422)) ([c2f84a2](https://github.com/snyssen/personal-website/commit/c2f84a2ca937f19f700713edf4b71782e827a33d))
+* **deps:** update all non-major dependencies ([#426](https://github.com/snyssen/personal-website/issues/426)) ([a1545fc](https://github.com/snyssen/personal-website/commit/a1545fcdfe6168b2c8682976234901daae4bf345))
+* **deps:** update all non-major dependencies ([#429](https://github.com/snyssen/personal-website/issues/429)) ([6ae13de](https://github.com/snyssen/personal-website/commit/6ae13de1f5789504d5d4b8d13d9f6b7764b865f4))
+* **deps:** update dependency preact to v10.29.1 ([#431](https://github.com/snyssen/personal-website/issues/431)) ([224c199](https://github.com/snyssen/personal-website/commit/224c199be24c3023c866f2f791e1cd89cb60f783))
+
 ## [2.12.2](https://github.com/snyssen/personal-website/compare/v2.12.1...v2.12.2) (2026-03-18)
 
 
