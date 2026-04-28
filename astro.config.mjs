@@ -8,7 +8,6 @@ import rehypeExternalLinks from "rehype-external-links";
 import remarkCapitalizeHeadings from "remark-capitalize-headings";
 import rehypeAutolinkHeadings from "rehype-autolink-headings";
 
-import tsconfigPaths from "vite-tsconfig-paths";
 import tailwindcss from "@tailwindcss/vite";
 
 import node from "@astrojs/node";
@@ -57,14 +56,7 @@ export default defineConfig({
   },
 
   vite: {
-    plugins: [
-      tsconfigPaths(),
-      tailwindcss({
-        resolveOptions: {
-          tsconfigPaths: true,
-        },
-      }),
-    ],
+    plugins: [tailwindcss()],
   },
 
   adapter: node({
