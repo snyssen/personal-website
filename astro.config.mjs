@@ -56,13 +56,10 @@ export default defineConfig({
   },
 
   vite: {
-    plugins: [
-      tailwindcss({
-        resolveOptions: {
-          tsconfigPaths: true,
-        },
-      }),
-    ],
+    plugins: [tailwindcss()],
+    resolve: {
+      tsconfigPaths: false,
+    },
   },
 
   adapter: node({
