@@ -57,6 +57,9 @@ export default defineConfig({
 
   vite: {
     plugins: [tailwindcss()],
+    resolve: {
+      tsconfigPaths: false,
+    },
   },
 
   adapter: node({
