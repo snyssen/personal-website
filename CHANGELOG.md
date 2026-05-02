@@ -1,5 +1,14 @@
 # Changelog
 
+## [2.12.4](https://github.com/snyssen/personal-website/compare/v2.12.3...v2.12.4) (2026-05-02)
+
+
+### Bug Fixes
+
+* **deps:** update all non-major dependencies ([#440](https://github.com/snyssen/personal-website/issues/440)) ([735ab47](https://github.com/snyssen/personal-website/commit/735ab474e76410909586c451da05834855edce12))
+* **deps:** update dependency astro to v6.2.1 ([#445](https://github.com/snyssen/personal-website/issues/445)) ([935301c](https://github.com/snyssen/personal-website/commit/935301c1f45e03abcfd64bfaca2d850961d25e18))
+* pass tsconfigPaths to @tailwindcss/vite resolveOptions ([#442](https://github.com/snyssen/personal-website/issues/442)) ([09da99b](https://github.com/snyssen/personal-website/commit/09da99b3768d100aef28bfc644de5e83659dede4))
+
 ## [2.12.3](https://github.com/snyssen/personal-website/compare/v2.12.2...v2.12.3) (2026-04-21)
 
 
