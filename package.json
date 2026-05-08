@@ -16,18 +16,18 @@
   },
   "dependencies": {
     "@astrojs/mdx": "5.0.4",
-    "@astrojs/node": "10.0.6",
+    "@astrojs/node": "10.1.0",
     "@astrojs/preact": "5.1.2",
     "@astrojs/rss": "4.0.18",
     "@astrojs/sitemap": "3.7.2",
-    "@tailwindcss/vite": "4.2.4",
-    "astro": "6.2.2",
+    "@tailwindcss/vite": "4.3.0",
+    "astro": "6.3.1",
     "astro-expressive-code": "0.42.0",
     "preact": "10.29.1",
     "rehype-autolink-headings": "7.1.0",
     "rehype-external-links": "3.0.0",
     "sharp": "0.34.5",
-    "tailwindcss": "4.2.4"
+    "tailwindcss": "4.3.0"
   },
   "devDependencies": {
     "@tailwindcss/typography": "0.5.19",
