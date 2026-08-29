@@ -1,4 +1,4 @@
-import { WebFingerLink, WebFingerObject } from "../../models/WebFingerObject"
+import type { WebFingerLink, WebFingerObject } from "../../models/WebFingerObject"
 
 export const prerender = false;
 
