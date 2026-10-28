@@ -1,5 +1,13 @@
 # Changelog
 
+## [2.12.6](https://github.com/snyssen/personal-website/compare/v2.12.5...v2.12.6) (2026-10-28)
+
+
+### Bug Fixes
+
+* **deps:** update all non-major dependencies ([#480](https://github.com/snyssen/personal-website/issues/480)) ([661f516](https://github.com/snyssen/personal-website/commit/661f516c73e45a171410a427fe89f2d158ffd5ef))
+* **deps:** update all non-major dependencies ([#483](https://github.com/snyssen/personal-website/issues/483)) ([2936f78](https://github.com/snyssen/personal-website/commit/2936f78759c670fb43d1d1e8d0e10181d7187b0e))
+
 ## [2.12.5](https://github.com/snyssen/personal-website/compare/v2.12.4...v2.12.5) (2026-08-29)
 
 
