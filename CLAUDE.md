@@ -97,7 +97,8 @@ standard hygiene hooks (trailing whitespace, EOF fixer, merge-conflict markers, 
 `markdown.remarkPlugins`/`rehypePlugins` fields: `remark-capitalize-headings`, then
 `rehypeHeadingIds` → `rehype-external-links` (appends an external-link icon) →
 `rehype-autolink-headings` (wraps headings in anchor links with an icon). The `mdx` integration is
-configured with `extendMarkdownConfig: false` so MDX pages do **not** inherit this processor —
+configured with `extendMarkdownConfig: false` and its own `processor: unified()` so MDX pages do
+**not** inherit this processor (disabling config extension alone does not isolate the processor) —
 these rehype plugins inject raw HTML nodes that MDX's hast-to-JSX compiler cannot handle
 (`Cannot handle unknown node 'raw'`), so MDX pages (e.g. `resume.mdx`) intentionally don't get
 auto-linked headings or external-link icons; components like `LinkWithIcon`/`MarkdownLink` add

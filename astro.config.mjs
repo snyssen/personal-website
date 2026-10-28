@@ -18,7 +18,7 @@ export default defineConfig({
 
   integrations: [
     expressiveCode(),
-    mdx({ extendMarkdownConfig: false }),
+    mdx({ extendMarkdownConfig: false, processor: unified() }),
     sitemap(),
     preact(),
   ],
