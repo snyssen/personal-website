@@ -21,14 +21,14 @@
     "@astrojs/preact": "6.1.1",
     "@astrojs/rss": "4.0.19",
     "@astrojs/sitemap": "3.7.4",
-    "@tailwindcss/vite": "4.3.3",
-    "astro": "7.4.4",
+    "@tailwindcss/vite": "4.3.4",
+    "astro": "7.4.5",
     "astro-expressive-code": "0.44.3",
     "preact": "10.29.8",
     "rehype-autolink-headings": "7.1.0",
     "rehype-external-links": "3.0.0",
     "sharp": "0.35.5",
-    "tailwindcss": "4.3.3"
+    "tailwindcss": "4.3.4"
   },
   "devDependencies": {
     "@tailwindcss/typography": "0.5.20",
